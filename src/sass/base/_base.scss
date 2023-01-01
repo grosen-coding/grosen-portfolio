@@ -1,0 +1,36 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*
+0-600px: Phone
+600-900px: Tablet Portrait Mode
+900-1200px: Tablet Landscape Mode
+1200-1800px: Normal styles
+1800px+: Large TVs ETC
+*/
+
+html {
+    scroll-behavior: smooth;
+
+    @include respond(big-desktop) {
+        font-size: 75%;
+    }
+
+    @include respond(laptop) {
+        font-size: 60%;
+    }
+
+    @include respond(tab-land) {
+        font-size: 55%;
+    }
+
+    @include respond(tab-port) {
+        font-size: 55%;
+    }
+}
+
