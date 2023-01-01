@@ -71,15 +71,21 @@ const Nav = styled.nav`
   top: 0;
   right: 0;
   left: 0;
-
-  background: linear-gradient(to bottom, #000, #0003 70%, #0000);
-
   background: linear-gradient(to bottom, #000, #0003 70%, #0000);
   transition: background 0.9s; /* control how smooth the background changes */
 
   &.scrolled {
     background: #0a0a0a;
     /* transition: background 0.9s; */
+  }
+
+  a {
+    transition: 0.25s;
+    letter-spacing: 1.1px;
+  }
+
+  a:hover {
+    color: var(--color-primary);
   }
 `;
 
@@ -116,14 +122,6 @@ const NavMenu = styled.div`
       text-transform: uppercase;
       font-size: 1.5rem;
       padding: 0 25px;
-
-      a {
-        transition: 0.25s;
-      }
-
-      a:hover {
-        color: var(--color-primary);
-      }
     }
   }
 `;

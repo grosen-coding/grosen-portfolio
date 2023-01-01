@@ -36,7 +36,7 @@ const Container = styled.header`
   background-repeat: no-repeat;
   color: white;
   font-family: var(--font-title);
-  border: 1px solid red;
+  /* border: 1px solid red; */
 
   &:before {
     position: absolute;
@@ -66,5 +66,5 @@ const Wrap = styled.div`
   max-width: 100%;
   margin: 0 auto;
   height: 100%;
-  border: 1px solid green;
+  /* border: 1px solid green; */
 `;

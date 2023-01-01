@@ -57,7 +57,7 @@ const LandingPage = styled.div`
   height: auto;
   display: flex;
   flex-direction: column;
-  padding-top: 20%;
+  padding-top: 25%;
   padding-left: 30px;
   text-transform: uppercase;
 
@@ -80,16 +80,33 @@ const LandingPage = styled.div`
 `;
 
 const Button = styled.button`
-  width: 150px;
+  width: 200px;
   height: 50px;
   margin-top: 40px;
   background-color: var(--color-primary);
   border-radius: 10px;
   padding: 10px 20px;
+  display: block;
   cursor: pointer;
+  z-index: 5;
+  transition: 0.25s;
+
+  &:hover {
+    background-color: #e2e2e2;
+    border: 2px solid var(--color-primary);
+    transition: 0.25s;
+  }
+
+  &:hover a {
+    color: var(--color-primary);
+  }
 
   a {
     text-transform: uppercase;
     font-weight: 500;
+    font-size: 1.5rem;
+    font-family: var(--font-title);
+    letter-spacing: 1.5px;
+    transition: 0.25s;
   }
 `;
