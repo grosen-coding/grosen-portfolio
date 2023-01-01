@@ -42,9 +42,18 @@ function Hero() {
         />
       </h1>
 
-      <Button>
-        <a href="#resume">My Resume</a>
-      </Button>
+      <div
+        className="btn-resume"
+        data-aos="fade-left"
+        data-aos-delay="300"
+        data-aos-duration="1000"
+        data-aos-easing="ease"
+        data-aos-once="true"
+      >
+        <Button>
+          <a href="#resume">My Resume</a>
+        </Button>
+      </div>
     </LandingPage>
   );
 }
@@ -60,6 +69,10 @@ const LandingPage = styled.div`
   padding-top: 25%;
   padding-left: 30px;
   text-transform: uppercase;
+
+  .btn-resume {
+    z-index: 5;
+  }
 
   h1 {
     font-size: 5rem;
@@ -88,17 +101,18 @@ const Button = styled.button`
   padding: 10px 20px;
   display: block;
   cursor: pointer;
-  z-index: 5;
-  transition: 0.25s;
+
+  transition: all 0.3s;
 
   &:hover {
     background-color: #e2e2e2;
     border: 2px solid var(--color-primary);
-    transition: 0.25s;
+    transition: 0.3s;
   }
 
   &:hover a {
     color: var(--color-primary);
+    transition: 0.3s;
   }
 
   a {
@@ -107,6 +121,6 @@ const Button = styled.button`
     font-size: 1.5rem;
     font-family: var(--font-title);
     letter-spacing: 1.5px;
-    transition: 0.25s;
+    transition: 0.3s;
   }
 `;
