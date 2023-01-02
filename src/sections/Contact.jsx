@@ -3,8 +3,16 @@ import styled from "styled-components";
 
 function Contact() {
   return (
-    <Container>
-      <Wrap></Wrap>
+    <Container id="contact">
+      <Wrap>
+        <h1>
+          <span>Get in Touch With Me</span>
+          <div></div>
+        </h1>
+        <ContactForm>
+          <form action=""></form>
+        </ContactForm>
+      </Wrap>
     </Container>
   );
 }
@@ -12,14 +20,29 @@ function Contact() {
 export default Contact;
 
 const Container = styled.section`
-  height: 100%;
+  height: 600px;
   width: 100%;
-  background-image: linear-gradient(rgba(23, 26, 29, 1), rgba(23, 26, 29, 0.9));
+  background-image: url("../img/contact-bg.jpg");
   background-position: center;
   background-position: cover;
   background-repeat: no-repeat;
   font-family: var(--font-title);
   padding-bottom: 60px;
+  position: relative;
+
+  &:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #000;
+    content: "";
+    width: 100%;
+    /* height: 100%; */
+    /* z-index: 1; */
+    opacity: 0.3;
+  }
 `;
 
 const Wrap = styled.div`
@@ -36,6 +59,8 @@ const Wrap = styled.div`
     font-weight: 500;
     font-size: 2rem;
     letter-spacing: 0.8px;
+    position: relative;
+    z-index: 10;
     /* position: relative; */
     text-align: center;
     > div {
@@ -55,9 +80,11 @@ const Wrap = styled.div`
         left: 50%;
         transform: translate(-50%, -50%);
         border: 10px solid black;
-        z-index: 2;
+        z-index: 1;
         background-color: var(--color-primary);
       }
     }
   }
 `;
+
+const ContactForm = styled.div``;
