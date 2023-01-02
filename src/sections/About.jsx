@@ -1,5 +1,8 @@
 import React from "react";
 import styled from "styled-components";
+import { FaReact } from "react-icons/fa";
+import { SlDiamond } from "react-icons/sl";
+import { AiOutlineRocket } from "react-icons/ai";
 
 function About() {
   return (
@@ -18,7 +21,9 @@ function About() {
 
         <AboutContent>
           <ContentCard>
-            <div></div>
+            <div className="card-icon">
+              <FaReact />
+            </div>
             <h3>Creativity</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
@@ -26,7 +31,9 @@ function About() {
             </p>
           </ContentCard>
           <ContentCard>
-            <div></div>
+            <div className="card-icon">
+              <SlDiamond />
+            </div>
             <h3>Dedication</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
@@ -35,7 +42,9 @@ function About() {
             </p>
           </ContentCard>
           <ContentCard>
-            <div></div>
+            <div className="card-icon">
+              <AiOutlineRocket />
+            </div>
             <h3>Hard Work & Commitment</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste vel
@@ -121,9 +130,15 @@ const ContentCard = styled.div`
   width: 30%;
   border-left: 1px solid grey;
 
+  .card-icon {
+    color: var(--color-primary);
+    font-size: 3rem;
+  }
+
   h3 {
     font-size: 2rem;
     font-weight: 600;
-    padding: 20px 0;
+    padding-bottom: 20px;
+    /* padding: 20px 0; */
   }
 `;
