@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 function Portfolio() {
   return (
-    <Container>
+    <Container id="portfolio">
       <Wrap>
         <h1>
           <span>Portfolio</span>
@@ -12,47 +12,71 @@ function Portfolio() {
         <Projects>
           <Project id="project-1" className="project-card">
             <ProjectTitle className="project-card-title">
-              <h3>Project Title 1 </h3>
+              <h3>Project Title 1</h3>
               <h5>project type</h5>
             </ProjectTitle>
-            <ProjectImg src="../img/1.jpg" alt="" />
+            <ProjectImg
+              className="project-card-img"
+              src="../img/1.jpg"
+              alt=""
+            />
           </Project>
           <Project id="project-2" className="project-card">
             <ProjectTitle className="project-card-title">
               <h3>Project Title 2</h3>
               <h5>project type</h5>
             </ProjectTitle>
-            <ProjectImg src="../img/1.jpg" alt="" />
+            <ProjectImg
+              className="project-card-img"
+              src="../img/1.jpg"
+              alt=""
+            />
           </Project>
           <Project id="project-3" className="project-card">
             <ProjectTitle className="project-card-title">
               <h3>Project Title 3</h3>
               <h5>project type</h5>
             </ProjectTitle>
-            <ProjectImg src="../img/1.jpg" alt="" />
+            <ProjectImg
+              className="project-card-img"
+              src="../img/1.jpg"
+              alt=""
+            />
           </Project>
           <Project id="project-4" className="project-card">
             <ProjectTitle className="project-card-title">
               <h3>Project Title 4</h3>
               <h5>project type</h5>
             </ProjectTitle>
-            <ProjectImg src="../img/1.jpg" alt="" />
+            <ProjectImg
+              className="project-card-img"
+              src="../img/1.jpg"
+              alt=""
+            />
           </Project>
           <Project id="project-5" className="project-card">
             <ProjectTitle className="project-card-title">
               <h3>Project Title 5</h3>
               <h5>project type</h5>
             </ProjectTitle>
-            <ProjectImg src="../img/1.jpg" alt="" />
+            <ProjectImg
+              className="project-card-img"
+              src="../img/1.jpg"
+              alt=""
+            />
           </Project>
           <Project id="project-6" className="project-card">
             <ProjectTitle className="project-card-title">
               <h3>Project Title 6</h3>
               <h5>project type</h5>
             </ProjectTitle>
-            <ImgWrap>
-              <ProjectImg src="../img/1.jpg" alt="" />
-            </ImgWrap>
+            {/* <ImgWrap className="project-img-wrap"> */}
+            <ProjectImg
+              className="project-card-img"
+              src="../img/1.jpg"
+              alt=""
+            />
+            {/* </ImgWrap> */}
           </Project>
         </Projects>
       </Wrap>
@@ -130,6 +154,17 @@ const Project = styled.div`
   width: 100%;
   position: relative;
   cursor: pointer;
+  overflow: hidden;
+  border-radius: 30px;
+
+  &:hover .project-card-title {
+    opacity: 1;
+  }
+
+  &:hover .project-card-img {
+    opacity: 0.4;
+    transform: scale(1);
+  }
   /* height: auto; */
   &:nth-of-type(1) {
     grid-row: 1 / 3;
@@ -164,16 +199,20 @@ const ProjectTitle = styled.div`
   width: 100%;
   text-align: center;
   z-index: 3;
+  opacity: 0;
+  transition: 0.3s;
 
   h3 {
     font-size: 2rem;
     letter-spacing: 0.8px;
+    transition: 0.3s;
   }
 
   h5 {
     font-size: 1.2rem;
     font-weight: 400;
     letter-spacing: 1px;
+    transition: 0.3s;
   }
 `;
 
@@ -181,12 +220,15 @@ const ImgWrap = styled.div`
   width: 100%;
   height: 100%;
   position: absolute;
+  /* z-index: -1; */
 `;
 
 const ProjectImg = styled.img`
   width: 100%;
-  border-radius: 50px;
+  border-radius: 30px;
   height: 100%;
   object-fit: cover;
-  object-position: center;
+  object-position: center center;
+  transition: all 0.3s;
+  transform: scale(1.05);
 `;
