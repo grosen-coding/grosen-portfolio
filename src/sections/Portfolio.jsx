@@ -70,13 +70,11 @@ function Portfolio() {
               <h3>Project Title 6</h3>
               <h5>project type</h5>
             </ProjectTitle>
-            {/* <ImgWrap className="project-img-wrap"> */}
             <ProjectImg
               className="project-card-img"
-              src="../img/5.jpg"
+              src="../img/2.jpg"
               alt=""
             />
-            {/* </ImgWrap> */}
           </Project>
         </Projects>
       </Wrap>
@@ -95,6 +93,17 @@ const Container = styled.section`
   background-repeat: no-repeat;
   font-family: var(--font-title);
   padding-bottom: 60px;
+  position: relative;
+
+  &:after {
+    content: "";
+    width: 100%;
+    bottom: 0;
+    height: 100%;
+    background: linear-gradient(to top, #000, #0003 70%, #0000);
+    position: absolute;
+    z-index: 5;
+  }
 `;
 
 const Wrap = styled.div`
@@ -103,6 +112,8 @@ const Wrap = styled.div`
   padding-top: 50px;
   margin: 0 auto;
   height: 100%;
+  position: relative;
+  z-index: 6;
   color: #e2e2e2;
   /* height: auto; */
 
@@ -156,6 +167,7 @@ const Project = styled.div`
   cursor: pointer;
   overflow: hidden;
   border-radius: 30px;
+  z-index: 7;
 
   &:hover .project-card-title {
     opacity: 1;
@@ -164,6 +176,7 @@ const Project = styled.div`
   &:hover .project-card-img {
     opacity: 0.4;
     transform: scale(1);
+    border: 1px solid;
   }
   /* height: auto; */
   &:nth-of-type(1) {
@@ -198,7 +211,7 @@ const ProjectTitle = styled.div`
   align-items: center;
   width: 100%;
   text-align: center;
-  z-index: 3;
+  z-index: 7;
   opacity: 0;
   transition: 0.3s;
 

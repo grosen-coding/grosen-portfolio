@@ -35,6 +35,18 @@ const Container = styled.header`
   background-repeat: no-repeat;
   color: white;
   font-family: var(--font-title);
+
+  position: relative;
+
+  &:after {
+    content: "";
+    width: 100%;
+    bottom: 0;
+    height: 10%;
+    background: linear-gradient(to top, #000, #0003 70%, #0000);
+    position: absolute;
+    z-index: 5;
+  }
   /* border: 1px solid red; */
 
   /* &:before {

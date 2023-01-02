@@ -79,27 +79,31 @@ export default About;
 const Container = styled.section`
   height: 100%;
   width: 100%;
-  background-color: #000;
+  background-image: linear-gradient(rgba(23, 26, 29, 0.9), rgba(23, 26, 29, 1));
+  background-position: center;
+  background-position: cover;
+  background-repeat: no-repeat;
+  font-family: var(--font-title);
+  padding: 40px 0;
   position: relative;
-  /* border: 1px solid blue; */
 
-  &:before {
+  &:after {
     content: "";
     width: 100%;
-    top: -200px;
-    height: 200px;
-    background: linear-gradient(to top, #000, #0003 70%, #0000);
+    top: 0;
+    height: 150%;
+    background: linear-gradient(to bottom, #000, #0003 70%, #0000);
     position: absolute;
     z-index: 5;
   }
 
-  &:after {
+  /* &:after {
     content: "";
     width: 100%;
     height: 200px;
     background: linear-gradient(to bottom, #000, #0003 50%, #0000);
     position: absolute;
-  }
+  } */
 
   font-family: var(--font-title);
   padding: 40px 0;
@@ -113,6 +117,9 @@ const AboutWrap = styled.div`
   margin: 0 auto;
   height: 100%;
   color: #e2e2e2;
+
+  position: relative;
+  z-index: 7;
   /* height: auto; */
   > p {
     text-align: center;

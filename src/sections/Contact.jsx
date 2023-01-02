@@ -6,7 +6,7 @@ function Contact() {
     <Container id="contact">
       <Wrap>
         <h1>
-          <span>Get in Touch With Me</span>
+          <span>Get in Touch Me</span>
           <div></div>
         </h1>
         <ContactForm>
@@ -29,19 +29,28 @@ const Container = styled.section`
   font-family: var(--font-title);
   padding-bottom: 60px;
   position: relative;
+  /* border: 1px solid blue; */
+
+  position: relative;
 
   &:before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #000;
     content: "";
     width: 100%;
-    /* height: 100%; */
-    /* z-index: 1; */
-    opacity: 0.3;
+    bottom: 0;
+    height: 20%;
+    background: linear-gradient(to top, #000, #0003 70%, #0000);
+    position: absolute;
+    z-index: 5;
+  }
+
+  &:after {
+    content: "";
+    width: 100%;
+    top: 0;
+    height: 200px;
+    background: linear-gradient(to bottom, #000, #0003 70%, #0000);
+    position: absolute;
+    z-index: 5;
   }
 `;
 

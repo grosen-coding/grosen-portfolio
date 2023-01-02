@@ -143,6 +143,17 @@ const Container = styled.section`
   background-repeat: no-repeat;
   font-family: var(--font-title);
   padding-bottom: 60px;
+  position: relative;
+
+  &:after {
+    content: "";
+    width: 100%;
+    top: 0;
+    height: 100%;
+    background: linear-gradient(to bottom, #000, #0003 70%, #0000);
+    position: absolute;
+    z-index: 5;
+  }
 `;
 
 const Wrap = styled.div`
@@ -152,6 +163,8 @@ const Wrap = styled.div`
   margin: 0 auto;
   height: 100%;
   color: #e2e2e2;
+  position: relative;
+  z-index: 6;
 
   h1 {
     margin-top: 20px;
