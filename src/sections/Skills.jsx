@@ -119,7 +119,7 @@ const Container = styled.section`
 
 const Wrap = styled.div`
   max-width: 100%;
-  width: 1300px;
+  width: var(--section-wrap-width);
   margin: 0 auto;
   height: 500px;
   color: #e2e2e2;

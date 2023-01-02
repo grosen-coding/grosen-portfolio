@@ -61,7 +61,7 @@ const Container = styled.header`
 `;
 // -------WRAPPER---------
 const Wrap = styled.div`
-  width: 1300px;
+  width: var(--section-wrap-width);
   max-width: 100%;
   margin: 0 auto;
   height: 100%;

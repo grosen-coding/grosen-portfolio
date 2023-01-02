@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 function WhatIDo() {
   return (
-    <Container>
+    <Container id="what-i-do">
       <Wrap>
         <div>
           <Left>
@@ -59,7 +59,8 @@ const Container = styled.section`
 
 const Wrap = styled.div`
   max-width: 100%;
-  width: 1300px;
+  width: var(--section-wrap-width);
+  padding-top: 50px;
   margin: 0 auto;
   height: 100%;
   color: #e2e2e2;

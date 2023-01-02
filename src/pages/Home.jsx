@@ -8,6 +8,7 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 
 import React from "react";
+import Services from "../sections/Services";
 
 function Home() {
   return (
@@ -19,6 +20,7 @@ function Home() {
       <Skills />
       <Portfolio />
       <Resume />
+      <Services />
       <Contact />
       <Footer />
     </>

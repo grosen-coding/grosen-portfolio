@@ -32,7 +32,7 @@ function NavBar() {
               <a href="#about">About</a>
             </li>
             <li className="nav-link">
-              <a href="#whatido">What I Do</a>
+              <a href="#what-i-do">What I Do</a>
             </li>
             <li className="nav-link">
               <a href="#skills">Skills</a>
@@ -41,7 +41,10 @@ function NavBar() {
               <a href="#portfolio">Portfolio</a>
             </li>
             <li className="nav-link">
-              <a href={"#resume"}>Resume</a>
+              <a href="#services">Services</a>
+            </li>
+            <li className="nav-link">
+              <a href="#resume">Resume</a>
             </li>
             <li className="nav-link">
               <a href="#contact">Contact</a>
@@ -91,7 +94,7 @@ const Nav = styled.nav`
 `;
 
 const NavWrapper = styled.div`
-  width: 1300px;
+  width: var(--section-wrap-width);
   height: 80px;
   margin: 0 auto;
   display: flex;
