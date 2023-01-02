@@ -37,7 +37,7 @@ const Container = styled.header`
   font-family: var(--font-title);
   /* border: 1px solid red; */
 
-  &:before {
+  /* &:before {
     position: absolute;
     bottom: 0px;
     left: 0;
@@ -46,9 +46,9 @@ const Container = styled.header`
     height: 50%;
     background-image: linear-gradient(rgba(23, 26, 29, 0), rgba(23, 26, 29, 1));
     z-index: 1;
-  }
+  } */
 
-  &:after {
+  /* &:after {
     position: absolute;
     top: 0px;
     left: 0;
@@ -57,7 +57,7 @@ const Container = styled.header`
     height: 50%;
     background-image: linear-gradient(rgba(23, 26, 29, 1), rgba(23, 26, 29, 0));
     z-index: -1;
-  }
+  } */
 `;
 // -------WRAPPER---------
 const Wrap = styled.div`

@@ -28,7 +28,7 @@ function WhatIDo() {
             </p>
             <div></div>
             <h2>Why Work With Me</h2>
-            <h3>Superior Results with </h3>
+            <h3>Superior Results with Top User Experience</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
               qui, odit commodi harum molestias nam soluta vel, unde quae nemo
@@ -49,7 +49,7 @@ export default WhatIDo;
 const Container = styled.section`
   height: 100%;
   width: 100%;
-  background-color: #000;
+  background-image: linear-gradient(rgba(23, 26, 29, 1), rgba(23, 26, 29, 0.9));
   background-position: center;
   background-position: cover;
   background-repeat: no-repeat;
@@ -82,6 +82,7 @@ const ImgWrap = styled.div`
 
   img {
     width: 100%;
+    border-radius: 50px;
   }
 `;
 
@@ -123,6 +124,7 @@ const Right = styled.div`
 
   h3 {
     font-size: 4rem;
+    line-height: 1.1;
   }
 
   p {

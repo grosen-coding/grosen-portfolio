@@ -63,11 +63,31 @@ const Container = styled.section`
   height: 100%;
   width: 100%;
   background-color: #000;
-  background-position: center;
-  background-position: cover;
-  background-repeat: no-repeat;
+  position: relative;
+  /* border: 1px solid blue; */
+
+  &:before {
+    content: "";
+    width: 100%;
+    top: -150px;
+    height: 200px;
+    background: linear-gradient(to top, #000, #0003 70%, #0000);
+    position: absolute;
+    z-index: 5;
+  }
+
+  &:after {
+    content: "";
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to bottom, #000, #0003 70%, #0000);
+    position: absolute;
+  }
+
   font-family: var(--font-title);
   padding: 40px 0;
+  /* border-bottom: 1px solid grey;
+  border-top: 1px solid grey; */
 `;
 
 const AboutWrap = styled.div`
@@ -84,7 +104,7 @@ const AboutTitle = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 40px 0;
+  padding: 10px 0;
   width: 100%;
 
   h1 {
