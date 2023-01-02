@@ -41,10 +41,10 @@ function NavBar() {
               <a href="#portfolio">Portfolio</a>
             </li>
             <li className="nav-link">
-              <a href="#services">Services</a>
+              <a href="#resume">Resume</a>
             </li>
             <li className="nav-link">
-              <a href="#resume">Resume</a>
+              <a href="#services">Services</a>
             </li>
             <li className="nav-link">
               <a href="#contact">Contact</a>

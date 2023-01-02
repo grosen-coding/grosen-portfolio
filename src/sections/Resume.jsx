@@ -110,7 +110,7 @@ function Resume() {
               <School className="resume-card">
                 <div></div>
                 <h5>
-                  <span>1</span>2002 - 2006
+                  <span>3</span>2002 - 2006
                 </h5>
                 <h3>Bachelor of Arts Psychology</h3>
                 <h4>

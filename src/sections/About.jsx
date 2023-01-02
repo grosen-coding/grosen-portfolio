@@ -14,7 +14,26 @@ function About() {
         </h1>
         <p>
           I'm a young tech enthusiast and entrepreneur who loves to take risks.
-          I grew up in a tech-loving family in northern Toronto, Ont.
+          I grew up in a tech-loving family in northern Toronto, Ont. Lorem
+          ipsum dolor sit amet consectetur adipisicing elit. Id accusamus,
+          blanditiis modi voluptas laudantium tempore possimus, nulla saepe
+          labore molestiae sit aliquid earum illo voluptates impedit qui. Quod
+          porro sed, numquam pariatur, architecto consequuntur maiores quae
+          maxime nesciunt nostrum, unde culpa asperiores omnis deleniti modi
+          iste iusto vel commodi perspiciatis.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga dicta
+          dolorum quaerat praesentium molestiae aliquam facilis animi vel,
+          sapiente reiciendis, dignissimos quod modi placeat? Vero esse at fuga
+          beatae tempora atque illum sapiente, doloribus qui eos voluptatibus
+          architecto eius fugit minima molestiae corrupti earum placeat dolor
+          autem ab nemo! Obcaecati, doloribus. Vel cumque placeat eos ea
+          necessitatibus sit pariatur iste repellat. Quis numquam voluptate
+          expedita veritatis iste alias dignissimos ab vitae eius magni? A
+          dolorem, nesciunt quibusdam velit similique, itaque, numquam tenetur
+          ipsam distinctio et voluptas vel minima iste omnis laborum ad eos ab
+          esse. Corrupti ratione quasi cumque minus!
         </p>
 
         <AboutContent>
