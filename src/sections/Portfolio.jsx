@@ -28,7 +28,7 @@ function Portfolio() {
             </ProjectTitle>
             <ProjectImg
               className="project-card-img"
-              src="../img/1.jpg"
+              src="../img/4.jpg"
               alt=""
             />
           </Project>
@@ -39,7 +39,7 @@ function Portfolio() {
             </ProjectTitle>
             <ProjectImg
               className="project-card-img"
-              src="../img/1.jpg"
+              src="../img/6.jpg"
               alt=""
             />
           </Project>
@@ -50,7 +50,7 @@ function Portfolio() {
             </ProjectTitle>
             <ProjectImg
               className="project-card-img"
-              src="../img/1.jpg"
+              src="../img/3.jpg"
               alt=""
             />
           </Project>
@@ -61,7 +61,7 @@ function Portfolio() {
             </ProjectTitle>
             <ProjectImg
               className="project-card-img"
-              src="../img/1.jpg"
+              src="../img/2.jpg"
               alt=""
             />
           </Project>
@@ -73,7 +73,7 @@ function Portfolio() {
             {/* <ImgWrap className="project-img-wrap"> */}
             <ProjectImg
               className="project-card-img"
-              src="../img/1.jpg"
+              src="../img/5.jpg"
               alt=""
             />
             {/* </ImgWrap> */}
@@ -206,6 +206,7 @@ const ProjectTitle = styled.div`
     font-size: 2rem;
     letter-spacing: 0.8px;
     transition: 0.3s;
+    padding: 20px 0 80px;
   }
 
   h5 {
@@ -216,12 +217,12 @@ const ProjectTitle = styled.div`
   }
 `;
 
-const ImgWrap = styled.div`
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  /* z-index: -1; */
-`;
+// const ImgWrap = styled.div`
+//   width: 100%;
+//   height: 100%;
+//   position: absolute;
+//   /* z-index: -1; */
+// `;
 
 const ProjectImg = styled.img`
   width: 100%;
