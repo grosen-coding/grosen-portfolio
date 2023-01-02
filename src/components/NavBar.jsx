@@ -71,6 +71,7 @@ const Nav = styled.nav`
   top: 0;
   right: 0;
   left: 0;
+  z-index: 100;
   background: linear-gradient(to bottom, #000, #0003 70%, #0000);
   transition: background 0.9s; /* control how smooth the background changes */
 

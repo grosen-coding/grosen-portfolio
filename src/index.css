@@ -34,6 +34,11 @@ a {
   color: #e2e2e2;
 }
 
+p {
+  font-size: 1.2rem;
+  opacity: 0.8;
+}
+
 /*
 0-600px: Phone
 600-900px: Tablet Portrait Mode
@@ -62,5 +67,26 @@ html {
 @media only screen and (max-width: 768px) {
   html {
     font-size: 55%;
+  }
+}
+
+/* Animations */
+@keyframes bounceDown {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translate(-50%, 0);
+  }
+  40% {
+    transform: translate(-50%, 5px);
+  }
+  60% {
+    transform: translate(-50%, 3px);
+  }
+}
+@keyframes arrowOpacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
