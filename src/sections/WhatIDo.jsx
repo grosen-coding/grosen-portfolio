@@ -62,7 +62,7 @@ const Container = styled.section`
     width: 100%;
     bottom: 0;
     height: 100%;
-    background: linear-gradient(to top, #000, #0001 70%, #0000);
+    background: linear-gradient(to top, #000, #0001 30%, #0000);
     position: absolute;
     z-index: 5;
   }
@@ -106,7 +106,7 @@ const Right = styled.div`
   height: 100%;
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
+  /* justify-content: space-between; */
   padding: 20px 0;
 
   div {
@@ -140,6 +140,7 @@ const Right = styled.div`
   h3 {
     font-size: 4rem;
     line-height: 1.1;
+    padding: 20px 0;
   }
 
   p {

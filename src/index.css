@@ -40,6 +40,14 @@ p {
   opacity: 0.6;
 }
 
+input::placeholder,
+textarea::placeholder {
+  font-family: var(--font-title);
+  opacity: 0.4;
+  color: #e2e2e2;
+  text-transform: uppercase;
+}
+
 /*
 0-600px: Phone
 600-900px: Tablet Portrait Mode

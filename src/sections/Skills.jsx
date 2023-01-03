@@ -29,49 +29,77 @@ function Skills() {
                   <h3>HTML</h3>
                   <div id="skill-progress">95%</div>
                 </Skill>
-                <div className="skill-bar" id="skill-bar"></div>
+                <SkillBar
+                  progress={95}
+                  className="skill-bar"
+                  id="skill-bar"
+                ></SkillBar>
               </SkillWrap>
               <SkillWrap>
                 <Skill>
                   <h3>CSS</h3>
-                  <div id="skill-progress">75%</div>
+                  <div id="skill-progress">90%</div>
                 </Skill>
-                <div className="skill-bar" id="skill-bar"></div>
+                <SkillBar
+                  progress={90}
+                  className="skill-bar"
+                  id="skill-bar"
+                ></SkillBar>
               </SkillWrap>
               <SkillWrap>
                 <Skill>
                   <h3>Javascript</h3>
-                  <div id="skill-progress">75%</div>
+                  <div id="skill-progress">70%</div>
                 </Skill>
-                <div className="skill-bar" id="skill-bar"></div>
+                <SkillBar
+                  progress={70}
+                  className="skill-bar"
+                  id="skill-bar"
+                ></SkillBar>
               </SkillWrap>
               <SkillWrap>
                 <Skill>
                   <h3>React</h3>
                   <div id="skill-progress">75%</div>
                 </Skill>
-                <div className="skill-bar" id="skill-bar"></div>
+                <SkillBar
+                  progress={75}
+                  className="skill-bar"
+                  id="skill-bar"
+                ></SkillBar>
               </SkillWrap>
               <SkillWrap>
                 <Skill>
                   <h3>Debugging</h3>
-                  <div id="skill-progress">75%</div>
+                  <div id="skill-progress">85%</div>
                 </Skill>
-                <div className="skill-bar" id="skill-bar"></div>
+                <SkillBar
+                  progress={85}
+                  className="skill-bar"
+                  id="skill-bar"
+                ></SkillBar>
               </SkillWrap>
               <SkillWrap>
                 <Skill>
                   <h3>Responsive Design</h3>
-                  <div id="skill-progress">75%</div>
+                  <div id="skill-progress">90%</div>
                 </Skill>
-                <div className="skill-bar" id="skill-bar"></div>
+                <SkillBar
+                  progress={90}
+                  className="skill-bar"
+                  id="skill-bar"
+                ></SkillBar>
               </SkillWrap>
               <SkillWrap>
                 <Skill>
                   <h3>Accessibility</h3>
-                  <div id="skill-progress">75%</div>
+                  <div id="skill-progress">80%</div>
                 </Skill>
-                <div className="skill-bar" id="skill-bar"></div>
+                <SkillBar
+                  progress={80}
+                  className="skill-bar"
+                  id="skill-bar"
+                ></SkillBar>
               </SkillWrap>
             </MySkills>
           </Right>
@@ -99,7 +127,7 @@ const Container = styled.section`
     width: 100%;
     top: 0;
     height: 150%;
-    background: linear-gradient(to bottom, #000, #0003 70%, #0000);
+    background: linear-gradient(to bottom, #000, #0003 50%, #0000);
     position: absolute;
     z-index: 5;
   }
@@ -173,7 +201,7 @@ const MySkills = styled.div`
 const SkillWrap = styled.div`
   /* height: 10px; */
   /* border: 1px solid purple; */
-  .skill-bar {
+  /* .skill-bar {
     height: 5px;
     width: 100%;
     background-color: grey;
@@ -192,7 +220,7 @@ const SkillWrap = styled.div`
       background-color: var(--color-primary);
       border-radius: 3px;
     }
-  }
+  } */
 `;
 
 const Skill = styled.div`
@@ -200,3 +228,27 @@ const Skill = styled.div`
   width: 100%;
   justify-content: space-between;
 `;
+
+const SkillBar = styled.div`
+  height: 5px;
+
+  width: 100%;
+  background-color: grey;
+  margin: 5px 0;
+  position: relative;
+  border-radius: 3px;
+  margin: 5px 0;
+
+  &:before {
+    content: "";
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: ${({ progress }) => progress}%;
+    position: absolute;
+    background-color: var(--color-primary);
+    border-radius: 3px;
+  }
+`;
+
+// width: ${({ progress }) => progress}%;

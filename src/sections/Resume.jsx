@@ -150,7 +150,7 @@ const Container = styled.section`
     width: 100%;
     top: 0;
     height: 100%;
-    background: linear-gradient(to bottom, #000, #0003 70%, #0000);
+    background: linear-gradient(to bottom, #000, #0003 50%, #0000);
     position: absolute;
     z-index: 5;
   }

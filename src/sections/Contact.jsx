@@ -9,9 +9,53 @@ function Contact() {
           <span>Get in Touch Me</span>
           <div></div>
         </h1>
-        <ContactForm>
-          <form action=""></form>
-        </ContactForm>
+        <ContactFormDiv>
+          <ContactForm className="contact-form">
+            <FormGroup className="form-group">
+              <input
+                type="email"
+                className="form-control"
+                id="email"
+                name="email"
+                // value={email}
+                // onChange={onChange}
+                placeholder="Name"
+                required
+              />
+              <input
+                type="email"
+                className="form-control"
+                id="email"
+                name="email"
+                // value={password}
+                // onChange={onChange}
+                placeholder="E-mail Address"
+                required
+              />
+              <input
+                type="phone"
+                className="form-control"
+                id="phone"
+                name="phone"
+                // value={password}
+                // onChange={onChange}
+                placeholder="Phone Number"
+                required
+              />
+            </FormGroup>
+            <FormGroup className="form-group">
+              <textarea
+                type="textarea"
+                placeholder="Please type your message"
+                className="form-text-area"
+                required
+              />
+            </FormGroup>
+            <FormGroup className="form-group">
+              <SubmitButton className="btn btn-block">Submit</SubmitButton>
+            </FormGroup>
+          </ContactForm>
+        </ContactFormDiv>
       </Wrap>
     </Container>
   );
@@ -20,7 +64,7 @@ function Contact() {
 export default Contact;
 
 const Container = styled.section`
-  height: 600px;
+  height: 100%;
   width: 100%;
   background-image: url("../img/contact-bg.jpg");
   background-position: center;
@@ -96,4 +140,67 @@ const Wrap = styled.div`
   }
 `;
 
-const ContactForm = styled.div``;
+const ContactFormDiv = styled.div`
+  width: 100%;
+`;
+
+const ContactForm = styled.form`
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 70%;
+  padding: 20px 0 40px;
+
+  input,
+  textarea {
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid grey;
+    border-radius: 3px;
+    padding: 10px;
+    color: #e2e2e2;
+    font-family: var(--font-title);
+    letter-spacing: 0.5px;
+    margin: 10px;
+  }
+  textarea {
+    resize: none;
+    height: 300px;
+  }
+`;
+
+const FormGroup = styled.div`
+  display: flex;
+  width: 100%;
+`;
+
+const SubmitButton = styled.button`
+  width: 50%;
+  height: auto;
+  background-color: var(--color-primary);
+  font-family: var(--font-title);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  font-weight: 500;
+  padding: 12px;
+  display: inline-block;
+  z-index: 5;
+  cursor: pointer;
+  transition: all 0.3s;
+  border: none;
+  margin: 0 auto;
+  margin-top: 15px;
+
+  &:hover {
+    background-color: #e2e2e2;
+    border: 2px solid var(--color-primary);
+    transition: 0.3s;
+  }
+
+  &:hover a {
+    color: var(--color-primary);
+    transition: 0.3s;
+  }
+`;

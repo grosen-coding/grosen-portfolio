@@ -12,8 +12,8 @@ function Portfolio() {
         <Projects>
           <Project id="project-1" className="project-card">
             <ProjectTitle className="project-card-title">
-              <h3>Project Title 1</h3>
-              <h5>project type</h5>
+              <h3>K9 Paws</h3>
+              <h5>full stack website</h5>
             </ProjectTitle>
             <ProjectImg
               className="project-card-img"
@@ -23,8 +23,8 @@ function Portfolio() {
           </Project>
           <Project id="project-2" className="project-card">
             <ProjectTitle className="project-card-title">
-              <h3>Project Title 2</h3>
-              <h5>project type</h5>
+              <h3>Retro Daily Planner</h3>
+              <h5>full stack website</h5>
             </ProjectTitle>
             <ProjectImg
               className="project-card-img"
@@ -34,8 +34,8 @@ function Portfolio() {
           </Project>
           <Project id="project-3" className="project-card">
             <ProjectTitle className="project-card-title">
-              <h3>Project Title 3</h3>
-              <h5>project type</h5>
+              <h3>PawTours</h3>
+              <h5>front end website</h5>
             </ProjectTitle>
             <ProjectImg
               className="project-card-img"
@@ -45,8 +45,8 @@ function Portfolio() {
           </Project>
           <Project id="project-4" className="project-card">
             <ProjectTitle className="project-card-title">
-              <h3>Project Title 4</h3>
-              <h5>project type</h5>
+              <h3>Quick Pick Flicker</h3>
+              <h5>react website</h5>
             </ProjectTitle>
             <ProjectImg
               className="project-card-img"
@@ -56,8 +56,8 @@ function Portfolio() {
           </Project>
           <Project id="project-5" className="project-card">
             <ProjectTitle className="project-card-title">
-              <h3>Project Title 5</h3>
-              <h5>project type</h5>
+              <h3>The Dog Blog</h3>
+              <h5>react website</h5>
             </ProjectTitle>
             <ProjectImg
               className="project-card-img"

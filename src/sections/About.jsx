@@ -124,6 +124,7 @@ const AboutWrap = styled.div`
   > p {
     text-align: center;
     font-size: 1.4rem;
+    padding: 10px 0;
     margin-bottom: 40px;
   }
 

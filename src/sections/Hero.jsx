@@ -74,10 +74,6 @@ const LandingPage = styled.section`
   padding-top: 25%;
   text-transform: uppercase;
 
-  .btn-resume {
-    z-index: 5;
-  }
-
   h1 {
     font-size: 5rem;
     color: var(--color-primary);
@@ -111,10 +107,10 @@ const Button = styled.button`
   border-radius: 10px;
   padding: 12px;
   display: inline-block;
-
+  z-index: 5;
   cursor: pointer;
-
   transition: all 0.3s;
+  border: none;
 
   &:hover {
     background-color: #e2e2e2;
