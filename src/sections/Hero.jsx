@@ -2,8 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import Typed from "react-typed";
 import AOS from "aos";
-import ScrollToTop from "../components/ScrollToTop";
-import { Link } from "react-router-dom";
 
 AOS.init({
   offset: 200,

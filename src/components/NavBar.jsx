@@ -1,13 +1,13 @@
 import React from "react";
-import { useState } from "react";
+// import { useState } from "react";
 import styled from "styled-components";
-import { Link } from "react-router-dom";
-import { Router } from "react-router-dom";
+// import { Link } from "react-router-dom";
+// import { Router } from "react-router-dom";
 import HamburgerNav from "./HamburgerNav";
 import { device } from "./device";
 
 function NavBar() {
-  const [showNav, setShowNav] = useState(true);
+  // const [showNav, setShowNav] = useState(true);
 
   window.addEventListener("scroll", function (e) {
     let nav = document.getElementById("navbar");
@@ -30,7 +30,7 @@ function NavBar() {
 
         <HamburgerNav />
 
-        <NavMenu className="nav-menu" showNav={showNav}>
+        <NavMenu>
           <ul className="navbar-links">
             <li className="nav-link">
               <a href="#about">About</a>
