@@ -195,7 +195,7 @@ const SubmitButton = styled.button`
 
   &:hover {
     background-color: #e2e2e2;
-    border: 2px solid var(--color-primary);
+    /* border: 2px solid var(--color-primary); */
     transition: 0.3s;
   }
 

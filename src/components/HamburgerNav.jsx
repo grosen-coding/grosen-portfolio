@@ -69,8 +69,7 @@ const HamburgerNav = () => {
 export default HamburgerNav;
 
 const HamMenu = styled.div`
-  transform: ${(props) => (props.showNav ? "scale(0)" : "scale(1)")};
-  transition: transform 0.2s ease-in-out;
+  opacity: ${(props) => (props.showNav ? "0" : "1")};
   background-color: rgba(0, 0, 0, 0.7);
   width: 100vw;
   height: 100%;
@@ -78,6 +77,8 @@ const HamMenu = styled.div`
   top: 0;
   left: 0;
   position: fixed;
+  transform: ${(props) => (props.showNav ? "scale(0)" : "scale(1)")};
+  transition: all 0.2s ease-in-out;
 `;
 
 const MenuWrap = styled.div`
