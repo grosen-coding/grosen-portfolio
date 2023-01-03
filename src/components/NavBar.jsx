@@ -3,6 +3,8 @@ import { useState } from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { Router } from "react-router-dom";
+import HamburgerNav from "./HamburgerNav";
+import { device } from "./device";
 
 function NavBar() {
   const [showNav, setShowNav] = useState(true);
@@ -26,7 +28,9 @@ function NavBar() {
           <a href="/">GSRCoding</a>
         </Logo>
 
-        <NavMenu showNav={showNav}>
+        <HamburgerNav />
+
+        <NavMenu className="nav-menu" showNav={showNav}>
           <ul className="navbar-links">
             <li className="nav-link">
               <a href="#about">About</a>
@@ -113,6 +117,10 @@ const Logo = styled.div`
 const NavMenu = styled.div`
   width: 80%;
   height: 100%;
+
+  @media ${device.mobileL} {
+    display: none;
+  }
 
   ul {
     height: 100%;
