@@ -115,8 +115,8 @@ const Container = styled.section`
   position: relative;
   overflow: hidden;
 
-  @media ${device.mobileL} {
-    /* padding: 0 10px; */
+  @media ${device.laptop} {
+    padding: 20px 0;
   }
 
   &:after {
@@ -141,7 +141,7 @@ const Wrap = styled.div`
   position: relative;
   z-index: 6;
 
-  @media ${device.tablet} {
+  @media ${device.laptop} {
     padding-top: 0;
   }
 
@@ -150,6 +150,11 @@ const Wrap = styled.div`
     width: 100%;
     height: 100%;
     justify-content: space-between;
+    align-items: center;
+
+    @media ${device.laptopL} {
+      padding: 0 25px;
+    }
 
     @media ${device.tablet} {
       padding: 0 25px;
@@ -181,10 +186,17 @@ const Left = styled.div`
 const ImgWrap = styled.div`
   display: flex;
   width: 100%;
+  height: 100%;
   justify-content: center;
+  padding-bottom: 120px;
+
   img {
-    width: 100%;
+    width: 90%;
     border-radius: 50px;
+
+    @media ${device.laptop} {
+      width: 100%;
+    }
 
     @media ${device.tablet} {
       width: 50%;

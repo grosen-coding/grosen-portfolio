@@ -258,7 +258,7 @@ const ServicesWrap = styled.div`
     text-align: center;
     align-items: center;
 
-    @media ${device.tablet} {
+    @media ${device.laptop} {
       margin: 10px;
     }
 

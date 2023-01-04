@@ -207,7 +207,7 @@ const Wrap = styled.div`
     height: 100%;
     justify-content: space-between;
 
-    @media ${device.tablet} {
+    @media ${device.laptopL} {
       padding: 0 25px;
     }
 

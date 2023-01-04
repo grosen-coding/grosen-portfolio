@@ -127,7 +127,7 @@ const AboutWrap = styled.div`
   position: relative;
   z-index: 7;
 
-  @media ${device.tablet} {
+  @media ${device.laptopL} {
     padding: 0 25px;
   }
 
@@ -141,16 +141,17 @@ const AboutWrap = styled.div`
     padding: 10px 0;
     margin-bottom: 40px;
 
-    @media ${device.tablet} {
+    @media ${device.laptop} {
       text-align: justify;
+    }
+
+    @media ${device.tablet} {
       margin-bottom: 20px;
     }
 
     @media ${device.mobileL} {
-      text-align: justify;
       font-size: 1.6rem;
       padding: 10px;
-      margin-bottom: 20px;
     }
   }
 

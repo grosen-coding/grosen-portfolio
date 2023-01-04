@@ -263,7 +263,7 @@ const ResumeWrap = styled.div`
   margin: 0 auto;
   justify-content: space-between;
 
-  @media ${device.tablet} {
+  @media ${device.laptop} {
     width: 90%;
   }
 

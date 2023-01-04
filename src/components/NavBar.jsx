@@ -133,6 +133,10 @@ const NavMenu = styled.div`
       font-size: 1.5rem;
       padding: 0 20px;
 
+      @media ${device.laptop} {
+        font-size: 1.3rem;
+      }
+
       @media ${device.tablet} {
         font-size: 1.5rem;
         padding: 0;
