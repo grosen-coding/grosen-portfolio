@@ -32,7 +32,14 @@ a {
 }
 
 p {
+  font-size: 1.2rem;
   color: rgb(169, 166, 166);
+}
+@media only screen and (max-width: 540px) {
+  p {
+    text-align: justify;
+    font-size: 1.6rem;
+  }
 }
 
 input::placeholder,
@@ -45,6 +52,26 @@ textarea::placeholder {
 
 html {
   scroll-behavior: smooth;
+}
+@media only screen and (min-width: 1200px) {
+  html {
+    font-size: 85%;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  html {
+    font-size: 65%;
+  }
+}
+@media only screen and (max-width: 1068px) {
+  html {
+    font-size: 55%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 55%;
+  }
 }
 
 /* Animations */

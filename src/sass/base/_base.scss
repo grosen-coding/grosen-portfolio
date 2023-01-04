@@ -16,9 +16,15 @@ a {
 }
 
 p {
-
+    font-size: 1.2rem;
 color: rgb(169, 166, 166);
 
+        @include respond(phone) {
+                text-align: justify;
+                font-size: 1.6rem;
+                // line-height: .5px;
+
+            }
 }
 
 
@@ -34,5 +40,20 @@ textarea::placeholder {
 html {
     scroll-behavior: smooth;
 
+    @include respond(big-desktop) {
+        font-size: 85%;
+    }
+
+    @include respond(laptop) {
+        font-size: 65%;
+    }
+
+    @include respond(tab-land) {
+        font-size: 55%;
+    }
+
+    @include respond(tab-port) {
+        font-size: 55%;
+    }
 }
 
