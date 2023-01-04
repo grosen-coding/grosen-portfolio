@@ -4,6 +4,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Hero from "../sections/Hero";
 import NavBar from "./NavBar";
+import { device } from "../components/device";
 
 AOS.init({
   offset: 200,
@@ -27,49 +28,31 @@ export default Header;
 
 // -------HEADER--------
 const Container = styled.header`
-  height: 100vh;
+  height: 95vh;
   width: 100%;
   background-image: url("../img/6.jpg");
   background-position: center;
-  background-position: cover;
+  background-size: cover;
   background-repeat: no-repeat;
   color: white;
   font-family: var(--font-title);
-
   position: relative;
+  overflow: hidden;
+
+  @media ${device.mobileL} {
+    padding: 0 20px;
+  }
 
   &:after {
     content: "";
     width: 100%;
     bottom: 0;
+    left: 0;
     height: 10%;
     background: linear-gradient(to top, #000, #0003 70%, #0000);
     position: absolute;
     z-index: 5;
   }
-  /* border: 1px solid red; */
-
-  /* &:before {
-    position: absolute;
-    bottom: 0px;
-    left: 0;
-    content: "";
-    width: 100%;
-    height: 50%;
-    background-image: linear-gradient(rgba(23, 26, 29, 0), rgba(23, 26, 29, 1));
-    z-index: 1;
-  } */
-
-  /* &:after {
-    position: absolute;
-    top: 0px;
-    left: 0;
-    content: "";
-    width: 100%;
-    height: 50%;
-    background-image: linear-gradient(rgba(23, 26, 29, 1), rgba(23, 26, 29, 0));
-    z-index: -1;
-  } */
 `;
 // -------WRAPPER---------
 const Wrap = styled.div`
@@ -77,5 +60,8 @@ const Wrap = styled.div`
   max-width: 100%;
   margin: 0 auto;
   height: 100%;
-  /* border: 1px solid green; */
+
+  @media ${device.mobileL} {
+    width: 100%;
+  }
 `;

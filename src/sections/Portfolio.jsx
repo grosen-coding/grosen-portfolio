@@ -1,14 +1,15 @@
 import React from "react";
 import styled from "styled-components";
+import { device } from "../components/device";
 
 function Portfolio() {
   return (
     <Container id="portfolio">
       <Wrap>
-        <h1>
+        <h2>
           <span>Portfolio</span>
           <div></div>
-        </h1>
+        </h2>
         <Projects>
           {/* Project 1 */}
           <Project
@@ -22,6 +23,8 @@ function Portfolio() {
           >
             <ProjectTitle className="project-card-title">
               <h3>K9 Paws</h3>
+
+              <h5>full stack website</h5>
               <a
                 href="https://k9paws-website.herokuapp.com/"
                 target="_blank"
@@ -31,8 +34,6 @@ function Portfolio() {
                   Check it out!
                 </ProjectLinkBtn>
               </a>
-
-              <h5>full stack website</h5>
             </ProjectTitle>
             <ProjectImg
               className="project-card-img"
@@ -53,6 +54,8 @@ function Portfolio() {
           >
             <ProjectTitle className="project-card-title">
               <h3>Retro Daily Planner</h3>
+
+              <h5>full stack website</h5>
               <a
                 href="https://retro-daily-planner-app.herokuapp.com/"
                 target="_blank"
@@ -62,8 +65,6 @@ function Portfolio() {
                   Check it out!
                 </ProjectLinkBtn>
               </a>
-
-              <h5>full stack website</h5>
             </ProjectTitle>
             <ProjectImg
               className="project-card-img"
@@ -85,6 +86,7 @@ function Portfolio() {
             <ProjectTitle className="project-card-title">
               <h3>PawTours</h3>
 
+              <h5>front end website</h5>
               <a
                 href="https://modest-brahmagupta-c4ca2d.netlify.app/index.html"
                 target="_blank"
@@ -94,8 +96,6 @@ function Portfolio() {
                   Check it out!
                 </ProjectLinkBtn>
               </a>
-
-              <h5>front end website</h5>
             </ProjectTitle>
             <ProjectImg
               className="project-card-img"
@@ -117,6 +117,7 @@ function Portfolio() {
             <ProjectTitle className="project-card-title">
               <h3>Quick Pick Flicker</h3>
 
+              <h5>react website</h5>
               <a
                 href="https://flickpicker.netlify.app/"
                 target="_blank"
@@ -126,8 +127,6 @@ function Portfolio() {
                   Check it out!
                 </ProjectLinkBtn>
               </a>
-
-              <h5>react website</h5>
             </ProjectTitle>
             <ProjectImg
               className="project-card-img"
@@ -149,6 +148,7 @@ function Portfolio() {
             <ProjectTitle className="project-card-title">
               <h3>The Dog Blog</h3>
 
+              <h5>react website</h5>
               <a
                 href="https://eloquent-wescoff-2d2bcd.netlify.app/"
                 target="_blank"
@@ -158,8 +158,6 @@ function Portfolio() {
                   Check it out!
                 </ProjectLinkBtn>
               </a>
-
-              <h5>react website</h5>
             </ProjectTitle>
             <ProjectImg
               className="project-card-img"
@@ -181,6 +179,7 @@ function Portfolio() {
             <ProjectTitle className="project-card-title">
               <h3>Project Title 6</h3>
 
+              <h5>project type</h5>
               <a
                 href="https://k9paws-website.herokuapp.com/"
                 target="_blank"
@@ -190,8 +189,6 @@ function Portfolio() {
                   Check it out!
                 </ProjectLinkBtn>
               </a>
-
-              <h5>project type</h5>
             </ProjectTitle>
             <ProjectImg
               className="project-card-img"
@@ -217,11 +214,17 @@ const Container = styled.section`
   font-family: var(--font-title);
   padding-bottom: 60px;
   position: relative;
+  overflow: hidden;
+
+  @media ${device.mobileL} {
+    padding: 0 0 30px;
+  }
 
   &:after {
     content: "";
     width: 100%;
     bottom: 0;
+    left: 0;
     height: 100%;
     background: linear-gradient(to top, #000, #0003 70%, #0000);
     position: absolute;
@@ -238,16 +241,20 @@ const Wrap = styled.div`
   position: relative;
   z-index: 6;
   color: #e2e2e2;
-  /* height: auto; */
 
-  h1 {
+  h2 {
     margin-top: 20px;
     text-transform: uppercase;
     font-weight: 500;
     font-size: 2rem;
     letter-spacing: 0.8px;
-    /* position: relative; */
     text-align: center;
+
+    @media ${device.mobileL} {
+      font-size: 2.6rem;
+      margin-top: 0;
+    }
+
     > div {
       height: 1px;
       width: 40%;
@@ -255,6 +262,10 @@ const Wrap = styled.div`
       margin: 40px auto 45px;
       position: relative;
       overflow: hidden;
+
+      @media ${device.mobileL} {
+        margin: 20px auto;
+      }
 
       &:before {
         content: "";
@@ -281,7 +292,11 @@ const Projects = styled.div`
   gap: 20px;
   padding: 40px 0;
 
-  /* border: 1px solid green; */
+  @media ${device.mobileL} {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
 `;
 
 const Project = styled.div`
@@ -291,8 +306,13 @@ const Project = styled.div`
   border-radius: 30px;
   z-index: 7;
 
+  @media ${device.mobileL} {
+    height: 250px;
+  }
+
   &:hover .project-card-title {
     opacity: 1;
+    transition: all 0.3s;
   }
 
   &:hover .project-card-img {
@@ -300,7 +320,7 @@ const Project = styled.div`
     transform: scale(1);
     border: 1px solid;
   }
-  /* height: auto; */
+
   &:nth-of-type(1) {
     grid-row: 1 / 3;
   }
@@ -348,7 +368,6 @@ const ProjectTitle = styled.div`
     font-size: 2rem;
     letter-spacing: 0.8px;
     transition: 0.3s;
-    /* padding: 20px 0 80px; */
   }
 
   h5 {
@@ -360,39 +379,34 @@ const ProjectTitle = styled.div`
 `;
 
 const ProjectLinkBtn = styled.div`
-  width: 250px;
+  width: 200px;
   height: auto;
   background-color: var(--color-primary);
   border-radius: 10px;
-  padding: 15px 20px;
-  /* display: inline-block; */
-  z-index: 5;
+  padding: 10px 20px;
   cursor: pointer;
   border: none;
-  /* text-transform: uppercase; */
   font-weight: 500;
   font-size: 1.5rem;
   font-family: var(--font-title);
   letter-spacing: 1px;
   opacity: 0;
   transform: scale(0);
-  /* transform: translateX(-200%); */
-  transition: 0.5s;
+  transition: 0.3s;
+  transition-delay: all 0.8s;
+
+  @media ${device.mobileL} {
+    width: 150px;
+    padding: 5px 10px;
+  }
 
   &:hover {
     background-color: #e2e2e2;
-    /* border: 2px solid var(--color-primary); */
     color: var(--color-primary);
     transition: 0.3s;
+    transition-delay: none;
   }
 `;
-
-// const ImgWrap = styled.div`
-//   width: 100%;
-//   height: 100%;
-//   position: absolute;
-//   /* z-index: -1; */
-// `;
 
 const ProjectImg = styled.img`
   width: 100%;

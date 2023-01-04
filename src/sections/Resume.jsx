@@ -1,14 +1,15 @@
 import React from "react";
 import styled from "styled-components";
+import { device } from "../components/device";
 
 function Resume() {
   return (
     <Container id="resume">
       <Wrap>
-        <h1>
+        <h2>
           <span>Resume</span>
           <div></div>
-        </h1>
+        </h2>
         <ResumeWrap>
           <Left>
             <h3>Experience</h3>
@@ -174,17 +175,17 @@ const Container = styled.section`
   height: 100%;
   width: 100%;
   background-image: linear-gradient(rgba(23, 26, 29, 0.9), rgba(23, 26, 29, 1));
-  background-position: center;
-  background-position: cover;
-  background-repeat: no-repeat;
+
   font-family: var(--font-title);
   padding-bottom: 60px;
   position: relative;
+  overflow: hidden;
 
   &:after {
     content: "";
     width: 100%;
     top: 0;
+    left: 0;
     height: 100%;
     background: linear-gradient(to bottom, #000, #0003 50%, #0000);
     position: absolute;
@@ -202,14 +203,23 @@ const Wrap = styled.div`
   position: relative;
   z-index: 6;
 
-  h1 {
+  @media ${device.mobileL} {
+    padding: 0 10px;
+  }
+
+  h2 {
     margin-top: 20px;
     text-transform: uppercase;
     font-weight: 500;
     font-size: 2rem;
     letter-spacing: 0.8px;
-    /* position: relative; */
     text-align: center;
+
+    @media ${device.mobileL} {
+      font-size: 2.6rem;
+      margin-top: 0;
+    }
+
     > div {
       height: 1px;
       width: 40%;
@@ -218,6 +228,9 @@ const Wrap = styled.div`
       position: relative;
       overflow: hidden;
 
+      @media ${device.mobileL} {
+        margin: 20px auto;
+      }
       &:before {
         content: "";
         position: absolute;
@@ -232,7 +245,6 @@ const Wrap = styled.div`
       }
     }
   }
-  /* height: auto; */
 `;
 
 const ResumeWrap = styled.div`
@@ -241,10 +253,24 @@ const ResumeWrap = styled.div`
   margin: 0 auto;
   justify-content: space-between;
 
+  @media ${device.mobileL} {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  @media ${device.mobileL} {
+    width: 90%;
+    padding: 0;
+  }
+
   h3 {
     font-size: 2.2rem;
     font-weight: 500;
     padding: 40px 0 30px;
+
+    @media ${device.mobileL} {
+      font-size: 3rem;
+    }
   }
 
   .resume-card {
@@ -252,6 +278,11 @@ const ResumeWrap = styled.div`
     position: relative;
     width: 100%;
     min-height: 100%;
+
+    @media ${device.mobileL} {
+      height: auto;
+    }
+
     > div {
       position: absolute;
       height: 40px;
@@ -263,19 +294,19 @@ const ResumeWrap = styled.div`
         rgba(255, 255, 255, 0.1) 0%,
         rgba(255, 255, 255, 0) 100%
       );
-      background-size: 100%;
-      background-repeat: no-repeat;
-      background-position: center center;
     }
+
     h5 {
       font-size: 1.3rem;
       font-weight: 300;
-      /* font-family: var(--font-title); */
       position: absolute;
       padding: 10px 0;
       top: 0;
+      width: 100%;
 
-      /* overflow: visible; */
+      @media ${device.mobileL} {
+        font-size: 1.6rem;
+      }
 
       span {
         position: absolute;
@@ -304,6 +335,11 @@ const ResumeWrap = styled.div`
       color: var(--color-primary);
       padding-bottom: 30px;
       font-weight: 400;
+
+      @media ${device.mobileL} {
+        padding-bottom: 15px;
+      }
+
       span {
         opacity: 0.6;
         color: #e2e2e2;
@@ -320,6 +356,10 @@ const ResumeWrap = styled.div`
 const Left = styled.div`
   width: 47%;
   height: 100%;
+
+  @media ${device.mobileL} {
+    width: 100%;
+  }
 `;
 
 const Experience = styled.div`
@@ -332,11 +372,19 @@ const Job = styled.div`
   height: 100%;
   padding: 30px;
   border-left: 1px solid grey;
+
+  @media ${device.mobileL} {
+    padding: 20px 0 15px 30px;
+  }
 `;
 
 const Right = styled.div`
   width: 47%;
   height: 100%;
+
+  @media ${device.mobileL} {
+    width: 100%;
+  }
 `;
 
 const Education = styled.div`
@@ -349,4 +397,8 @@ const School = styled.div`
   height: 100%;
   padding: 30px;
   border-left: 1px solid grey;
+
+  @media ${device.mobileL} {
+    padding: 20px 0 15px 30px;
+  }
 `;

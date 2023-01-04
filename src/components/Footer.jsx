@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { device } from "../components/device";
 
 function Footer() {
   return (
@@ -9,9 +10,6 @@ function Footer() {
           <Left>
             <h4>&copy; 2022 Copyright GSRCoding</h4>
           </Left>
-          <Right>
-            <h4>Icons</h4>
-          </Right>
         </FooterContent>
       </Wrap>
     </Container>
@@ -25,17 +23,14 @@ const Container = styled.section`
   width: 100%;
   background: #000;
   font-family: var(--font-title);
-  /* padding-bottom: 60px; */
 `;
 
 const Wrap = styled.div`
   max-width: 100%;
   width: var(--section-wrap-width);
-  /* padding-top: 50px; */
   margin: 0 auto;
   height: 100%;
   color: #e2e2e2;
-  /* height: auto; */
 `;
 
 const FooterContent = styled.div`
@@ -45,6 +40,10 @@ const FooterContent = styled.div`
   align-items: center;
   justify-content: center;
 
+  @media ${device.mobileL} {
+    padding: 0 10px;
+  }
+
   h4 {
     font-size: 1.4rem;
     font-weight: 400;
@@ -53,11 +52,6 @@ const FooterContent = styled.div`
 `;
 
 const Left = styled.div`
-  width: 60%;
-`;
-
-const Right = styled.div`
-  width: 40%;
-  text-align: right;
-  /* justify-self: flex-end; */
+  width: 100%;
+  text-align: center;
 `;

@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { device } from "../components/device";
 
 function Skills() {
   return (
@@ -163,23 +164,22 @@ const Container = styled.section`
   width: 100%;
   background-image: linear-gradient(rgba(23, 26, 29, 0.9), rgba(23, 26, 29, 1));
   background-position: center;
-  background-position: cover;
   background-repeat: no-repeat;
   font-family: var(--font-title);
   padding: 40px 0;
   position: relative;
+  overflow: hidden;
 
   &:after {
     content: "";
     width: 100%;
     top: 0;
+    left: 0;
     height: 150%;
-    background: linear-gradient(to bottom, #000, #0003 50%, #0000);
+    background: linear-gradient(to bottom, #0003, #0003 50%, #0000);
     position: absolute;
     z-index: 5;
   }
-
-  /* border: 1px solid red; */
 `;
 
 const Wrap = styled.div`
@@ -190,15 +190,24 @@ const Wrap = styled.div`
   color: #e2e2e2;
   position: relative;
   z-index: 6;
-  /* height: auto; */
   padding: 40px 0;
-  /* border: 1px solid blue; */
+
+  @media ${device.mobileL} {
+    height: auto;
+    padding: 40px 0 0;
+  }
 
   & > div {
     display: flex;
     width: 100%;
     height: 100%;
     justify-content: space-between;
+
+    @media ${device.mobileL} {
+      flex-direction: column;
+      width: 90%;
+      margin: 0 auto;
+    }
   }
 `;
 
@@ -208,7 +217,10 @@ const Left = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  /* border: 1px solid yellow; */
+
+  @media ${device.mobileL} {
+    width: 100%;
+  }
 
   h2 {
     font-size: 2rem;
@@ -223,6 +235,7 @@ const Left = styled.div`
 
   p {
     padding: 10px 0;
+    color: rgb(169, 166, 166);
   }
 `;
 
@@ -230,7 +243,10 @@ const Right = styled.div`
   width: 47%;
   height: 100%;
   padding: 20px 0;
-  /* border: 1px solid green; */
+
+  @media ${device.mobileL} {
+    width: 100%;
+  }
 
   h3 {
     font-weight: 500;
@@ -243,37 +259,36 @@ const MySkills = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding: 10px 0;
+
+  @media ${device.mobileL} {
+    padding-bottom: 0px;
+  }
 `;
 
 const SkillWrap = styled.div`
-  /* height: 10px; */
-  /* border: 1px solid purple; */
-  /* .skill-bar {
-    height: 5px;
-    width: 100%;
-    background-color: grey;
-    margin: 5px 0;
-    position: relative;
-    border-radius: 3px;
-    margin: 5px 0;
-
-    &:before {
-      content: "";
-      left: 0;
-      top: 0;
-      bottom: 0;
-      width: 75%;
-      position: absolute;
-      background-color: var(--color-primary);
-      border-radius: 3px;
-    }
-  } */
+  width: 100%;
+  height: 100%;
 `;
 
 const Skill = styled.div`
   display: flex;
   width: 100%;
   justify-content: space-between;
+
+  h3 {
+    @media ${device.mobileL} {
+      font-size: 1.7rem;
+    }
+  }
+
+  #skill-progress {
+    @media ${device.mobileL} {
+      font-size: 1.7rem;
+      font-weight: 200;
+      opacity: 0.8;
+    }
+  }
 `;
 
 const SkillBar = styled.div`
@@ -307,5 +322,3 @@ const SkillBar = styled.div`
     }
   }
 `;
-
-// width: ${({ progress }) => progress}%;

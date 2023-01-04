@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { device } from "../components/device";
 
 function WhatIDo() {
   return (
@@ -44,6 +45,7 @@ function WhatIDo() {
               I Develop Websites & Debug Code
             </h3>
             <p
+              className="p-text"
               data-aos="fade-left"
               data-aos-delay="450"
               data-aos-duration="500"
@@ -80,6 +82,7 @@ function WhatIDo() {
               Superior Results with Top User Experience
             </h3>
             <p
+              className="p-text"
               data-aos="fade-left"
               data-aos-delay="450"
               data-aos-duration="500"
@@ -106,17 +109,21 @@ const Container = styled.section`
   height: 100%;
   width: 100%;
   background-image: linear-gradient(rgba(23, 26, 29, 1), rgba(23, 26, 29, 0.9));
-  background-position: center;
-  background-position: cover;
   background-repeat: no-repeat;
   font-family: var(--font-title);
   padding: 40px 0;
   position: relative;
+  overflow: hidden;
+
+  @media ${device.mobileL} {
+    padding: 0 10px;
+  }
 
   &:after {
     content: "";
     width: 100%;
     bottom: 0;
+    left: 0;
     height: 100%;
     background: linear-gradient(to top, #000, #0001 30%, #0000);
     position: absolute;
@@ -134,23 +141,30 @@ const Wrap = styled.div`
   position: relative;
   z-index: 6;
 
-  /* height: auto; */
   & > div {
     display: flex;
     width: 100%;
     height: 100%;
     justify-content: space-between;
+
+    @media ${device.mobileL} {
+      flex-direction: column;
+      width: 90%;
+      margin: 0 auto;
+    }
   }
 `;
 
 const Left = styled.div`
   width: 47%;
   height: 100%;
+
+  @media ${device.mobileL} {
+    width: 100%;
+  }
 `;
 
 const ImgWrap = styled.div`
-  /* background-color: #000; */
-
   img {
     width: 100%;
     border-radius: 50px;
@@ -162,8 +176,17 @@ const Right = styled.div`
   height: 100%;
   display: flex;
   flex-direction: column;
-  /* justify-content: space-between; */
   padding: 20px 0;
+
+  p {
+    padding: 10px 0;
+    opacity: 0.6;
+    color: rgb(169, 166, 166);
+  }
+
+  @media ${device.mobileL} {
+    width: 100%;
+  }
 
   div {
     height: 1px;
@@ -197,9 +220,5 @@ const Right = styled.div`
     font-size: 4rem;
     line-height: 1.1;
     padding: 20px 0;
-  }
-
-  p {
-    padding: 10px 0;
   }
 `;

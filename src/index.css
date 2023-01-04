@@ -2,10 +2,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600&family=Saira:wght@200;300;400;500;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600&display=swap");
 /*
-0-600px: Phone
-600-900px: Tablet Portrait Mode
-900-1200px: Tablet Landscape Mode
-1200-1800px: Normal styles
+0-540px: Phone
+541-768px: Tablet Portrait Mode
+769-1068px: Tablet Landscape Mode
+1069px-1200px: Laptop
+1200px-1799px: Desktop
 1800px+: Large TVs ETC
 */
 :root {
@@ -33,7 +34,13 @@ a {
 
 p {
   font-size: 1.2rem;
-  opacity: 0.6;
+  color: rgb(169, 166, 166);
+}
+@media only screen and (max-width: 540px) {
+  p {
+    text-align: justify;
+    font-size: 1.5rem;
+  }
 }
 
 input::placeholder,
@@ -44,13 +51,6 @@ textarea::placeholder {
   text-transform: uppercase;
 }
 
-/*
-0-600px: Phone
-600-900px: Tablet Portrait Mode
-900-1200px: Tablet Landscape Mode
-1200-1800px: Normal styles
-1800px+: Large TVs ETC
-*/
 html {
   scroll-behavior: smooth;
 }
@@ -93,16 +93,5 @@ html {
   }
   100% {
     opacity: 1;
-  }
-}
-@keyframes scaleIn {
-  0% {
-    transform: scale(0);
-  }
-  70% {
-    transform: scale(1.1);
-  }
-  100% {
-    transform: scale(1);
   }
 }

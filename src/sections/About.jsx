@@ -3,15 +3,16 @@ import styled from "styled-components";
 import { FaReact } from "react-icons/fa";
 import { SlDiamond } from "react-icons/sl";
 import { AiOutlineRocket } from "react-icons/ai";
+import { device } from "../components/device";
 
 function About() {
   return (
     <Container id="about">
       <AboutWrap>
-        <h1>
+        <h2>
           <span>Welcome to My World</span>
           <div></div>
-        </h1>
+        </h2>
         <p>
           I'm a young tech enthusiast and entrepreneur who loves to take risks.
           I grew up in a tech-loving family in northern Toronto, Ont. Lorem
@@ -95,35 +96,26 @@ const Container = styled.section`
   height: 100%;
   width: 100%;
   background-image: linear-gradient(rgba(23, 26, 29, 0.9), rgba(23, 26, 29, 1));
-  background-position: center;
-  background-position: cover;
-  background-repeat: no-repeat;
+
   font-family: var(--font-title);
   padding: 40px 0;
   position: relative;
+  overflow: hidden;
+
+  @media ${device.mobileL} {
+    padding: 20px 0;
+  }
 
   &:after {
     content: "";
     width: 100%;
     top: 0;
+    left: 0;
     height: 150%;
     background: linear-gradient(to bottom, #000, #0003 70%, #0000);
     position: absolute;
     z-index: 5;
   }
-
-  /* &:after {
-    content: "";
-    width: 100%;
-    height: 200px;
-    background: linear-gradient(to bottom, #000, #0003 50%, #0000);
-    position: absolute;
-  } */
-
-  font-family: var(--font-title);
-  padding: 40px 0;
-  /* border-bottom: 1px solid grey;
-  border-top: 1px solid grey; */
 `;
 
 const AboutWrap = styled.div`
@@ -132,24 +124,38 @@ const AboutWrap = styled.div`
   margin: 0 auto;
   height: 100%;
   color: #e2e2e2;
-
   position: relative;
   z-index: 7;
-  /* height: auto; */
+
+  @media ${device.mobileL} {
+    padding: 0 10px;
+  }
+
   > p {
     text-align: center;
     font-size: 1.4rem;
     padding: 10px 0;
     margin-bottom: 40px;
+
+    @media ${device.mobileL} {
+      text-align: justify;
+      padding: 10px;
+      margin-bottom: 20px;
+    }
   }
 
-  h1 {
+  h2 {
     margin-top: 20px;
     text-transform: uppercase;
     font-weight: 500;
     font-size: 2rem;
     letter-spacing: 0.8px;
     text-align: center;
+
+    @media ${device.mobileL} {
+      font-size: 2.6rem;
+      margin-top: 0;
+    }
 
     > div {
       height: 1px;
@@ -179,12 +185,22 @@ const AboutContent = styled.div`
   display: flex;
   justify-content: space-between;
   padding: 20px 0;
+
+  @media ${device.mobileL} {
+    flex-direction: column;
+  }
 `;
 const ContentCard = styled.div`
   height: auto;
   padding: 30px;
   width: 30%;
   border-left: 1px solid grey;
+
+  @media ${device.mobileL} {
+    width: 100%;
+    padding: 20px;
+    margin: 10px 0;
+  }
 
   .card-icon {
     color: var(--color-primary);
@@ -195,6 +211,5 @@ const ContentCard = styled.div`
     font-size: 2rem;
     font-weight: 600;
     padding-bottom: 20px;
-    /* padding: 20px 0; */
   }
 `;

@@ -81,7 +81,6 @@ const HamMenu = styled.div`
 `;
 
 const MenuWrap = styled.div`
-  /* display: flex; */
   width: 100%;
   height: 100%;
   display: flex;
@@ -99,18 +98,22 @@ const MenuWrap = styled.div`
 
       a {
         letter-spacing: 2.3px;
+
+        @media ${device.mobileL} {
+          font-size: 3rem;
+        }
       }
     }
   }
 `;
 
 const HamburgerDiv = styled.div`
-  display: none;
-  width: auto;
-  height: auto;
+  width: 50px;
+  height: 50px;
   position: fixed;
-  top: 20px;
-  right: 30px;
+  top: 25px;
+  right: 20px;
+  display: none;
 
   @media ${device.mobileL} {
     display: block;

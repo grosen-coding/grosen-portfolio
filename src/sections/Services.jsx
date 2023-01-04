@@ -6,15 +6,16 @@ import { MdDeveloperBoard } from "react-icons/md";
 import { AiOutlineLock } from "react-icons/ai";
 import { AiOutlineCoffee } from "react-icons/ai";
 import { GiPencilBrush } from "react-icons/gi";
+import { device } from "../components/device";
 
 function Services() {
   return (
     <Container id="services">
       <Wrap>
-        <h1>
+        <h2>
           <span>Services I Offer</span>
           <div></div>
-        </h1>
+        </h2>
         <ServicesWrap>
           <div
             className="service-card"
@@ -154,11 +155,18 @@ const Container = styled.section`
   font-family: var(--font-title);
   padding-bottom: 60px;
   position: relative;
+  overflow: hidden;
+
+  @media ${device.mobileL} {
+    padding-bottom: 0;
+    margin-top: -20px;
+  }
 
   &:after {
     content: "";
     width: 100%;
     bottom: 0;
+    left: 0;
     height: 120%;
     background: linear-gradient(to top, #000, #0003 70%, #0000);
     position: absolute;
@@ -175,14 +183,24 @@ const Wrap = styled.div`
   color: #e2e2e2;
   position: relative;
   z-index: 7;
-  h1 {
+
+  @media ${device.mobileL} {
+    padding-top: 20px;
+  }
+
+  h2 {
     margin-top: 20px;
     text-transform: uppercase;
     font-weight: 500;
     font-size: 2rem;
     letter-spacing: 0.8px;
-    /* position: relative; */
     text-align: center;
+
+    @media ${device.mobileL} {
+      font-size: 2.6rem;
+      margin-top: 0;
+    }
+
     > div {
       height: 1px;
       width: 40%;
@@ -190,6 +208,10 @@ const Wrap = styled.div`
       margin: 40px auto 45px;
       position: relative;
       overflow: hidden;
+
+      @media ${device.mobileL} {
+        margin: 20px auto;
+      }
 
       &:before {
         content: "";
@@ -205,7 +227,6 @@ const Wrap = styled.div`
       }
     }
   }
-  /* height: auto; */
 `;
 
 const ServicesWrap = styled.div`
@@ -228,6 +249,11 @@ const ServicesWrap = styled.div`
     text-align: center;
     align-items: center;
 
+    @media ${device.mobileL} {
+      width: 300px;
+      padding: 15px;
+      margin: 15px 5px;
+    }
     h4 {
       font-size: 1.8rem;
       letter-spacing: 0.7px;

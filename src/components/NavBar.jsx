@@ -1,14 +1,9 @@
 import React from "react";
-// import { useState } from "react";
 import styled from "styled-components";
-// import { Link } from "react-router-dom";
-// import { Router } from "react-router-dom";
 import HamburgerNav from "./HamburgerNav";
 import { device } from "./device";
 
 function NavBar() {
-  // const [showNav, setShowNav] = useState(true);
-
   window.addEventListener("scroll", function (e) {
     let nav = document.getElementById("navbar");
     if (
@@ -62,29 +57,18 @@ function NavBar() {
 
 export default NavBar;
 
-// ------NAVBAR--------
-// const Wrapper = styled.div`
-//   width: 100vw;
-//   height: 80px;
-// `;
-
 const Nav = styled.nav`
-  width: 100%;
   height: 80px;
-  /* padding: 0 30px; */
-  /* border: 1px solid yellow; */
-  /* position: -webkit-sticky; */
   position: fixed;
   top: 0;
   right: 0;
   left: 0;
   z-index: 100;
   background: linear-gradient(to bottom, #000, #0003 70%, #0000);
-  transition: background 0.9s; /* control how smooth the background changes */
+  transition: background 0.9s;
 
   &.scrolled {
     background: #0a0a0a;
-    /* transition: background 0.9s; */
   }
 
   a {
@@ -92,7 +76,9 @@ const Nav = styled.nav`
     letter-spacing: 1.1px;
   }
 
-  a:hover {
+  a:hover,
+  a:focus,
+  a:active {
     color: var(--color-primary);
   }
 `;
@@ -109,7 +95,6 @@ const NavWrapper = styled.div`
 
 const Logo = styled.div`
   width: 20%;
-  /* text-transform: uppercase; */
   font-size: 1.8rem;
 `;
 

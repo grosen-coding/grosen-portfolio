@@ -9,6 +9,7 @@
 }
 
 
+
 a {
     text-decoration: none;
     color: #e2e2e2;
@@ -16,7 +17,8 @@ a {
 
 p {
     font-size: 1.2rem;
-    opacity: 0.6;
+color: rgb(169, 166, 166);
+
 }
 
 
@@ -29,31 +31,8 @@ textarea::placeholder {
 }
 
 
-/*
-0-600px: Phone
-600-900px: Tablet Portrait Mode
-900-1200px: Tablet Landscape Mode
-1200-1800px: Normal styles
-1800px+: Large TVs ETC
-*/
-
 html {
     scroll-behavior: smooth;
 
-    @include respond(big-desktop) {
-        font-size: 75%;
-    }
-
-    @include respond(laptop) {
-        font-size: 60%;
-    }
-
-    @include respond(tab-land) {
-        font-size: 55%;
-    }
-
-    @include respond(tab-port) {
-        font-size: 55%;
-    }
 }
 

@@ -1,14 +1,15 @@
 import React from "react";
 import styled from "styled-components";
+import { device } from "../components/device";
 
 function Contact() {
   return (
     <Container id="contact">
       <Wrap>
-        <h1>
+        <h2>
           <span>Get in Touch Me</span>
           <div></div>
-        </h1>
+        </h2>
         <ContactFormDiv>
           <ContactForm className="contact-form">
             <FormGroup className="form-group">
@@ -17,8 +18,6 @@ function Contact() {
                 className="form-control"
                 id="email"
                 name="email"
-                // value={email}
-                // onChange={onChange}
                 placeholder="Name"
                 required
               />
@@ -27,8 +26,6 @@ function Contact() {
                 className="form-control"
                 id="email"
                 name="email"
-                // value={password}
-                // onChange={onChange}
                 placeholder="E-mail Address"
                 required
               />
@@ -37,8 +34,6 @@ function Contact() {
                 className="form-control"
                 id="phone"
                 name="phone"
-                // value={password}
-                // onChange={onChange}
                 placeholder="Phone Number"
                 required
               />
@@ -67,13 +62,17 @@ const Container = styled.section`
   height: 100%;
   width: 100%;
   background-image: url("../img/contact-bg.jpg");
-  background-position: center;
-  background-position: cover;
+  background-position: center left 30%;
+  background-size: cover;
   background-repeat: no-repeat;
   font-family: var(--font-title);
   padding-bottom: 60px;
   position: relative;
-  /* border: 1px solid blue; */
+  overflow: hidden;
+
+  @media ${device.mobileL} {
+    padding-bottom: 20px;
+  }
 
   position: relative;
 
@@ -81,6 +80,7 @@ const Container = styled.section`
     content: "";
     width: 100%;
     bottom: 0;
+    left: 0;
     height: 20%;
     background: linear-gradient(to top, #000, #0003 70%, #0000);
     position: absolute;
@@ -91,6 +91,7 @@ const Container = styled.section`
     content: "";
     width: 100%;
     top: 0;
+    left: 0;
     height: 200px;
     background: linear-gradient(to bottom, #000, #0003 70%, #0000);
     position: absolute;
@@ -106,7 +107,7 @@ const Wrap = styled.div`
   height: 100%;
   color: #e2e2e2;
 
-  h1 {
+  h2 {
     margin-top: 20px;
     text-transform: uppercase;
     font-weight: 500;
@@ -114,8 +115,11 @@ const Wrap = styled.div`
     letter-spacing: 0.8px;
     position: relative;
     z-index: 10;
-    /* position: relative; */
     text-align: center;
+
+    @media ${device.mobileL} {
+      margin-top: 0;
+    }
     > div {
       height: 1px;
       width: 40%;
@@ -123,6 +127,10 @@ const Wrap = styled.div`
       margin: 40px auto 45px;
       position: relative;
       overflow: hidden;
+
+      @media ${device.mobileL} {
+        margin: 20px auto;
+      }
 
       &:before {
         content: "";
@@ -150,11 +158,17 @@ const ContactForm = styled.form`
   margin: 0 auto;
   width: 70%;
   padding: 20px 0 40px;
+  position: relative;
+  z-index: 7;
+
+  @media ${device.mobileL} {
+    width: 90%;
+  }
 
   input,
   textarea {
     width: 100%;
-    background-color: transparent;
+    background-color: rgba(0, 0, 0, 0.4);
     border: 1px solid grey;
     border-radius: 3px;
     padding: 10px;
@@ -195,7 +209,6 @@ const SubmitButton = styled.button`
 
   &:hover {
     background-color: #e2e2e2;
-    /* border: 2px solid var(--color-primary); */
     transition: 0.3s;
   }
 
