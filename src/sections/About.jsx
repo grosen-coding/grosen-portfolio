@@ -37,7 +37,12 @@ function About() {
         </p>
 
         <AboutContent>
-          <ContentCard>
+          <ContentCard
+            data-aos="zoom-in"
+            data-aos-delay="100"
+            data-aos-duration="500"
+            data-aos-easing="ease-in-out"
+          >
             <div className="card-icon">
               <FaReact />
             </div>
@@ -47,7 +52,12 @@ function About() {
               mollitia pariatur fugiat praesentium totam ea!
             </p>
           </ContentCard>
-          <ContentCard>
+          <ContentCard
+            data-aos="zoom-in"
+            data-aos-delay="250"
+            data-aos-duration="500"
+            data-aos-easing="ease-in-out"
+          >
             <div className="card-icon">
               <SlDiamond />
             </div>
@@ -58,7 +68,12 @@ function About() {
               nihil laudantium eveniet perferendis.
             </p>
           </ContentCard>
-          <ContentCard>
+          <ContentCard
+            data-aos="zoom-in"
+            data-aos-delay="400"
+            data-aos-duration="500"
+            data-aos-easing="ease-in-out"
+          >
             <div className="card-icon">
               <AiOutlineRocket />
             </div>

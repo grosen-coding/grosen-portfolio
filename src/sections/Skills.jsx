@@ -7,9 +7,31 @@ function Skills() {
       <Wrap>
         <div>
           <Left>
-            <h2>My Skills</h2>
-            <h3>I love what I do, and am dedicated to it</h3>
-            <p>
+            <h2
+              data-aos="flip-down"
+              data-aos-delay="0"
+              data-aos-duration="500"
+              data-aos-easing="ease-in-out"
+              data-aos-offset="100px"
+            >
+              My Skills
+            </h2>
+            <h3
+              data-aos="fade-right"
+              data-aos-delay="450"
+              data-aos-duration="500"
+              data-aos-easing="ease-in-out"
+              data-aos-offset="150px"
+            >
+              I love what I do, and am dedicated to it
+            </h3>
+            <p
+              data-aos="fade-right"
+              data-aos-delay="450"
+              data-aos-duration="500"
+              data-aos-easing="ease-in-out"
+              data-aos-offset="150px"
+            >
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum,
               distinctio commodi iste illum nostrum quod tempora nisi eos? Sequi
               fugit in est necessitatibus similique dolor pariatur sit nihil

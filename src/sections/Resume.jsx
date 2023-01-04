@@ -14,7 +14,13 @@ function Resume() {
             <h3>Experience</h3>
             <Experience>
               <Job className="resume-card">
-                <div></div>
+                <div
+                  data-aos="fade-right"
+                  data-aos-delay="200"
+                  data-aos-duration="1200"
+                  data-aos-easing="ease"
+                  data-aos-offset="200px"
+                ></div>
                 <h5>
                   <span>1</span>2016 - present
                 </h5>
@@ -31,7 +37,13 @@ function Resume() {
                 </p>
               </Job>
               <Job className="resume-card">
-                <div></div>
+                <div
+                  data-aos="fade-right"
+                  data-aos-delay="200"
+                  data-aos-duration="1200"
+                  data-aos-easing="ease"
+                  data-aos-offset="200px"
+                ></div>
                 <h5>
                   <span>2</span>2019 - 2022
                 </h5>
@@ -49,13 +61,19 @@ function Resume() {
                 </p>
               </Job>
               <Job className="resume-card">
-                <div></div>
+                <div
+                  data-aos="fade-right"
+                  data-aos-delay="200"
+                  data-aos-duration="1200"
+                  data-aos-easing="ease"
+                  data-aos-offset="200px"
+                ></div>
                 <h5>
                   <span>3</span>2010 - present
                 </h5>
                 <h3>Owner & Operator</h3>
                 <h4>
-                  K9 Design -- <span>Greater Toronto Area, ONT</span>
+                  K9PAWS -- <span>Greater Toronto Area, ONT</span>
                 </h4>
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -74,7 +92,13 @@ function Resume() {
             <h3>Education</h3>
             <Education>
               <School className="resume-card">
-                <div></div>
+                <div
+                  data-aos="fade-left"
+                  data-aos-delay="200"
+                  data-aos-duration="1200"
+                  data-aos-easing="ease"
+                  data-aos-offset="200px"
+                ></div>
                 <h5>
                   <span>1</span>2021-2022
                 </h5>
@@ -92,7 +116,13 @@ function Resume() {
                 </p>
               </School>
               <School className="resume-card">
-                <div></div>
+                <div
+                  data-aos="fade-left"
+                  data-aos-delay="200"
+                  data-aos-duration="1200"
+                  data-aos-easing="ease"
+                  data-aos-offset="200px"
+                ></div>
                 <h5>
                   <span>2</span>2006 - 2008
                 </h5>
@@ -108,7 +138,13 @@ function Resume() {
                 </p>
               </School>
               <School className="resume-card">
-                <div></div>
+                <div
+                  data-aos="fade-left"
+                  data-aos-delay="200"
+                  data-aos-duration="1200"
+                  data-aos-easing="ease"
+                  data-aos-offset="200px"
+                ></div>
                 <h5>
                   <span>3</span>2002 - 2006
                 </h5>

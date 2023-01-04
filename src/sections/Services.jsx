@@ -16,7 +16,14 @@ function Services() {
           <div></div>
         </h1>
         <ServicesWrap>
-          <div className="service-card">
+          <div
+            className="service-card"
+            data-aos="flip-down"
+            data-aos-delay="200"
+            data-aos-duration="700"
+            data-aos-easing="ease"
+            data-aos-offset="200px"
+          >
             <div className="service-icon">
               <FaDesktop />
             </div>
@@ -29,7 +36,14 @@ function Services() {
               facilis molestiae necessitatibus sint.
             </p>
           </div>
-          <div className="service-card">
+          <div
+            className="service-card"
+            data-aos="flip-down"
+            data-aos-delay="300"
+            data-aos-duration="700"
+            data-aos-easing="ease"
+            data-aos-offset="200px"
+          >
             <div className="service-icon">
               <ImMobile />
             </div>
@@ -42,7 +56,14 @@ function Services() {
               facilis molestiae necessitatibus sint.
             </p>
           </div>
-          <div className="service-card">
+          <div
+            className="service-card"
+            data-aos="flip-down"
+            data-aos-delay="400"
+            data-aos-duration="700"
+            data-aos-easing="ease"
+            data-aos-offset="200px"
+          >
             <div className="service-icon">
               <MdDeveloperBoard />
             </div>
@@ -55,7 +76,14 @@ function Services() {
               facilis molestiae necessitatibus sint.
             </p>
           </div>
-          <div className="service-card">
+          <div
+            className="service-card"
+            data-aos="flip-down"
+            data-aos-delay="500"
+            data-aos-duration="700"
+            data-aos-easing="ease"
+            data-aos-offset="200px"
+          >
             <div className="service-icon">
               <AiOutlineLock />
             </div>
@@ -68,7 +96,14 @@ function Services() {
               facilis molestiae necessitatibus sint.
             </p>
           </div>
-          <div className="service-card">
+          <div
+            className="service-card"
+            data-aos="flip-down"
+            data-aos-delay="600"
+            data-aos-duration="700"
+            data-aos-easing="ease"
+            data-aos-offset="200px"
+          >
             <div className="service-icon">
               <AiOutlineCoffee />
             </div>
@@ -81,7 +116,14 @@ function Services() {
               facilis molestiae necessitatibus sint.
             </p>
           </div>
-          <div className="service-card">
+          <div
+            className="service-card"
+            data-aos="flip-down"
+            data-aos-delay="700"
+            data-aos-duration="700"
+            data-aos-easing="ease"
+            data-aos-offset="200px"
+          >
             <div className="service-icon">
               <GiPencilBrush />
             </div>

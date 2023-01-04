@@ -29,7 +29,7 @@ export default Header;
 const Container = styled.header`
   height: 100vh;
   width: 100%;
-  background-image: url("../img/background/6.jpg");
+  background-image: url("../img/6.jpg");
   background-position: center;
   background-position: cover;
   background-repeat: no-repeat;

@@ -3,6 +3,18 @@ import styled from "styled-components";
 
 function WhatIDo() {
   return (
+    // <div class="item" data-aos="example-anim1">7</div>
+
+    // [data-aos="example-anim1"] {
+    //   transform: skewX(45deg);
+    //   opacity: 0;
+    //   transition-property: transform, opacity;
+    //   &.aos-animate {
+    //     transform: skewX(0);
+    //     opacity: 1;
+    //   }
+    // }
+
     <Container id="what-i-do">
       <Wrap>
         <div>
@@ -13,9 +25,31 @@ function WhatIDo() {
           </Left>
 
           <Right>
-            <h2>What I Do</h2>
-            <h3>I Develop Websites & Debug Code</h3>
-            <p>
+            <h2
+              data-aos="flip-down"
+              data-aos-delay="0"
+              data-aos-duration="500"
+              data-aos-easing="ease-in-out"
+              data-aos-offset="100px"
+            >
+              What I Do
+            </h2>
+            <h3
+              data-aos="fade-left"
+              data-aos-delay="250"
+              data-aos-duration="500"
+              data-aos-easing="ease-in-out"
+              data-aos-offset="150px"
+            >
+              I Develop Websites & Debug Code
+            </h3>
+            <p
+              data-aos="fade-left"
+              data-aos-delay="450"
+              data-aos-duration="500"
+              data-aos-easing="ease-in-out"
+              data-aos-offset="150px"
+            >
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum,
               distinctio commodi iste illum nostrum quod tempora nisi eos? Sequi
               fugit in est necessitatibus similique dolor pariatur sit nihil
@@ -27,9 +61,31 @@ function WhatIDo() {
               distinctio sed! Iste voluptas distinctio ipsam aliquam.
             </p>
             <div></div>
-            <h2>Why Work With Me</h2>
-            <h3>Superior Results with Top User Experience</h3>
-            <p>
+            <h2
+              data-aos="flip-down"
+              data-aos-delay="0"
+              data-aos-duration="500"
+              data-aos-easing="ease-in-out"
+              data-aos-offset="100px"
+            >
+              Why Work With Me
+            </h2>
+            <h3
+              data-aos="fade-left"
+              data-aos-delay="250"
+              data-aos-duration="500"
+              data-aos-easing="ease-in-out"
+              data-aos-offset="150px"
+            >
+              Superior Results with Top User Experience
+            </h3>
+            <p
+              data-aos="fade-left"
+              data-aos-delay="450"
+              data-aos-duration="500"
+              data-aos-easing="ease-in-out"
+              data-aos-offset="150px"
+            >
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
               qui, odit commodi harum molestias nam soluta vel, unde quae nemo
               itaque, veritatis dolore temporibus corporis in animi accusamus
