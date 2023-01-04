@@ -51,77 +51,102 @@ function Skills() {
                   <h3>HTML</h3>
                   <div id="skill-progress">95%</div>
                 </Skill>
-                <SkillBar
-                  progress={95}
-                  className="skill-bar"
-                  id="skill-bar"
-                ></SkillBar>
+                <SkillBar progress={95} className="skill-bar" id="skill-bar">
+                  {" "}
+                  <div
+                    data-aos="anim1"
+                    data-aos-duration="2000"
+                    data-aos-easing="ease-in-out"
+                    data-aos-offset="150px"
+                  ></div>
+                </SkillBar>
               </SkillWrap>
               <SkillWrap>
                 <Skill>
                   <h3>CSS</h3>
                   <div id="skill-progress">90%</div>
                 </Skill>
-                <SkillBar
-                  progress={90}
-                  className="skill-bar"
-                  id="skill-bar"
-                ></SkillBar>
+                <SkillBar progress={90} className="skill-bar" id="skill-bar">
+                  {" "}
+                  <div
+                    data-aos="anim1"
+                    data-aos-duration="2000"
+                    data-aos-easing="ease-in-out"
+                    data-aos-offset="150px"
+                  ></div>
+                </SkillBar>
               </SkillWrap>
               <SkillWrap>
                 <Skill>
                   <h3>Javascript</h3>
                   <div id="skill-progress">70%</div>
                 </Skill>
-                <SkillBar
-                  progress={70}
-                  className="skill-bar"
-                  id="skill-bar"
-                ></SkillBar>
+                <SkillBar progress={70} className="skill-bar" id="skill-bar">
+                  {" "}
+                  <div
+                    data-aos="anim1"
+                    data-aos-duration="2000"
+                    data-aos-easing="ease-in-out"
+                    data-aos-offset="150px"
+                  ></div>
+                </SkillBar>
               </SkillWrap>
               <SkillWrap>
                 <Skill>
                   <h3>React</h3>
                   <div id="skill-progress">75%</div>
                 </Skill>
-                <SkillBar
-                  progress={75}
-                  className="skill-bar"
-                  id="skill-bar"
-                ></SkillBar>
+                <SkillBar progress={75} className="skill-bar" id="skill-bar">
+                  {" "}
+                  <div
+                    data-aos="anim1"
+                    data-aos-duration="2000"
+                    data-aos-easing="ease-in-out"
+                    data-aos-offset="150px"
+                  ></div>
+                </SkillBar>
               </SkillWrap>
               <SkillWrap>
                 <Skill>
                   <h3>Debugging</h3>
                   <div id="skill-progress">85%</div>
                 </Skill>
-                <SkillBar
-                  progress={85}
-                  className="skill-bar"
-                  id="skill-bar"
-                ></SkillBar>
+                <SkillBar progress={85} className="skill-bar" id="skill-bar">
+                  <div
+                    data-aos="anim1"
+                    data-aos-duration="2000"
+                    data-aos-easing="ease-in-out"
+                    data-aos-offset="150px"
+                  ></div>
+                </SkillBar>
               </SkillWrap>
               <SkillWrap>
                 <Skill>
                   <h3>Responsive Design</h3>
                   <div id="skill-progress">90%</div>
                 </Skill>
-                <SkillBar
-                  progress={90}
-                  className="skill-bar"
-                  id="skill-bar"
-                ></SkillBar>
+                <SkillBar progress={90} className="skill-bar" id="skill-bar">
+                  <div
+                    data-aos="anim1"
+                    data-aos-duration="2000"
+                    data-aos-easing="ease-in-out"
+                    data-aos-offset="150px"
+                  ></div>
+                </SkillBar>
               </SkillWrap>
               <SkillWrap>
                 <Skill>
                   <h3>Accessibility</h3>
                   <div id="skill-progress">80%</div>
                 </Skill>
-                <SkillBar
-                  progress={80}
-                  className="skill-bar"
-                  id="skill-bar"
-                ></SkillBar>
+                <SkillBar progress={80} className="skill-bar" id="skill-bar">
+                  <div
+                    data-aos="anim1"
+                    data-aos-duration="2000"
+                    data-aos-easing="ease-in-out"
+                    data-aos-offset="150px"
+                  ></div>
+                </SkillBar>
               </SkillWrap>
             </MySkills>
           </Right>
@@ -260,8 +285,9 @@ const SkillBar = styled.div`
   position: relative;
   border-radius: 3px;
   margin: 5px 0;
+  overflow: hidden;
 
-  &:before {
+  & > div {
     content: "";
     left: 0;
     top: 0;
@@ -270,6 +296,15 @@ const SkillBar = styled.div`
     position: absolute;
     background-color: var(--color-primary);
     border-radius: 3px;
+
+    &[data-aos="anim1"] {
+      transform: translateX(-100%);
+
+      transition-property: transform;
+      &.aos-animate {
+        transform: translateX(0);
+      }
+    }
   }
 `;
 

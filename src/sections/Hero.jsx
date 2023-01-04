@@ -69,12 +69,13 @@ const LandingPage = styled.section`
   height: auto;
   display: flex;
   flex-direction: column;
-  padding-top: 25%;
+  padding-top: 20%;
   text-transform: uppercase;
 
   h1 {
     font-size: 5rem;
     color: var(--color-primary);
+    padding-bottom: 30px;
   }
 
   h2 {
