@@ -190,6 +190,10 @@ const ImgWrap = styled.div`
   justify-content: center;
   padding-bottom: 120px;
 
+  @media ${device.tablet} {
+    padding-bottom: 0;
+  }
+
   img {
     width: 90%;
     border-radius: 50px;

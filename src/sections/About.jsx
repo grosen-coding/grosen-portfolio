@@ -141,7 +141,7 @@ const AboutWrap = styled.div`
     padding: 10px 0;
     margin-bottom: 40px;
 
-    @media ${device.laptop} {
+    @media ${device.laptopL} {
       text-align: justify;
     }
 
