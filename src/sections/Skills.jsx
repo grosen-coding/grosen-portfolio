@@ -177,10 +177,10 @@ const Container = styled.section`
   &:after {
     content: "";
     width: 100%;
-    top: 0;
+    bottom: 0;
     left: 0;
     height: 150%;
-    background: linear-gradient(to bottom, #0003, #0003 50%, #0000);
+    background: linear-gradient(to top, #000, #0003 70%, #0000);
     position: absolute;
     z-index: 5;
   }

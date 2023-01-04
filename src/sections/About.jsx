@@ -95,7 +95,8 @@ export default About;
 const Container = styled.section`
   height: 100%;
   width: 100%;
-  background-image: linear-gradient(rgba(23, 26, 29, 0.9), rgba(23, 26, 29, 1));
+  /* background-image: linear-gradient(rgba(23, 26, 29, 0.9), rgba(23, 26, 29, 1)); */
+  background-color: #000;
 
   font-family: var(--font-title);
   padding: 40px 0;

@@ -209,7 +209,7 @@ const Container = styled.section`
   width: 100%;
   background-image: linear-gradient(rgba(23, 26, 29, 1), rgba(23, 26, 29, 0.9));
   background-position: center;
-  background-position: cover;
+
   background-repeat: no-repeat;
   font-family: var(--font-title);
   padding-bottom: 60px;
@@ -223,10 +223,10 @@ const Container = styled.section`
   &:after {
     content: "";
     width: 100%;
-    bottom: 0;
+    top: 0;
     left: 0;
     height: 100%;
-    background: linear-gradient(to top, #000, #0003 70%, #0000);
+    background: linear-gradient(to bottom, #000, #0003 100%, #0000);
     position: absolute;
     z-index: 5;
   }

@@ -148,9 +148,10 @@ export default Services;
 const Container = styled.section`
   height: 100%;
   width: 100%;
-  background-image: linear-gradient(rgba(23, 26, 29, 1), rgba(23, 26, 29, 0.9));
+  /* background-image: linear-gradient(rgba(23, 26, 29, 1), rgba(23, 26, 29, 0.9)); */
+  background-color: #000;
   background-position: center;
-  background-position: cover;
+  background-size: cover;
   background-repeat: no-repeat;
   font-family: var(--font-title);
   padding-bottom: 60px;
@@ -168,7 +169,7 @@ const Container = styled.section`
     bottom: 0;
     left: 0;
     height: 120%;
-    background: linear-gradient(to top, #000, #0003 70%, #0000);
+    background: linear-gradient(to top, #000, #0003 100%, #0000);
     position: absolute;
     z-index: 5;
   }
