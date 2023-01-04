@@ -1,7 +1,6 @@
 /* import main fonts */
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600&family=Saira:wght@200;300;400;500;600&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600&display=swap");
-/*
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600&display=swap"); /*
 0-540px: Phone
 541-768px: Tablet Portrait Mode
 769-1068px: Tablet Landscape Mode
@@ -33,14 +32,7 @@ a {
 }
 
 p {
-  font-size: 1.2rem;
   color: rgb(169, 166, 166);
-}
-@media only screen and (max-width: 540px) {
-  p {
-    text-align: justify;
-    font-size: 1.5rem;
-  }
 }
 
 input::placeholder,
@@ -53,26 +45,6 @@ textarea::placeholder {
 
 html {
   scroll-behavior: smooth;
-}
-@media only screen and (min-width: 1200px) {
-  html {
-    font-size: 75%;
-  }
-}
-@media only screen and (max-width: 1200px) {
-  html {
-    font-size: 60%;
-  }
-}
-@media only screen and (max-width: 1068px) {
-  html {
-    font-size: 55%;
-  }
-}
-@media only screen and (max-width: 768px) {
-  html {
-    font-size: 55%;
-  }
 }
 
 /* Animations */
