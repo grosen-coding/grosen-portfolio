@@ -368,6 +368,10 @@ const ProjectTitle = styled.div`
     font-size: 2rem;
     letter-spacing: 0.8px;
     transition: 0.3s;
+
+    @media ${device.mobileL} {
+      font-size: 2.8rem;
+    }
   }
 
   h5 {
@@ -375,6 +379,10 @@ const ProjectTitle = styled.div`
     font-weight: 400;
     letter-spacing: 1px;
     transition: 0.3s;
+
+    @media ${device.mobileL} {
+      font-size: 1.6rem;
+    }
   }
 `;
 

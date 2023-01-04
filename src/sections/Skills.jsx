@@ -236,6 +236,10 @@ const Left = styled.div`
   p {
     padding: 10px 0;
     color: rgb(169, 166, 166);
+
+    @media ${device.mobileL} {
+      font-size: 1.6rem;
+    }
   }
 `;
 

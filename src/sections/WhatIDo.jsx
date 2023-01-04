@@ -182,6 +182,10 @@ const Right = styled.div`
     padding: 10px 0;
     opacity: 0.6;
     color: rgb(169, 166, 166);
+
+    @media ${device.mobileL} {
+      font-size: 1.6rem;
+    }
   }
 
   @media ${device.mobileL} {

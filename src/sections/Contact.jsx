@@ -176,6 +176,12 @@ const ContactForm = styled.form`
     font-family: var(--font-title);
     letter-spacing: 0.5px;
     margin: 10px;
+
+    &::placeholder {
+      @media ${device.mobileL} {
+        font-size: 1.2rem;
+      }
+    }
   }
   textarea {
     resize: none;
@@ -186,6 +192,11 @@ const ContactForm = styled.form`
 const FormGroup = styled.div`
   display: flex;
   width: 100%;
+
+  @media ${device.mobileL} {
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 const SubmitButton = styled.button`
@@ -206,10 +217,12 @@ const SubmitButton = styled.button`
   border: none;
   margin: 0 auto;
   margin-top: 15px;
+  color: #e2e2e2;
 
   &:hover {
     background-color: #e2e2e2;
     transition: 0.3s;
+    color: var(--color-primary);
   }
 
   &:hover a {

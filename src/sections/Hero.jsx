@@ -82,7 +82,7 @@ const TitleWrap = styled.div`
   padding-left: 100px;
 
   @media ${device.mobileL} {
-    padding: 100px 0 0;
+    padding: 50px 0 0;
     text-align: center;
     margin: 0;
   }

@@ -327,6 +327,10 @@ const ResumeWrap = styled.div`
     h3 {
       font-size: 1.8rem;
       padding-bottom: 10px;
+
+      @media ${device.mobileL} {
+        font-size: 2rem;
+      }
     }
 
     h4 {
@@ -348,7 +352,11 @@ const ResumeWrap = styled.div`
     }
 
     p {
-      line-height: 1.7;
+      line-height: 1.5;
+
+      @media ${device.mobileL} {
+        font-size: 1.6rem;
+      }
     }
   }
 `;

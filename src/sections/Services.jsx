@@ -236,10 +236,10 @@ const ServicesWrap = styled.div`
   align-items: center;
 
   .service-card {
-    border: 1px solid #3f3f3f;
+    border: 1px solid #343333;
     margin: 20px;
     border-radius: 10px;
-    background-color: #222;
+    background-color: #373636;
     width: 400px;
     height: 320px;
     display: flex;
@@ -257,6 +257,18 @@ const ServicesWrap = styled.div`
     h4 {
       font-size: 1.8rem;
       letter-spacing: 0.7px;
+
+      @media ${device.mobileL} {
+        font-size: 2.2rem;
+      }
+    }
+
+    p {
+      color: rgb(169, 166, 166);
+
+      @media ${device.mobileL} {
+        font-size: 1.6rem;
+      }
     }
   }
 
@@ -264,11 +276,15 @@ const ServicesWrap = styled.div`
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background-color: #3f3f3f;
+    background-color: #5b5a5a;
     display: flex;
     justify-content: center;
     align-items: center;
     color: var(--color-primary);
     font-size: 2rem;
+
+    @media ${device.mobileL} {
+      font-size: 2.5rem;
+    }
   }
 `;

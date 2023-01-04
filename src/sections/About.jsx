@@ -103,7 +103,7 @@ const Container = styled.section`
   overflow: hidden;
 
   @media ${device.mobileL} {
-    padding: 20px 0;
+    padding: 35px 0;
   }
 
   &:after {
@@ -139,6 +139,7 @@ const AboutWrap = styled.div`
 
     @media ${device.mobileL} {
       text-align: justify;
+      font-size: 1.6rem;
       padding: 10px;
       margin-bottom: 20px;
     }
@@ -211,5 +212,15 @@ const ContentCard = styled.div`
     font-size: 2rem;
     font-weight: 600;
     padding-bottom: 20px;
+
+    @media ${device.mobileL} {
+      font-size: 2.6rem;
+    }
+  }
+
+  p {
+    @media ${device.mobileL} {
+      font-size: 1.6rem;
+    }
   }
 `;
