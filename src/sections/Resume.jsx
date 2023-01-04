@@ -184,10 +184,10 @@ const Container = styled.section`
   &:after {
     content: "";
     width: 100%;
-    top: 0;
+    bottom: 0;
     left: 0;
     height: 100%;
-    background: linear-gradient(to bottom, #000, #0003 50%, #0000);
+    background: linear-gradient(to top, #000, #0003 100%, #0000);
     position: absolute;
     z-index: 5;
   }
@@ -300,7 +300,7 @@ const ResumeWrap = styled.div`
       left: 0;
       background: linear-gradient(
         90deg,
-        rgba(255, 255, 255, 0.1) 0%,
+        rgba(255, 255, 255, 0.341) 0%,
         rgba(255, 255, 255, 0) 100%
       );
     }
@@ -330,6 +330,8 @@ const ResumeWrap = styled.div`
         justify-content: center;
         align-items: center;
         transform: translateX(-55px);
+        color: #333333;
+        font-weight: 600;
       }
     }
 

@@ -296,6 +296,10 @@ const ServicesWrap = styled.div`
     color: var(--color-primary);
     font-size: 2rem;
 
+    @media ${device.tablet} {
+      font-size: 3rem;
+    }
+
     @media ${device.mobileL} {
       font-size: 2.5rem;
     }
