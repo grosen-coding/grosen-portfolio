@@ -170,6 +170,10 @@ const Container = styled.section`
   position: relative;
   overflow: hidden;
 
+  @media ${device.tablet} {
+    padding: 0;
+  }
+
   &:after {
     content: "";
     width: 100%;
@@ -203,10 +207,15 @@ const Wrap = styled.div`
     height: 100%;
     justify-content: space-between;
 
+    @media ${device.tablet} {
+      padding: 0 25px;
+    }
+
     @media ${device.mobileL} {
       flex-direction: column;
       width: 90%;
       margin: 0 auto;
+      padding: 0 10px;
     }
   }
 `;

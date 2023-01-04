@@ -127,6 +127,10 @@ const AboutWrap = styled.div`
   position: relative;
   z-index: 7;
 
+  @media ${device.tablet} {
+    padding: 0 25px;
+  }
+
   @media ${device.mobileL} {
     padding: 0 10px;
   }
@@ -136,6 +140,11 @@ const AboutWrap = styled.div`
     font-size: 1.4rem;
     padding: 10px 0;
     margin-bottom: 40px;
+
+    @media ${device.tablet} {
+      text-align: justify;
+      margin-bottom: 20px;
+    }
 
     @media ${device.mobileL} {
       text-align: justify;
@@ -152,6 +161,10 @@ const AboutWrap = styled.div`
     font-size: 2rem;
     letter-spacing: 0.8px;
     text-align: center;
+
+    @media ${device.tablet} {
+      font-size: 3rem;
+    }
 
     @media ${device.mobileL} {
       font-size: 2.6rem;
@@ -196,6 +209,11 @@ const ContentCard = styled.div`
   padding: 30px;
   width: 30%;
   border-left: 1px solid grey;
+
+  @media ${device.tablet} {
+    width: 33%;
+    padding: 10px 20px;
+  }
 
   @media ${device.mobileL} {
     width: 100%;

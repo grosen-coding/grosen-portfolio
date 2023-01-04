@@ -196,6 +196,10 @@ const Wrap = styled.div`
     letter-spacing: 0.8px;
     text-align: center;
 
+    @media ${device.tablet} {
+      font-size: 2.3rem;
+    }
+
     @media ${device.mobileL} {
       font-size: 2.6rem;
       margin-top: 0;
@@ -208,6 +212,9 @@ const Wrap = styled.div`
       margin: 40px auto 45px;
       position: relative;
       overflow: hidden;
+      @media ${device.tablet} {
+        margin: 20px auto 30px;
+      }
 
       @media ${device.mobileL} {
         margin: 20px auto;
@@ -234,20 +241,26 @@ const ServicesWrap = styled.div`
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  width: 100%;
 
   .service-card {
     border: 1px solid #343333;
     margin: 20px;
     border-radius: 10px;
     background-color: #373636;
-    width: 400px;
+    width: 30%;
     height: 320px;
+    min-height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     padding: 30px;
     text-align: center;
     align-items: center;
+
+    @media ${device.tablet} {
+      margin: 10px;
+    }
 
     @media ${device.mobileL} {
       width: 300px;

@@ -17,7 +17,7 @@ function Hero() {
     <LandingPage>
       <TitleWrap>
         <h3>Welcome to my Portfolio</h3>
-        <h2
+        <h1
           data-aos="fade-right"
           data-aos-delay="100"
           data-aos-duration="1000"
@@ -25,8 +25,8 @@ function Hero() {
           data-aos-once="true"
         >
           Gary Rosen
-        </h2>
-        <h1
+        </h1>
+        <h2
           data-aos="fade-left"
           data-aos-delay="800"
           data-aos-duration="1000"
@@ -35,13 +35,13 @@ function Hero() {
         >
           <Typed
             strings={["a Freelancer, ", "a Designer,", "and a Programmer."]}
-            startDelay={2000}
+            startDelay={1200}
             typeSpeed={80}
             backSpeed={30}
-            backDelay={1200}
+            backDelay={800}
             loop
           />
-        </h1>
+        </h2>
 
         <ResumeBtnDiv
           data-aos="fade-down"
@@ -81,6 +81,11 @@ const TitleWrap = styled.div`
   padding-top: 100px;
   padding-left: 100px;
 
+  @media ${device.tablet} {
+    padding-top: 0;
+    margin-top: -40px;
+  }
+
   @media ${device.mobileL} {
     padding: 50px 0 0;
     text-align: center;
@@ -88,22 +93,30 @@ const TitleWrap = styled.div`
   }
 
   h1 {
+    font-size: 4.5rem;
+    padding-bottom: 0;
+    margin-bottom: -20px;
+
+    @media ${device.tablet} {
+      font-size: 6rem;
+    }
+
+    @media ${device.mobileL} {
+      font-size: 5rem;
+    }
+  }
+
+  h2 {
     font-size: 5rem;
     color: var(--color-primary);
     padding: 20px 0 30px;
 
     @media ${device.mobileL} {
-      font-size: 2.8rem;
+      font-size: 3.8rem;
     }
-  }
 
-  h2 {
-    font-size: 4.5rem;
-    padding-bottom: 0;
-    margin-bottom: -20px;
-
-    @media ${device.mobileL} {
-      font-size: 6rem;
+    @media ${device.mobileS} {
+      font-size: 3.2rem;
     }
   }
 
@@ -112,6 +125,11 @@ const TitleWrap = styled.div`
     letter-spacing: 5px;
     padding-bottom: 30px;
     text-transform: uppercase;
+    font-size: 1.5rem;
+
+    @media ${device.tablet} {
+      font-size: 2rem;
+    }
 
     @media ${device.mobileL} {
       font-size: 2rem;
@@ -125,6 +143,11 @@ const ResumeBtnDiv = styled.div`
   position: relative;
   z-index: 2;
   margin-top: 40px;
+
+  @media ${device.tablet} {
+    width: 30%;
+    /* margin: 40px auto; */
+  }
 
   @media ${device.mobileL} {
     margin: 40px auto 0;

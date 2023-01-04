@@ -19,7 +19,7 @@ function Portfolio() {
             data-aos-delay="100"
             data-aos-duration="700"
             data-aos-easing="ease"
-            data-aos-offset="250px"
+            data-aos-offset="200px"
           >
             <ProjectTitle className="project-card-title">
               <h3>K9 Paws</h3>
@@ -50,7 +50,7 @@ function Portfolio() {
             data-aos-delay="250"
             data-aos-duration="700"
             data-aos-easing="ease"
-            data-aos-offset="250px"
+            data-aos-offset="200px"
           >
             <ProjectTitle className="project-card-title">
               <h3>Retro Daily Planner</h3>
@@ -81,7 +81,7 @@ function Portfolio() {
             data-aos-delay="400"
             data-aos-duration="700"
             data-aos-easing="ease"
-            data-aos-offset="250px"
+            data-aos-offset="200px"
           >
             <ProjectTitle className="project-card-title">
               <h3>PawTours</h3>
@@ -112,7 +112,7 @@ function Portfolio() {
             data-aos-delay="650"
             data-aos-duration="700"
             data-aos-easing="ease"
-            data-aos-offset="150px"
+            data-aos-offset="50px"
           >
             <ProjectTitle className="project-card-title">
               <h3>Quick Pick Flicker</h3>
@@ -143,7 +143,7 @@ function Portfolio() {
             data-aos-delay="800"
             data-aos-duration="700"
             data-aos-easing="ease"
-            data-aos-offset="150px"
+            data-aos-offset="50px"
           >
             <ProjectTitle className="project-card-title">
               <h3>The Dog Blog</h3>
@@ -174,7 +174,7 @@ function Portfolio() {
             data-aos-delay="950"
             data-aos-duration="700"
             data-aos-easing="ease"
-            data-aos-offset="150px"
+            data-aos-offset="50px"
           >
             <ProjectTitle className="project-card-title">
               <h3>Project Title 6</h3>
@@ -250,6 +250,10 @@ const Wrap = styled.div`
     letter-spacing: 0.8px;
     text-align: center;
 
+    @media ${device.tablet} {
+      font-size: 2.3rem;
+    }
+
     @media ${device.mobileL} {
       font-size: 2.6rem;
       margin-top: 0;
@@ -262,6 +266,10 @@ const Wrap = styled.div`
       margin: 40px auto 45px;
       position: relative;
       overflow: hidden;
+
+      @media ${device.tablet} {
+        margin: 20px auto 30px;
+      }
 
       @media ${device.mobileL} {
         margin: 20px auto;
@@ -292,7 +300,14 @@ const Projects = styled.div`
   gap: 20px;
   padding: 40px 0;
 
+  @media ${device.tablet} {
+    padding: 0 5px;
+    width: 100%;
+    gap: 12px;
+  }
+
   @media ${device.mobileL} {
+    padding: 0 10px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -305,6 +320,10 @@ const Project = styled.div`
   overflow: hidden;
   border-radius: 30px;
   z-index: 7;
+
+  @media ${device.tablet} {
+    /* height: 400px; */
+  }
 
   @media ${device.mobileL} {
     height: 250px;

@@ -117,6 +117,10 @@ const Wrap = styled.div`
     z-index: 10;
     text-align: center;
 
+    @media ${device.tablet} {
+      font-size: 2.3rem;
+    }
+
     @media ${device.mobileL} {
       margin-top: 0;
     }
@@ -127,6 +131,10 @@ const Wrap = styled.div`
       margin: 40px auto 45px;
       position: relative;
       overflow: hidden;
+
+      @media ${device.tablet} {
+        margin: 20px auto 30px;
+      }
 
       @media ${device.mobileL} {
         margin: 20px auto;
@@ -160,6 +168,10 @@ const ContactForm = styled.form`
   padding: 20px 0 40px;
   position: relative;
   z-index: 7;
+
+  @media ${device.tablet} {
+    width: 90%;
+  }
 
   @media ${device.mobileL} {
     width: 90%;

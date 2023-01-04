@@ -215,9 +215,15 @@ const Wrap = styled.div`
     letter-spacing: 0.8px;
     text-align: center;
 
-    @media ${device.mobileL} {
-      font-size: 2.6rem;
+    @media ${device.tablet} {
+      padding: 0 25px;
       margin-top: 0;
+      font-size: 2.3rem;
+    }
+
+    @media ${device.mobileL} {
+      margin-top: 20px;
+      font-size: 2.6rem;
     }
 
     > div {
@@ -228,8 +234,12 @@ const Wrap = styled.div`
       position: relative;
       overflow: hidden;
 
-      @media ${device.mobileL} {
+      @media ${device.tablet} {
         margin: 20px auto;
+      }
+
+      @media ${device.mobileL} {
+        margin: 20px auto 0;
       }
       &:before {
         content: "";
@@ -253,13 +263,12 @@ const ResumeWrap = styled.div`
   margin: 0 auto;
   justify-content: space-between;
 
-  @media ${device.mobileL} {
-    flex-direction: column;
-    width: 100%;
+  @media ${device.tablet} {
+    width: 90%;
   }
 
   @media ${device.mobileL} {
-    width: 90%;
+    flex-direction: column;
     padding: 0;
   }
 
@@ -353,6 +362,10 @@ const ResumeWrap = styled.div`
 
     p {
       line-height: 1.5;
+
+      @media ${device.tablet} {
+        font-size: 1.3rem;
+      }
 
       @media ${device.mobileL} {
         font-size: 1.6rem;

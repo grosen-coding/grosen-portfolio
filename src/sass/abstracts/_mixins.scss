@@ -42,8 +42,8 @@
         }
     }
 
-    @if $breakpoint ==big-desktop {
-        @media only screen and (min-width: 1200px) {
+    @if $breakpoint ==desktop {
+        @media only screen and (min-width: 1201px) {
             @content;
         }
     }

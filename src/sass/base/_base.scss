@@ -40,12 +40,12 @@ textarea::placeholder {
 html {
     scroll-behavior: smooth;
 
-    @include respond(big-desktop) {
-        font-size: 85%;
+    @include respond(desktop) {
+        font-size: 80%;
     }
 
     @include respond(laptop) {
-        font-size: 65%;
+        font-size: 75%;
     }
 
     @include respond(tab-land) {

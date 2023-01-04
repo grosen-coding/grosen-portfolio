@@ -85,6 +85,7 @@ const Nav = styled.nav`
 
 const NavWrapper = styled.div`
   width: var(--section-wrap-width);
+  max-width: 100%;
   height: 80px;
   margin: 0 auto;
   display: flex;
@@ -96,12 +97,20 @@ const NavWrapper = styled.div`
 const Logo = styled.div`
   width: 20%;
   font-size: 1.8rem;
+
+  @media ${device.tablet} {
+    width: 10%;
+  }
 `;
 
 // --------NAV MENU---------
 const NavMenu = styled.div`
   width: 80%;
   height: 100%;
+
+  @media ${device.tablet} {
+    width: 85%;
+  }
 
   @media ${device.mobileL} {
     display: none;
@@ -114,11 +123,27 @@ const NavMenu = styled.div`
     justify-content: center;
     align-items: center;
 
+    @media ${device.tablet} {
+      justify-content: flex-end;
+    }
+
     li {
       list-style: none;
       text-transform: uppercase;
       font-size: 1.5rem;
-      padding: 0 25px;
+      padding: 0 20px;
+
+      @media ${device.tablet} {
+        font-size: 1.5rem;
+        padding: 0;
+      }
+
+      a {
+        display: inline-block;
+        @media ${device.tablet} {
+          padding: 0 8px;
+        }
+      }
     }
   }
 `;

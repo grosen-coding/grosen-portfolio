@@ -116,7 +116,7 @@ const Container = styled.section`
   overflow: hidden;
 
   @media ${device.mobileL} {
-    padding: 0 10px;
+    /* padding: 0 10px; */
   }
 
   &:after {
@@ -141,13 +141,23 @@ const Wrap = styled.div`
   position: relative;
   z-index: 6;
 
+  @media ${device.tablet} {
+    padding-top: 0;
+  }
+
   & > div {
     display: flex;
     width: 100%;
     height: 100%;
     justify-content: space-between;
 
+    @media ${device.tablet} {
+      padding: 0 25px;
+      flex-direction: column;
+    }
+
     @media ${device.mobileL} {
+      padding: 0 10px;
       flex-direction: column;
       width: 90%;
       margin: 0 auto;
@@ -159,15 +169,30 @@ const Left = styled.div`
   width: 47%;
   height: 100%;
 
+  @media ${device.tablet} {
+    width: 100%;
+  }
+
   @media ${device.mobileL} {
     width: 100%;
   }
 `;
 
 const ImgWrap = styled.div`
+  display: flex;
+  width: 100%;
+  justify-content: center;
   img {
     width: 100%;
     border-radius: 50px;
+
+    @media ${device.tablet} {
+      width: 50%;
+    }
+
+    @media ${device.mobileL} {
+      width: 100%;
+    }
   }
 `;
 
@@ -183,9 +208,17 @@ const Right = styled.div`
     opacity: 0.6;
     color: rgb(169, 166, 166);
 
+    @media ${device.tablet} {
+      text-align: justify;
+    }
+
     @media ${device.mobileL} {
       font-size: 1.6rem;
     }
+  }
+
+  @media ${device.tablet} {
+    width: 100%;
   }
 
   @media ${device.mobileL} {
