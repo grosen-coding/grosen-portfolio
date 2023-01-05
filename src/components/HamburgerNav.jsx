@@ -77,7 +77,7 @@ const HamMenu = styled.div`
   left: 0;
   position: fixed;
   transform: ${(props) => (props.showNav ? "scale(0)" : "scale(1)")};
-  transition: all 0.15s ease-in-out;
+  transition: all 0.2s ease-in-out;
 `;
 
 const MenuWrap = styled.div`
