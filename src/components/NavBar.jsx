@@ -26,7 +26,7 @@ function NavBar() {
         <HamburgerNav />
 
         <NavMenu>
-          <ul className="navbar-links">
+          <ul className="navbar-links link-1">
             <li className="nav-link">
               <a href="#about">About</a>
             </li>
@@ -58,7 +58,7 @@ function NavBar() {
 export default NavBar;
 
 const Nav = styled.nav`
-  height: 70px;
+  height: 80px;
   position: fixed;
   top: 0;
   right: 0;
@@ -86,7 +86,7 @@ const Nav = styled.nav`
 const NavWrapper = styled.div`
   width: var(--section-wrap-width);
   max-width: 100%;
-  height: 70px;
+  height: 100%;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -97,6 +97,10 @@ const NavWrapper = styled.div`
 const Logo = styled.div`
   width: 20%;
   font-size: 1.8rem;
+  animation: logoAnimate 2s forwards;
+  /* animation-delay: 5s; */
+  opacity: 0;
+  transform-origin: center;
 
   a {
     color: var(--color-yellow);
@@ -137,6 +141,39 @@ const NavMenu = styled.div`
       text-transform: uppercase;
       font-size: 1.5rem;
       padding: 0 20px;
+      opacity: 0;
+      /* animation: navLinks 2s forwards; */
+
+      &:first-child {
+        animation: navLinks 3s forwards;
+        animation-delay: 3.5s;
+      }
+
+      &:nth-child(2) {
+        animation: navLinks 3s forwards;
+        animation-delay: 2.2s;
+      }
+
+      &:nth-child(3) {
+        animation: navLinks 3s forwards;
+        animation-delay: 4s;
+      }
+      &:nth-child(4) {
+        animation: navLinks 2s forwards;
+        animation-delay: 2.6s;
+      }
+      &:nth-child(5) {
+        animation: navLinks 2s forwards;
+        animation-delay: 2.8s;
+      }
+      &:nth-child(6) {
+        animation: navLinks 2s forwards;
+        animation-delay: 4.2s;
+      }
+      &:nth-child(7) {
+        animation: navLinks 2s forwards;
+        animation-delay: 3.3s;
+      }
 
       @media ${device.laptop} {
         font-size: 1.3rem;

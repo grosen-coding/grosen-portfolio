@@ -230,7 +230,7 @@ const SubmitButton = styled.button`
   border: none;
   margin: 0 auto;
   margin-top: 15px;
-  color: #e2e2e2;
+  color: rgba(0, 0, 0, 0.5);
 
   &:hover {
     background-color: #e2e2e2;

@@ -432,6 +432,7 @@ const ProjectLinkBtn = styled.div`
   opacity: 0;
   transform: scale(0);
   transition: 0.3s;
+  color: rgba(0, 0, 0, 0.5);
 
   @media ${device.mobileL} {
     width: 150px;

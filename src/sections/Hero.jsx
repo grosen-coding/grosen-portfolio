@@ -181,11 +181,12 @@ const Button = styled.button`
 
   a {
     text-transform: uppercase;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 1.5rem;
     font-family: var(--font-title);
     letter-spacing: 1.5px;
     transition: 0.3s;
+    color: rgba(0, 0, 0, 0.5);
   }
 `;
 
