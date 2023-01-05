@@ -194,6 +194,10 @@ const ImgWrap = styled.div`
     padding-bottom: 0;
   }
 
+  @media ${device.mobileL} {
+    padding-bottom: 30px;
+  }
+
   img {
     width: 90%;
     border-radius: 50px;
@@ -257,7 +261,7 @@ const Right = styled.div`
       width: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      border: 10px solid black;
+      border: 10px solid rgba(50, 54, 59, 0.9);
       z-index: 2;
       background-color: var(--color-primary);
     }

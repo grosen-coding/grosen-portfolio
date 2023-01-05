@@ -251,8 +251,8 @@ const Wrap = styled.div`
         width: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        border: 10px solid black;
-        z-index: 2;
+        border: 10px solid rgba(50, 54, 59, 0.9);
+        z-index: 6;
         background-color: var(--color-primary);
       }
     }

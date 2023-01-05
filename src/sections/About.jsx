@@ -211,7 +211,7 @@ const ContentCard = styled.div`
   height: auto;
   padding: 30px;
   width: 30%;
-  border-left: 1px solid grey;
+  border-left: 1px solid rgb(254, 220, 121, 0.4);
 
   @media ${device.tablet} {
     width: 33%;

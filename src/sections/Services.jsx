@@ -246,7 +246,7 @@ const ServicesWrap = styled.div`
   width: 100%;
 
   .service-card {
-    border: 1px solid #343333;
+    border: 1px solid rgb(254, 220, 121, 0.4);
     margin: 20px;
     border-radius: 10px;
     background-color: #373636;
