@@ -251,7 +251,6 @@ const ServicesWrap = styled.div`
   width: 100%;
 
   .service-card {
-    border: 1px solid rgb(254, 220, 121, 0.4);
     margin: 20px;
     border-radius: 10px;
     background-color: #373636;
@@ -264,6 +263,30 @@ const ServicesWrap = styled.div`
     padding: 30px;
     text-align: center;
     align-items: center;
+    transition: all 0.2s !important;
+
+    &:hover {
+      background-color: #2c2b2b;
+      transform: scale(1.05);
+      transition-delay: 0ms !important;
+      cursor: pointer;
+      transition: all 0.2s !important;
+      border: 1px solid rgb(254, 220, 121, 0.4);
+    }
+
+    &:hover .service-icon {
+      background-color: var(--color-primary);
+      color: #2c2b2b;
+      transition: 0.3s;
+      transition-delay: 0.1s;
+      font-size: 2.7rem;
+    }
+
+    &:hover p {
+      color: rgb(254, 220, 121, 0.4);
+      transition: 0.3s;
+      font-weight: 500;
+    }
 
     @media ${device.laptop} {
       margin: 10px;
@@ -302,6 +325,7 @@ const ServicesWrap = styled.div`
     align-items: center;
     color: var(--color-primary);
     font-size: 2rem;
+    transition: 0.3s;
 
     @media ${device.tablet} {
       font-size: 3rem;

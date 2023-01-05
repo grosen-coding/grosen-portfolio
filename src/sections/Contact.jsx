@@ -25,6 +25,10 @@ function Contact() {
                 name="email"
                 placeholder="Name"
                 required
+                data-aos="flip-down"
+                data-aos-delay="100"
+                data-aos-duration="800"
+                data-aos-easing="ease-in-out"
               />
               <input
                 type="email"
@@ -33,6 +37,10 @@ function Contact() {
                 name="email"
                 placeholder="E-mail Address"
                 required
+                data-aos="flip-down"
+                data-aos-delay="300"
+                data-aos-duration="800"
+                data-aos-easing="ease-in-out"
               />
               <input
                 type="phone"
@@ -41,6 +49,10 @@ function Contact() {
                 name="phone"
                 placeholder="Phone Number"
                 required
+                data-aos="flip-down"
+                data-aos-delay="500"
+                data-aos-duration="800"
+                data-aos-easing="ease-in-out"
               />
             </FormGroup>
             <FormGroup className="form-group">
@@ -48,6 +60,10 @@ function Contact() {
                 type="textarea"
                 placeholder="Please type your message"
                 className="form-text-area"
+                data-aos="zoom-in"
+                data-aos-delay="75000"
+                data-aos-duration="800"
+                data-aos-easing="ease-in-out"
                 required
               />
             </FormGroup>
