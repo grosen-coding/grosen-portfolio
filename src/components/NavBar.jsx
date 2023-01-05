@@ -97,10 +97,8 @@ const NavWrapper = styled.div`
 const Logo = styled.div`
   width: 20%;
   font-size: 1.8rem;
-  animation: logoAnimate 5s forwards;
-  animation-delay: 4s;
 
-  opacity: 0;
+  opacity: 0.6;
 
   a {
     color: var(--color-yellow);

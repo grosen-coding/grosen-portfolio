@@ -109,24 +109,6 @@ p {
     opacity: 1;
   }
 }
-@keyframes logoAnimate {
-  0%, 25% {
-    transform: rotateX(0) rotateY(360deg) scale(1) translate(50px, -50px);
-    opacity: 0;
-  }
-  50% {
-    transform: rotateX(0) rotateY(0deg) scale(2.5) translate(100px, 70px);
-    opacity: 0.8;
-  }
-  85% {
-    transform: rotateX(0) rotateY(360deg) scale(1) translate(0, 0);
-    opacity: 1;
-  }
-  100% {
-    transform: rotateX(360deg) rotateY(360deg) scale(1) translate(0, 0);
-    opacity: 0.6;
-  }
-}
 @keyframes scrollToTop {
   0% {
     transform: scale(0.7);
