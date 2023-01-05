@@ -7,7 +7,7 @@ function Contact() {
     <Container id="contact">
       <Wrap>
         <h2>
-          <span>Get in Touch Me</span>
+          <span>Get in Touch With Me</span>
           <div></div>
         </h2>
         <ContactFormDiv>

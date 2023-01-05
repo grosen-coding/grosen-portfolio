@@ -8,7 +8,10 @@ function Footer() {
       <Wrap>
         <FooterContent>
           <Left>
-            <h4>&copy; 2022 Copyright GSRCoding</h4>
+            <h4>
+              &copy; 2022 Copyright &nbsp; &nbsp;||&nbsp; &nbsp;{" "}
+              <span>GSRCoding</span>
+            </h4>
           </Left>
         </FooterContent>
       </Wrap>
@@ -48,6 +51,10 @@ const FooterContent = styled.div`
     font-size: 1.4rem;
     font-weight: 400;
     letter-spacing: 1.2px;
+
+    span {
+      color: var(--color-yellow);
+    }
   }
 `;
 
