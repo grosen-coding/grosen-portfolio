@@ -62,7 +62,12 @@ function WhatIDo() {
               qui porro facere minima nostrum necessitatibus aliquam dolorum
               distinctio sed! Iste voluptas distinctio ipsam aliquam.
             </p>
-            <div></div>
+            <div
+              data-aos="zoom-in"
+              data-aos-delay="100"
+              data-aos-duration="500"
+              data-aos-easing="ease-in-out"
+            ></div>
             <h2
               data-aos="flip-down"
               data-aos-delay="0"

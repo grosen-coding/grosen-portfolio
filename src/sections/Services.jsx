@@ -14,7 +14,12 @@ function Services() {
       <Wrap>
         <h2>
           <span>Services I Offer</span>
-          <div></div>
+          <div
+            data-aos="zoom-in"
+            data-aos-delay="100"
+            data-aos-duration="500"
+            data-aos-easing="ease-in-out"
+          ></div>
         </h2>
         <ServicesWrap>
           <div

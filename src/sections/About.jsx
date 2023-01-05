@@ -11,7 +11,12 @@ function About() {
       <AboutWrap>
         <h2>
           <span>Welcome to My World</span>
-          <div></div>
+          <div
+            data-aos="zoom-in"
+            data-aos-delay="100"
+            data-aos-duration="500"
+            data-aos-easing="ease-in-out"
+          ></div>
         </h2>
         <p>
           I'm a young tech enthusiast and entrepreneur who loves to take risks.

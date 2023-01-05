@@ -8,7 +8,12 @@ function Portfolio() {
       <Wrap>
         <h2>
           <span>Portfolio</span>
-          <div></div>
+          <div
+            data-aos="zoom-in"
+            data-aos-delay="100"
+            data-aos-duration="500"
+            data-aos-easing="ease-in-out"
+          ></div>
         </h2>
         <Projects>
           {/* Project 1 */}

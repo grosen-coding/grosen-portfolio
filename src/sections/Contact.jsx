@@ -8,7 +8,12 @@ function Contact() {
       <Wrap>
         <h2>
           <span>Get in Touch With Me</span>
-          <div></div>
+          <div
+            data-aos="zoom-in"
+            data-aos-delay="100"
+            data-aos-duration="500"
+            data-aos-easing="ease-in-out"
+          ></div>
         </h2>
         <ContactFormDiv>
           <ContactForm className="contact-form">
