@@ -111,15 +111,42 @@ p {
 }
 @keyframes logoAnimate {
   0% {
-    transform: scale(0) translate(-250px, -250px);
+    transform: scale(1) translate(-250px, -250px);
     opacity: 0;
   }
+  25% {
+    transform: scale(0.8);
+  }
   50% {
-    transform: scale(1.8) translate(50px, 50px);
+    transform: scale(1.5) translate(50px, 50px);
     opacity: 0.5;
+  }
+  75% {
+    transform: scale(0.8);
   }
   100% {
     transform: scale(1) translate(0, 0);
     opacity: 1;
+  }
+}
+@keyframes scrollToTop {
+  0% {
+    transform: scale(0.7);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(0.7);
+  }
+}
+@keyframes scrollTopAppear {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
   }
 }
