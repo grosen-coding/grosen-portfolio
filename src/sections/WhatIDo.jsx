@@ -29,7 +29,7 @@ function WhatIDo() {
             <h2
               data-aos="flip-down"
               data-aos-delay="0"
-              data-aos-duration="500"
+              data-aos-duration="800"
               data-aos-easing="ease-in-out"
               data-aos-offset="100px"
             >
@@ -37,20 +37,20 @@ function WhatIDo() {
             </h2>
             <h3
               data-aos="fade-left"
-              data-aos-delay="250"
-              data-aos-duration="500"
+              data-aos-delay="450"
+              data-aos-duration="600"
               data-aos-easing="ease-in-out"
-              data-aos-offset="150px"
+              data-aos-offset="100px"
             >
               I Develop Websites & Debug Code
             </h3>
             <p
               className="p-text"
               data-aos="fade-left"
-              data-aos-delay="450"
-              data-aos-duration="500"
+              data-aos-delay="600"
+              data-aos-duration="600"
               data-aos-easing="ease-in-out"
-              data-aos-offset="150px"
+              data-aos-offset="100px"
             >
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum,
               distinctio commodi iste illum nostrum quod tempora nisi eos? Sequi
@@ -66,7 +66,7 @@ function WhatIDo() {
             <h2
               data-aos="flip-down"
               data-aos-delay="0"
-              data-aos-duration="500"
+              data-aos-duration="800"
               data-aos-easing="ease-in-out"
               data-aos-offset="100px"
             >
@@ -74,20 +74,20 @@ function WhatIDo() {
             </h2>
             <h3
               data-aos="fade-left"
-              data-aos-delay="250"
-              data-aos-duration="500"
+              data-aos-delay="450"
+              data-aos-duration="600"
               data-aos-easing="ease-in-out"
-              data-aos-offset="150px"
+              data-aos-offset="100px"
             >
               Superior Results with Top User Experience
             </h3>
             <p
               className="p-text"
               data-aos="fade-left"
-              data-aos-delay="450"
-              data-aos-duration="500"
+              data-aos-delay="600"
+              data-aos-duration="600"
               data-aos-easing="ease-in-out"
-              data-aos-offset="150px"
+              data-aos-offset="100px"
             >
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
               qui, odit commodi harum molestias nam soluta vel, unde quae nemo
@@ -108,7 +108,7 @@ export default WhatIDo;
 const Container = styled.section`
   height: 100%;
   width: 100%;
-  background-image: linear-gradient(rgba(23, 26, 29, 1), rgba(23, 26, 29, 0.9));
+  background-image: linear-gradient(rgba(23, 26, 29, 1), rgba(46, 49, 53, 0.9));
   background-repeat: no-repeat;
   font-family: var(--font-title);
   padding: 40px 0;
@@ -125,7 +125,7 @@ const Container = styled.section`
     top: 0;
     left: 0;
     height: 100%;
-    background: linear-gradient(to bottom, #000, #0003 100%, #0000);
+    background: linear-gradient(to bottom, #000, #0003 80%, #0000);
     position: absolute;
     z-index: 5;
   }
@@ -273,5 +273,6 @@ const Right = styled.div`
     font-size: 4rem;
     line-height: 1.1;
     padding: 20px 0;
+    color: var(--color-yellow);
   }
 `;

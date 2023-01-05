@@ -126,6 +126,7 @@ const TitleWrap = styled.div`
     padding-bottom: 30px;
     text-transform: uppercase;
     font-size: 1.5rem;
+    color: var(--color-yellow);
 
     @media ${device.tablet} {
       font-size: 2rem;

@@ -160,9 +160,10 @@ const AboutWrap = styled.div`
     margin-top: 20px;
     text-transform: uppercase;
     font-weight: 500;
-    font-size: 2rem;
+    font-size: 2.5rem;
     letter-spacing: 0.8px;
     text-align: center;
+    color: var(--color-yellow);
 
     @media ${device.tablet} {
       font-size: 3rem;

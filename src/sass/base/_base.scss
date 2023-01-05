@@ -15,17 +15,7 @@ a {
     color: #e2e2e2;
 }
 
-p {
-    font-size: 1.2rem;
-color: rgb(169, 166, 166);
 
-        @include respond(phone) {
-                text-align: justify;
-                font-size: 1.6rem;
-                // line-height: .5px;
-
-            }
-}
 
 
 input::placeholder,
@@ -54,6 +44,17 @@ html {
 
     @include respond(tab-port) {
         font-size: 55%;
+    }
+}
+
+p {
+    font-size: 1.2rem;
+    color: rgb(169, 166, 166);
+    letter-spacing: 0.4px;
+    font-weight: 300;
+
+    @media (max-width: 540px) {
+        font-size: 1.4rem !important;
     }
 }
 

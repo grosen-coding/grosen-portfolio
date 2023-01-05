@@ -111,11 +111,12 @@ const Wrap = styled.div`
     margin-top: 20px;
     text-transform: uppercase;
     font-weight: 500;
-    font-size: 2rem;
+    font-size: 2.5rem;
     letter-spacing: 0.8px;
     position: relative;
     z-index: 10;
     text-align: center;
+    color: var(--color-yellow);
 
     @media ${device.tablet} {
       font-size: 2.3rem;

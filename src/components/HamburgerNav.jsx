@@ -69,7 +69,7 @@ export default HamburgerNav;
 
 const HamMenu = styled.div`
   opacity: ${(props) => (props.showNav ? "0" : "1")};
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.9);
   width: 100vw;
   height: 100%;
   border-radius: 30px;
@@ -77,7 +77,7 @@ const HamMenu = styled.div`
   left: 0;
   position: fixed;
   transform: ${(props) => (props.showNav ? "scale(0)" : "scale(1)")};
-  transition: all 0.2s ease-in-out;
+  transition: all 0.15s ease-in-out;
 `;
 
 const MenuWrap = styled.div`
@@ -94,13 +94,21 @@ const MenuWrap = styled.div`
     li {
       font-size: 2rem;
       font-family: var(--font-title);
-      padding: 10px 0;
+      padding: 10px 60px;
+      text-align: center;
+      border-bottom: 1px solid #fedd7951;
+
+      &:first-child {
+        border-top: 1px solid #fedd7951;
+      }
 
       a {
-        letter-spacing: 2.3px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        font-weight: 300;
 
         @media ${device.mobileL} {
-          font-size: 3rem;
+          font-size: 2.6rem;
         }
       }
     }

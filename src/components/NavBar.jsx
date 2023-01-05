@@ -58,7 +58,7 @@ function NavBar() {
 export default NavBar;
 
 const Nav = styled.nav`
-  height: 80px;
+  height: 70px;
   position: fixed;
   top: 0;
   right: 0;
@@ -68,7 +68,7 @@ const Nav = styled.nav`
   transition: background 0.9s;
 
   &.scrolled {
-    background: #0a0a0a;
+    background: rgba(22, 22, 22, 0.9);
   }
 
   a {
@@ -86,7 +86,7 @@ const Nav = styled.nav`
 const NavWrapper = styled.div`
   width: var(--section-wrap-width);
   max-width: 100%;
-  height: 80px;
+  height: 70px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -97,6 +97,11 @@ const NavWrapper = styled.div`
 const Logo = styled.div`
   width: 20%;
   font-size: 1.8rem;
+
+  a {
+    color: var(--color-yellow);
+    font-weight: 500;
+  }
 
   @media ${device.tablet} {
     width: 10%;

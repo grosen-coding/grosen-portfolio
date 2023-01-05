@@ -174,7 +174,8 @@ export default Resume;
 const Container = styled.section`
   height: 100%;
   width: 100%;
-  background-image: linear-gradient(rgba(23, 26, 29, 0.9), rgba(23, 26, 29, 1));
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(50, 54, 59, 0.1)); */
+  background-color: rgba(50, 54, 59, 0.9);
 
   font-family: var(--font-title);
   padding-bottom: 60px;
@@ -211,9 +212,10 @@ const Wrap = styled.div`
     margin-top: 20px;
     text-transform: uppercase;
     font-weight: 500;
-    font-size: 2rem;
+    font-size: 2.5rem;
     letter-spacing: 0.8px;
     text-align: center;
+    color: var(--color-yellow);
 
     @media ${device.tablet} {
       padding: 0 25px;
@@ -357,7 +359,7 @@ const ResumeWrap = styled.div`
 
       span {
         opacity: 0.6;
-        color: #e2e2e2;
+        color: var(--color-yellow);
         font-size: 1.2rem;
       }
     }

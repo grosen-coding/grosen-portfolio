@@ -11,7 +11,7 @@ function Skills() {
             <h2
               data-aos="flip-down"
               data-aos-delay="0"
-              data-aos-duration="500"
+              data-aos-duration="800"
               data-aos-easing="ease-in-out"
               data-aos-offset="100px"
             >
@@ -20,7 +20,7 @@ function Skills() {
             <h3
               data-aos="fade-right"
               data-aos-delay="450"
-              data-aos-duration="500"
+              data-aos-duration="600"
               data-aos-easing="ease-in-out"
               data-aos-offset="150px"
             >
@@ -28,8 +28,8 @@ function Skills() {
             </h3>
             <p
               data-aos="fade-right"
-              data-aos-delay="450"
-              data-aos-duration="500"
+              data-aos-delay="600"
+              data-aos-duration="600"
               data-aos-easing="ease-in-out"
               data-aos-offset="150px"
             >
@@ -58,7 +58,7 @@ function Skills() {
                     data-aos="anim1"
                     data-aos-duration="2000"
                     data-aos-easing="ease-in-out"
-                    data-aos-offset="150px"
+                    data-aos-offset="50px"
                   ></div>
                 </SkillBar>
               </SkillWrap>
@@ -73,7 +73,7 @@ function Skills() {
                     data-aos="anim1"
                     data-aos-duration="2000"
                     data-aos-easing="ease-in-out"
-                    data-aos-offset="150px"
+                    data-aos-offset="50px"
                   ></div>
                 </SkillBar>
               </SkillWrap>
@@ -88,7 +88,7 @@ function Skills() {
                     data-aos="anim1"
                     data-aos-duration="2000"
                     data-aos-easing="ease-in-out"
-                    data-aos-offset="150px"
+                    data-aos-offset="50px"
                   ></div>
                 </SkillBar>
               </SkillWrap>
@@ -103,7 +103,7 @@ function Skills() {
                     data-aos="anim1"
                     data-aos-duration="2000"
                     data-aos-easing="ease-in-out"
-                    data-aos-offset="150px"
+                    data-aos-offset="50px"
                   ></div>
                 </SkillBar>
               </SkillWrap>
@@ -117,7 +117,7 @@ function Skills() {
                     data-aos="anim1"
                     data-aos-duration="2000"
                     data-aos-easing="ease-in-out"
-                    data-aos-offset="150px"
+                    data-aos-offset="50px"
                   ></div>
                 </SkillBar>
               </SkillWrap>
@@ -131,7 +131,7 @@ function Skills() {
                     data-aos="anim1"
                     data-aos-duration="2000"
                     data-aos-easing="ease-in-out"
-                    data-aos-offset="150px"
+                    data-aos-offset="50px"
                   ></div>
                 </SkillBar>
               </SkillWrap>
@@ -145,7 +145,7 @@ function Skills() {
                     data-aos="anim1"
                     data-aos-duration="2000"
                     data-aos-easing="ease-in-out"
-                    data-aos-offset="150px"
+                    data-aos-offset="50px"
                   ></div>
                 </SkillBar>
               </SkillWrap>
@@ -162,13 +162,15 @@ export default Skills;
 const Container = styled.section`
   height: 100%;
   width: 100%;
-  background-image: linear-gradient(rgba(23, 26, 29, 0.9), rgba(23, 26, 29, 1));
-  background-position: center;
+  /* background-image: linear-gradient(rgba(46, 49, 53, 0.9), rgba(23, 26, 29, 1)); */
+  background-color: rgba(46, 49, 53, 0.9);
+  /* background-position: center; */
   background-repeat: no-repeat;
   font-family: var(--font-title);
-  padding: 40px 0;
+  /* padding: 40px 0; */
   position: relative;
   overflow: hidden;
+  padding-bottom: 40px;
 
   @media ${device.tablet} {
     padding: 0;
@@ -180,7 +182,7 @@ const Container = styled.section`
     bottom: 0;
     left: 0;
     height: 150%;
-    background: linear-gradient(to top, #000, #0003 70%, #0000);
+    /* background: linear-gradient(to top, #000, #0003 70%, #0000); */
     position: absolute;
     z-index: 5;
   }
@@ -240,6 +242,7 @@ const Left = styled.div`
   h3 {
     font-size: 4rem;
     line-height: 1.1;
+    color: var(--color-yellow);
   }
 
   p {
@@ -290,12 +293,16 @@ const Skill = styled.div`
   justify-content: space-between;
 
   h3 {
+    letter-spacing: 0.6px;
     @media ${device.mobileL} {
       font-size: 1.7rem;
     }
   }
 
   #skill-progress {
+    color: var(--color-yellow);
+    opacity: 0.7;
+
     @media ${device.mobileL} {
       font-size: 1.7rem;
       font-weight: 200;

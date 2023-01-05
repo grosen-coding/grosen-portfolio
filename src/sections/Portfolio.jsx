@@ -207,14 +207,17 @@ export default Portfolio;
 const Container = styled.section`
   height: 100%;
   width: 100%;
-  background-image: linear-gradient(rgba(23, 26, 29, 1), rgba(23, 26, 29, 0.9));
+  /* background-image: linear-gradient(rgba(23, 26, 29, 1), rgba(45, 48, 52, 0.9)); */
   background-position: center;
+  background-color: #000;
 
   background-repeat: no-repeat;
   font-family: var(--font-title);
   padding-bottom: 60px;
   position: relative;
   overflow: hidden;
+  border-bottom: 2px solid var(--color-primary);
+  border-top: 2px solid var(--color-primary);
 
   @media ${device.mobileL} {
     padding: 0 0 30px;
@@ -246,9 +249,10 @@ const Wrap = styled.div`
     margin-top: 20px;
     text-transform: uppercase;
     font-weight: 500;
-    font-size: 2rem;
+    font-size: 2.5rem;
     letter-spacing: 0.8px;
     text-align: center;
+    color: var(--color-yellow);
 
     @media ${device.tablet} {
       font-size: 2.3rem;
@@ -334,6 +338,12 @@ const Project = styled.div`
     transition: all 0.3s;
   }
 
+  &:hover .project-card-title h5 {
+    transform: translateY(0);
+    opacity: 1;
+    transition: all 0.3s;
+  }
+
   &:hover .project-card-img {
     opacity: 0.4;
     transform: scale(1);
@@ -384,7 +394,7 @@ const ProjectTitle = styled.div`
   transition: 0.3s;
 
   h3 {
-    font-size: 2rem;
+    font-size: 2.2rem;
     letter-spacing: 0.8px;
     transition: 0.3s;
 
@@ -398,6 +408,10 @@ const ProjectTitle = styled.div`
     font-weight: 400;
     letter-spacing: 1px;
     transition: 0.3s;
+    color: var(--color-yellow);
+    transform: translateY(-300%);
+    opacity: 0;
+    transition: all 0.3s;
 
     @media ${device.mobileL} {
       font-size: 1.6rem;
