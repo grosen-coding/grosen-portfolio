@@ -325,8 +325,8 @@ const Project = styled.div`
   border-radius: 30px;
   z-index: 7;
 
-  @media ${device.tablet} {
-    /* height: 400px; */
+  &:hover {
+    border: 1px solid rgb(254, 220, 121);
   }
 
   @media ${device.mobileL} {
@@ -347,7 +347,6 @@ const Project = styled.div`
   &:hover .project-card-img {
     opacity: 0.4;
     transform: scale(1);
-    border: 1px solid;
   }
 
   &:nth-of-type(1) {
@@ -374,8 +373,7 @@ const Project = styled.div`
   &:hover .project-btn {
     transform: scale(1);
     opacity: 1;
-    transition: all 0.3s;
-    transition-delay: 0.3s;
+    transition: all 0.5s;
   }
 `;
 
@@ -424,17 +422,16 @@ const ProjectLinkBtn = styled.div`
   height: auto;
   background-color: var(--color-primary);
   border-radius: 10px;
-  padding: 10px 20px;
+  padding: 5px 10px;
   cursor: pointer;
   border: none;
   font-weight: 500;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-family: var(--font-title);
-  letter-spacing: 1px;
+  letter-spacing: 0.8px;
   opacity: 0;
   transform: scale(0);
   transition: 0.3s;
-  transition-delay: all 0.8s;
 
   @media ${device.mobileL} {
     width: 150px;
@@ -445,7 +442,6 @@ const ProjectLinkBtn = styled.div`
     background-color: #e2e2e2;
     color: var(--color-primary);
     transition: 0.3s;
-    transition-delay: none;
   }
 `;
 
@@ -456,5 +452,5 @@ const ProjectImg = styled.img`
   object-fit: cover;
   object-position: center center;
   transition: all 0.3s;
-  transform: scale(1.05);
+  transform: scale(1.2);
 `;
