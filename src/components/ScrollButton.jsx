@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { FaArrowCircleUp } from "react-icons/fa";
 import styled from "styled-components";
+import { device } from "../components/device";
 
 const ScrollButton = () => {
   const [visible, setVisible] = useState(false);
@@ -54,6 +55,11 @@ const ToTopButton = styled.div`
   opacity: 0.4;
   transition: 0.25s;
   animation: scrollToTop 2s infinite;
+
+  @media ${device.mobileL} {
+    right: 20px;
+    bottom: 25px;
+  }
 
   &:hover {
     opacity: 0.7;
