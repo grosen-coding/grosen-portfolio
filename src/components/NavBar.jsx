@@ -97,10 +97,10 @@ const NavWrapper = styled.div`
 const Logo = styled.div`
   width: 20%;
   font-size: 1.8rem;
-  animation: logoAnimate 2s forwards;
-  /* animation-delay: 5s; */
+  animation: logoAnimate 5s forwards;
+  animation-delay: 4s;
+
   opacity: 0;
-  transform-origin: center;
 
   a {
     color: var(--color-yellow);
