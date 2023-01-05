@@ -9,8 +9,8 @@ function Footer() {
         <FooterContent>
           <Left>
             <h4>
-              &copy; 2022 Copyright &nbsp; &nbsp;||&nbsp; &nbsp;{" "}
-              <span>GSRCoding</span>
+              <span>rosengsr@gmail.com</span>&nbsp; &nbsp;||&nbsp; &nbsp; &copy;
+              2022 Copyright &nbsp; &nbsp;||&nbsp; &nbsp; <span>GSRCoding</span>
             </h4>
           </Left>
         </FooterContent>

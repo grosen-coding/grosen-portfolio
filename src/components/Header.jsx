@@ -31,6 +31,8 @@ const Container = styled.header`
   height: 95vh;
   width: 100%;
   background-image: url("../img/6.jpg");
+  /* background-attachment: fixed; */
+  backface-visibility: hidden;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

@@ -94,6 +94,21 @@ function Skills() {
               </SkillWrap>
               <SkillWrap>
                 <Skill>
+                  <h3>Back-end</h3>
+                  <div id="skill-progress">40%</div>
+                </Skill>
+                <SkillBar progress={40} className="skill-bar" id="skill-bar">
+                  {" "}
+                  <div
+                    data-aos="anim1"
+                    data-aos-duration="2000"
+                    data-aos-easing="ease-in-out"
+                    data-aos-offset="50px"
+                  ></div>
+                </SkillBar>
+              </SkillWrap>
+              <SkillWrap>
+                <Skill>
                   <h3>React</h3>
                   <div id="skill-progress">75%</div>
                 </Skill>

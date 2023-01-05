@@ -325,9 +325,9 @@ const Project = styled.div`
   border-radius: 30px;
   z-index: 7;
 
-  &:hover {
+  /* &:hover {
     border: 1px solid rgb(254, 220, 121);
-  }
+  } */
 
   @media ${device.mobileL} {
     height: 250px;

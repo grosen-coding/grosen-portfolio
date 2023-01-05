@@ -51,7 +51,7 @@ function Hero() {
           data-aos-once="true"
         >
           <Button>
-            <a href="#resume">My Resume</a>
+            <a href="#portfolio">My Projects</a>
           </Button>
           <DownArrowDiv>
             <DownArrow src="../img/down-arrow.svg" className="down-arrow" />
