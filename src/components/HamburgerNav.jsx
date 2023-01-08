@@ -71,13 +71,14 @@ const HamMenu = styled.div`
   opacity: ${(props) => (props.showNav ? "0" : "1")};
   background-color: rgba(0, 0, 0, 0.9);
   width: 100vw;
-  height: 100%;
-  border-radius: 30px;
+  height: 100vh;
+  border-radius: 100px;
   top: 0;
   left: 0;
   position: fixed;
   transform: ${(props) => (props.showNav ? "scale(0)" : "scale(1)")};
-  transition: all 0.2s ease-in-out;
+  transition: all 0.5s cubic-bezier(0.33, -1.48, 0.38, 3.1);
+  transition-delay: 0s !important;
 `;
 
 const MenuWrap = styled.div`

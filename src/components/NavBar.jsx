@@ -119,7 +119,7 @@ const Logo = styled.div`
   width: 20%;
   font-size: 1.8rem;
   opacity: 0;
-  animation: logoFade 1.5s linear forwards;
+  animation: logoFade 2s linear forwards;
   transform-origin: left;
 
   a {
