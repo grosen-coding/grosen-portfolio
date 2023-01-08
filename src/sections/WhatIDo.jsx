@@ -52,15 +52,13 @@ function WhatIDo() {
               data-aos-easing="ease-in-out"
               data-aos-offset="100px"
             >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum,
-              distinctio commodi iste illum nostrum quod tempora nisi eos? Sequi
-              fugit in est necessitatibus similique dolor pariatur sit nihil
-              repellendus iusto, inventore, explicabo eos perspiciatis rem
-              maiores? Similique libero neque expedita cumque. Minus sed
-              accusantium at facere nemo dolore? Sapiente assumenda asperiores
-              quisquam accusamus, tempore odit quam libero, sequi nobis unde,
-              qui porro facere minima nostrum necessitatibus aliquam dolorum
-              distinctio sed! Iste voluptas distinctio ipsam aliquam.
+              My strongest areas of web development are easily designing &
+              creating stunning websites, and debugging code. Writing a website
+              from scratch, or tracking down & solving a problem bug, deliver
+              overwhelming feelings of excitement, satisfaction and pride that
+              make me only want to learn more. I can provide custom designs,
+              help you create your own vision for your personal or business
+              website, or even help you find problems and bugs in your code.
             </p>
             <div
               data-aos="zoom-in"
@@ -94,12 +92,14 @@ function WhatIDo() {
               data-aos-easing="ease-in-out"
               data-aos-offset="100px"
             >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
-              qui, odit commodi harum molestias nam soluta vel, unde quae nemo
-              itaque, veritatis dolore temporibus corporis in animi accusamus
-              hic recusandae rem. Aspernatur modi soluta placeat dolore
-              laudantium, debitis sapiente ipsam ad fugiat rerum a quasi
-              possimus quisquam, temporibus ipsum expedita.
+              Over two decades of working with clients and large companies has
+              also given me the patience, knowledge and ability to work
+              extremely effectively in all environments, whether one-on-one,
+              leading a small group, or being an essential part of a large
+              company. I bring the same level of passion, creativity and
+              dedication to every aspect of my life, and take great pride in
+              providing results that always exceed expectations. You will never
+              be disappointed!
             </p>
           </Right>
         </div>

@@ -10,7 +10,7 @@ function About() {
     <Container id="about">
       <AboutWrap>
         <h2>
-          <span>Welcome to My World</span>
+          <span>Welcome to My World!</span>
           <div
             data-aos="zoom-in"
             data-aos-delay="100"
@@ -19,27 +19,23 @@ function About() {
           ></div>
         </h2>
         <p>
-          I'm a young tech enthusiast and entrepreneur who loves to take risks.
-          I grew up in a tech-loving family in northern Toronto, Ont. Lorem
-          ipsum dolor sit amet consectetur adipisicing elit. Id accusamus,
-          blanditiis modi voluptas laudantium tempore possimus, nulla saepe
-          labore molestiae sit aliquid earum illo voluptates impedit qui. Quod
-          porro sed, numquam pariatur, architecto consequuntur maiores quae
-          maxime nesciunt nostrum, unde culpa asperiores omnis deleniti modi
-          iste iusto vel commodi perspiciatis.
+          I'm a young, creative tech enthusiast and entrepreneur who loves to
+          take risks. Growing up in a tech-loving family in northern Toronto,
+          Ont, means computers have been in my blood since birth. My coding
+          journey began 25 years ago, writing basic HTML websites and designing
+          graphics in Adobe Photoshop - long before CSS first made life much
+          easier - but it wasn't until I became a business owner that I truly
+          fell in love with web development.
         </p>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga dicta
-          dolorum quaerat praesentium molestiae aliquam facilis animi vel,
-          sapiente reiciendis, dignissimos quod modi placeat? Vero esse at fuga
-          beatae tempora atque illum sapiente, doloribus qui eos voluptatibus
-          architecto eius fugit minima molestiae corrupti earum placeat dolor
-          autem ab nemo! Obcaecati, doloribus. Vel cumque placeat eos ea
-          necessitatibus sit pariatur iste repellat. Quis numquam voluptate
-          expedita veritatis iste alias dignissimos ab vitae eius magni? A
-          dolorem, nesciunt quibusdam velit similique, itaque, numquam tenetur
-          ipsam distinctio et voluptas vel minima iste omnis laborum ad eos ab
-          esse. Corrupti ratione quasi cumque minus!
+          Front-End Development is currently my specialty, with a proficiency in
+          HTML, CSS and JavaScript code, but what I enjoy most, is bringing an
+          obsessive level of creativity and attention-to-detail into my
+          projects. I take great pride in developing websites & writing code
+          with a fresh, up-to-date and modern approach. An extensive background
+          in both project and employee management has given me a sharp eye for
+          problem solving and positive leadership, and has made me an asset to
+          anyone expecting the best.
         </p>
 
         <AboutContent>
@@ -54,8 +50,10 @@ function About() {
             </div>
             <h3>Creativity</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
-              mollitia pariatur fugiat praesentium totam ea!
+              Without a doubt, the best part of modern web development has to be
+              the endless possibilities to express creativity. From writing
+              cleaner, more efficient code, to obsessing over the placement of
+              design components, the skies are truly the limit.
             </p>
           </ContentCard>
           <ContentCard
@@ -69,9 +67,11 @@ function About() {
             </div>
             <h3>Dedication</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
-              blanditiis molestiae a nostrum asperiores obcaecati dignissimos
-              nihil laudantium eveniet perferendis.
+              When I start something, I finish it. I love to be challenged, and
+              I love to solve problems even more knowing there are always
+              multiple solutions. Whether I'm debugging a problem with code, or
+              working with a client, my level of commitment to my work is
+              unmatched.
             </p>
           </ContentCard>
           <ContentCard
@@ -83,10 +83,12 @@ function About() {
             <div className="card-icon">
               <AiOutlineRocket />
             </div>
-            <h3>Hard Work & Commitment</h3>
+            <h3>Constant Learning</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste vel
-              perferendis aut explicabo asperiores inventore officia enim.
+              Web development changes faster than most technology these days.
+              The excitement of watching emerging languages and methods develop
+              literally every day allows me to feel I am able to continuously
+              learn something new or different.
             </p>
           </ContentCard>
         </AboutContent>

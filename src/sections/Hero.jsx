@@ -43,20 +43,20 @@ function Hero() {
           />
         </h2>
 
-        <ResumeBtnDiv
+        <ProjectsBtnDiv
           data-aos="fade-down"
           data-aos-delay="300"
-          data-aos-duration="1000"
+          data-aos-duration="700"
           data-aos-easing="ease"
           data-aos-once="true"
         >
-          <Button>
+          <ProjectsButton>
             <a href="#portfolio">My Projects</a>
-          </Button>
+          </ProjectsButton>
           <DownArrowDiv>
             <DownArrow src="../img/down-arrow.svg" className="down-arrow" />
           </DownArrowDiv>
-        </ResumeBtnDiv>
+        </ProjectsBtnDiv>
       </TitleWrap>
 
       {/* <ScrollToTop /> */}
@@ -138,7 +138,7 @@ const TitleWrap = styled.div`
   }
 `;
 
-const ResumeBtnDiv = styled.div`
+const ProjectsBtnDiv = styled.div`
   display: inline-block;
   width: 20%;
   position: relative;
@@ -157,7 +157,7 @@ const ResumeBtnDiv = styled.div`
   }
 `;
 
-const Button = styled.button`
+const ProjectsButton = styled.button`
   width: 100%;
   height: auto;
   background-color: var(--color-primary);

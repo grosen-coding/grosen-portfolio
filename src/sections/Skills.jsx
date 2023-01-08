@@ -33,15 +33,18 @@ function Skills() {
               data-aos-easing="ease-in-out"
               data-aos-offset="150px"
             >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum,
-              distinctio commodi iste illum nostrum quod tempora nisi eos? Sequi
-              fugit in est necessitatibus similique dolor pariatur sit nihil
-              repellendus iusto, inventore, explicabo eos perspiciatis rem
-              maiores? Similique libero neque expedita cumque. Minus sed
-              accusantium at facere nemo dolore? Sapiente assumenda asperiores
-              quisquam accusamus, tempore odit quam libero, sequi nobis unde,
-              qui porro facere minima nostrum necessitatibus aliquam dolorum
-              distinctio sed! Iste voluptas distinctio ipsam aliquam.
+              My skills and knowledge are constantly growing as I become more
+              deeply immersed in web development. In a short time, I was able to
+              learn a significant amount, which made me only want to learn more.
+              Every project I created was another opportunity to discover a
+              unique or creative way to approach my next projects. Currently, my
+              skills are mostly based on front-end development. My background in
+              design first drew me towards the visual experience of a website,
+              but, after creating several full-stack websites, I have developed
+              an appreciation for writing back-end security and authentication.
+              I enjoy both writing code in plain JS, as well as using
+              frameworks, with significant experience using React and the vast
+              libraries it contains.
             </p>
           </Left>
 
