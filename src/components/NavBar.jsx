@@ -28,25 +28,46 @@ function NavBar() {
         <NavMenu>
           <ul className="navbar-links link-1">
             <li className="nav-link">
-              <a href="#about">About</a>
+              <a href="#about">
+                About<span></span>
+                <span></span>
+              </a>
             </li>
             <li className="nav-link">
-              <a href="#what-i-do">What I Do</a>
+              <a href="#what-i-do">
+                What I Do<span></span>
+                <span></span>
+              </a>
             </li>
             <li className="nav-link">
-              <a href="#skills">Skills</a>
+              <a href="#skills">
+                Skills<span></span>
+                <span></span>
+              </a>
             </li>
             <li className="nav-link">
-              <a href="#portfolio">Portfolio</a>
+              <a href="#portfolio">
+                Portfolio<span></span>
+                <span></span>
+              </a>
             </li>
             <li className="nav-link">
-              <a href="#resume">Resume</a>
+              <a href="#resume">
+                Resume<span></span>
+                <span></span>
+              </a>
             </li>
             <li className="nav-link">
-              <a href="#services">Services</a>
+              <a href="#services">
+                Services<span></span>
+                <span></span>
+              </a>
             </li>
             <li className="nav-link">
-              <a href="#contact">Contact</a>
+              <a href="#contact">
+                Contact<span></span>
+                <span></span>
+              </a>
             </li>
           </ul>
         </NavMenu>
@@ -97,8 +118,9 @@ const NavWrapper = styled.div`
 const Logo = styled.div`
   width: 20%;
   font-size: 1.8rem;
-
-  opacity: 0.6;
+  opacity: 0;
+  animation: logoFade 1.5s linear forwards;
+  transform-origin: left;
 
   a {
     color: var(--color-yellow);
@@ -184,6 +206,86 @@ const NavMenu = styled.div`
 
       a {
         display: inline-block;
+
+        span:first-child:before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 30px;
+          width: 8px;
+          height: 8px;
+          background-color: transparent;
+          border-top: 2px solid var(--color-primary);
+          border-left: 2px solid var(--color-primary);
+          transition: 0.4s;
+          opacity: 0;
+        }
+
+        span:first-child:after {
+          content: "";
+          position: absolute;
+          top: 0;
+          right: 30px;
+          width: 8px;
+          height: 8px;
+          background-color: transparent;
+          border-top: 2px solid var(--color-primary);
+          border-right: 2px solid var(--color-primary);
+          transition: 0.4s;
+          opacity: 0;
+        }
+
+        span:last-child:before {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          left: 30px;
+          width: 8px;
+          height: 8px;
+          background-color: transparent;
+          border-bottom: 2px solid var(--color-primary);
+          border-left: 2px solid var(--color-primary);
+          transition: 0.4s;
+          opacity: 0;
+        }
+
+        span:last-child:after {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          right: 30px;
+          width: 8px;
+          height: 8px;
+          background-color: transparent;
+          border-bottom: 2px solid var(--color-primary);
+          border-right: 2px solid var(--color-primary);
+          transition: 0.4s;
+          opacity: 0;
+        }
+
+        &:hover span:first-child:before {
+          top: -5px;
+          left: 5px;
+          opacity: 1;
+        }
+
+        &:hover span:first-child:after {
+          top: -5px;
+          right: 5px;
+          opacity: 1;
+        }
+
+        &:hover span:last-child:before {
+          bottom: -5px;
+          left: 5px;
+          opacity: 1;
+        }
+
+        &:hover span:last-child:after {
+          bottom: -5px;
+          right: 5px;
+          opacity: 1;
+        }
         @media ${device.tablet} {
           padding: 0 8px;
         }

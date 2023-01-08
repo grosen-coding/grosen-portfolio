@@ -38,7 +38,7 @@ function About() {
           anyone expecting the best. When I'm not coding, you can find me
           rehabilitating last-chance dogs, teaching canine psychology, designing
           & building award-winning landscapes, hiking & exploring nature, or
-          playing the drums and a variety of sports!
+          playing the drums and a variety of sports.
         </p>
 
         <AboutContent>

@@ -31,7 +31,7 @@ function Services() {
             data-aos-duration="700"
             data-aos-easing="ease"
           >
-            <div className="service-icon">
+            <div className="service-icon-div">
               <FaDesktop />
             </div>
 
@@ -44,7 +44,7 @@ function Services() {
             data-aos-duration="700"
             data-aos-easing="ease"
           >
-            <div className="service-icon">
+            <div className="service-icon-div">
               <ImMobile />
             </div>
 
@@ -57,7 +57,7 @@ function Services() {
             data-aos-duration="700"
             data-aos-easing="ease"
           >
-            <div className="service-icon">
+            <div className="service-icon-div">
               <MdDeveloperBoard />
             </div>
 
@@ -70,7 +70,7 @@ function Services() {
             data-aos-duration="700"
             data-aos-easing="ease"
           >
-            <div className="service-icon">
+            <div className="service-icon-div">
               <AiOutlineLock />
             </div>
 
@@ -83,7 +83,7 @@ function Services() {
             data-aos-duration="700"
             data-aos-easing="ease"
           >
-            <div className="service-icon">
+            <div className="service-icon-div">
               <AiOutlineCoffee />
             </div>
 
@@ -96,7 +96,7 @@ function Services() {
             data-aos-duration="700"
             data-aos-easing="ease"
           >
-            <div className="service-icon">
+            <div className="service-icon-div">
               <GiPencilBrush />
             </div>
 
@@ -110,7 +110,7 @@ function Services() {
             data-aos-duration="700"
             data-aos-easing="ease"
           >
-            <div className="service-icon">
+            <div className="service-icon-div">
               <FaBug />
             </div>
             <h4>Code Debugging</h4>
@@ -123,7 +123,7 @@ function Services() {
             data-aos-duration="700"
             data-aos-easing="ease"
           >
-            <div className="service-icon">
+            <div className="service-icon-div">
               <SiElasticstack />
             </div>
             <h4>Full-Stack Development</h4>
@@ -241,7 +241,6 @@ const ServicesWrap = styled.div`
     border-radius: 10px;
     background-color: #373636;
     width: 22%;
-    /* height: 320px; */
     min-height: 100%;
     display: flex;
     flex-direction: column;
@@ -249,23 +248,27 @@ const ServicesWrap = styled.div`
     padding: 15px;
     text-align: center;
     align-items: center;
-    /* transition: all 0.2s !important; */
     border: 1px solid rgb(254, 220, 121, 0.4);
 
     &:hover {
       background-color: #2c2b2b;
       transform: scale(1.05);
       transition-delay: 0ms !important;
-      cursor: pointer;
       transition: all 0.2s !important;
     }
 
-    &:hover .service-icon {
+    &:hover .service-icon-div {
       background-color: var(--color-primary);
       color: #2c2b2b;
       transition: 0.3s;
       transition-delay: 0.1s;
-      font-size: 2.7rem;
+      font-size: 2.5rem;
+    }
+
+    &:hover .service-icon-div:after {
+      width: 130%;
+      height: 130%;
+      opacity: 1;
     }
 
     &:hover p {
@@ -284,25 +287,17 @@ const ServicesWrap = styled.div`
       margin: 15px 5px;
     }
     h4 {
-      font-size: 1.8rem;
+      font-size: 1.6rem;
       letter-spacing: 0.7px;
       font-weight: 500;
 
       @media ${device.mobileL} {
-        font-size: 2.2rem;
-      }
-    }
-
-    p {
-      color: rgb(169, 166, 166);
-
-      @media ${device.mobileL} {
-        font-size: 1.6rem;
+        font-size: 2rem;
       }
     }
   }
 
-  .service-icon {
+  .service-icon-div {
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -314,6 +309,24 @@ const ServicesWrap = styled.div`
     font-size: 2rem;
     transition: 0.3s;
     margin-bottom: 10px;
+    position: relative;
+    z-index: 10;
+
+    &:after {
+      content: "";
+      position: absolute;
+      /*  */
+      /* left: 0; */
+      width: 50%;
+      height: 50%;
+      opacity: 0;
+      background-color: transparent;
+      border: 2px dotted var(--color-primary);
+      border-radius: 50%;
+      z-index: -1;
+      transition: all 0.4s;
+      animation: rotating 10s linear infinite;
+    }
 
     @media ${device.tablet} {
       font-size: 3rem;

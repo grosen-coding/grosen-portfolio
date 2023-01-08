@@ -186,22 +186,22 @@ const ProjectsButton = styled.button`
     font-family: var(--font-title);
     letter-spacing: 1.5px;
     transition: 0.3s;
-    color: rgba(0, 0, 0, 0.5);
+    color: rgba(0, 0, 0, 0.7);
   }
 `;
 
 // Down-ARROW
 const DownArrowDiv = styled.div`
   position: absolute;
-  top: 80%;
+  top: 90%;
   left: 50%;
   transform: translateX(-50%);
-  width: 60px;
-  height: 60px;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
   opacity: 0;
   animation: arrowOpacity forwards 2s;
-  animation-delay: 3s;
+  animation-delay: 2s;
 `;
 
 const DownArrow = styled.img`

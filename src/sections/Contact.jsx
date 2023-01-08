@@ -97,13 +97,10 @@ const Container = styled.section`
   padding-bottom: 60px;
   position: relative;
   overflow: hidden;
-
   @media ${device.mobileL} {
     padding-bottom: 20px;
   }
-
   position: relative;
-
   &:before {
     content: "";
     width: 100%;
@@ -114,7 +111,6 @@ const Container = styled.section`
     position: absolute;
     z-index: 5;
   }
-
   &:after {
     content: "";
     width: 100%;
@@ -134,7 +130,6 @@ const Wrap = styled.div`
   margin: 0 auto;
   height: 100%;
   color: #e2e2e2;
-
   h2 {
     margin-top: 20px;
     text-transform: uppercase;
@@ -145,11 +140,9 @@ const Wrap = styled.div`
     z-index: 10;
     text-align: center;
     color: var(--color-yellow);
-
     @media ${device.tablet} {
       font-size: 2.3rem;
     }
-
     @media ${device.mobileL} {
       margin-top: 0;
     }
@@ -160,15 +153,12 @@ const Wrap = styled.div`
       margin: 40px auto 45px;
       position: relative;
       overflow: hidden;
-
       @media ${device.tablet} {
         margin: 20px auto 30px;
       }
-
       @media ${device.mobileL} {
         margin: 20px auto;
       }
-
       &:before {
         content: "";
         position: absolute;
@@ -197,15 +187,12 @@ const ContactForm = styled.form`
   padding: 20px 0 40px;
   position: relative;
   z-index: 7;
-
   @media ${device.tablet} {
     width: 90%;
   }
-
   @media ${device.mobileL} {
     width: 90%;
   }
-
   input,
   textarea {
     width: 100%;
@@ -217,7 +204,6 @@ const ContactForm = styled.form`
     font-family: var(--font-title);
     letter-spacing: 0.5px;
     margin: 10px;
-
     &::placeholder {
       @media ${device.mobileL} {
         font-size: 1.2rem;
@@ -233,7 +219,6 @@ const ContactForm = styled.form`
 const FormGroup = styled.div`
   display: flex;
   width: 100%;
-
   @media ${device.mobileL} {
     flex-direction: column;
     align-items: center;
@@ -258,14 +243,12 @@ const SubmitButton = styled.button`
   border: none;
   margin: 0 auto;
   margin-top: 15px;
-  color: rgba(0, 0, 0, 0.5);
-
+  color: rgba(0, 0, 0, 0.7);
   &:hover {
     background-color: #e2e2e2;
     transition: 0.3s;
     color: var(--color-primary);
   }
-
   &:hover a {
     color: var(--color-primary);
     transition: 0.3s;
