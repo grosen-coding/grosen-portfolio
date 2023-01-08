@@ -6,6 +6,8 @@ import { MdDeveloperBoard } from "react-icons/md";
 import { AiOutlineLock } from "react-icons/ai";
 import { AiOutlineCoffee } from "react-icons/ai";
 import { GiPencilBrush } from "react-icons/gi";
+import { FaBug } from "react-icons/fa";
+import { SiElasticstack } from "react-icons/si";
 import { device } from "../components/device";
 
 function Services() {
@@ -28,19 +30,12 @@ function Services() {
             data-aos-delay="200"
             data-aos-duration="700"
             data-aos-easing="ease"
-            data-aos-offset="200px"
           >
             <div className="service-icon">
               <FaDesktop />
             </div>
 
             <h4>Desktop Apps</h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
-              aliquam, nulla nam nobis error dolorum harum soluta molestias
-              vitae sit distinctio modi ullam commodi doloremque? Deleniti
-              facilis molestiae necessitatibus sint.
-            </p>
           </div>
           <div
             className="service-card"
@@ -48,19 +43,12 @@ function Services() {
             data-aos-delay="300"
             data-aos-duration="700"
             data-aos-easing="ease"
-            data-aos-offset="200px"
           >
             <div className="service-icon">
               <ImMobile />
             </div>
 
             <h4>Mobile Apps</h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
-              aliquam, nulla nam nobis error dolorum harum soluta molestias
-              vitae sit distinctio modi ullam commodi doloremque? Deleniti
-              facilis molestiae necessitatibus sint.
-            </p>
           </div>
           <div
             className="service-card"
@@ -68,19 +56,12 @@ function Services() {
             data-aos-delay="400"
             data-aos-duration="700"
             data-aos-easing="ease"
-            data-aos-offset="200px"
           >
             <div className="service-icon">
               <MdDeveloperBoard />
             </div>
 
             <h4>Web Development</h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
-              aliquam, nulla nam nobis error dolorum harum soluta molestias
-              vitae sit distinctio modi ullam commodi doloremque? Deleniti
-              facilis molestiae necessitatibus sint.
-            </p>
           </div>
           <div
             className="service-card"
@@ -88,19 +69,12 @@ function Services() {
             data-aos-delay="500"
             data-aos-duration="700"
             data-aos-easing="ease"
-            data-aos-offset="200px"
           >
             <div className="service-icon">
               <AiOutlineLock />
             </div>
 
             <h4>Authentication & Security</h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
-              aliquam, nulla nam nobis error dolorum harum soluta molestias
-              vitae sit distinctio modi ullam commodi doloremque? Deleniti
-              facilis molestiae necessitatibus sint.
-            </p>
           </div>
           <div
             className="service-card"
@@ -108,19 +82,12 @@ function Services() {
             data-aos-delay="600"
             data-aos-duration="700"
             data-aos-easing="ease"
-            data-aos-offset="200px"
           >
             <div className="service-icon">
               <AiOutlineCoffee />
             </div>
 
             <h4>Web Consulting</h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
-              aliquam, nulla nam nobis error dolorum harum soluta molestias
-              vitae sit distinctio modi ullam commodi doloremque? Deleniti
-              facilis molestiae necessitatibus sint.
-            </p>
           </div>
           <div
             className="service-card"
@@ -128,19 +95,38 @@ function Services() {
             data-aos-delay="700"
             data-aos-duration="700"
             data-aos-easing="ease"
-            data-aos-offset="200px"
           >
             <div className="service-icon">
               <GiPencilBrush />
             </div>
 
             <h4>Custom Designs</h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
-              aliquam, nulla nam nobis error dolorum harum soluta molestias
-              vitae sit distinctio modi ullam commodi doloremque? Deleniti
-              facilis molestiae necessitatibus sint.
-            </p>
+          </div>
+
+          <div
+            className="service-card"
+            data-aos="flip-down"
+            data-aos-delay="800"
+            data-aos-duration="700"
+            data-aos-easing="ease"
+          >
+            <div className="service-icon">
+              <FaBug />
+            </div>
+            <h4>Code Debugging</h4>
+          </div>
+
+          <div
+            className="service-card"
+            data-aos="flip-down"
+            data-aos-delay="900"
+            data-aos-duration="700"
+            data-aos-easing="ease"
+          >
+            <div className="service-icon">
+              <SiElasticstack />
+            </div>
+            <h4>Full-Stack Development</h4>
           </div>
         </ServicesWrap>
       </Wrap>
@@ -251,19 +237,20 @@ const ServicesWrap = styled.div`
   width: 100%;
 
   .service-card {
-    margin: 20px;
+    margin: 15px;
     border-radius: 10px;
     background-color: #373636;
-    width: 30%;
-    height: 320px;
+    width: 22%;
+    /* height: 320px; */
     min-height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    padding: 30px;
+    padding: 15px;
     text-align: center;
     align-items: center;
-    transition: all 0.2s !important;
+    /* transition: all 0.2s !important; */
+    border: 1px solid rgb(254, 220, 121, 0.4);
 
     &:hover {
       background-color: #2c2b2b;
@@ -271,7 +258,6 @@ const ServicesWrap = styled.div`
       transition-delay: 0ms !important;
       cursor: pointer;
       transition: all 0.2s !important;
-      border: 1px solid rgb(254, 220, 121, 0.4);
     }
 
     &:hover .service-icon {
@@ -300,6 +286,7 @@ const ServicesWrap = styled.div`
     h4 {
       font-size: 1.8rem;
       letter-spacing: 0.7px;
+      font-weight: 500;
 
       @media ${device.mobileL} {
         font-size: 2.2rem;
@@ -326,6 +313,7 @@ const ServicesWrap = styled.div`
     color: var(--color-primary);
     font-size: 2rem;
     transition: 0.3s;
+    margin-bottom: 10px;
 
     @media ${device.tablet} {
       font-size: 3rem;

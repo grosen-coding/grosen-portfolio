@@ -201,7 +201,7 @@ const DownArrowDiv = styled.div`
   border-radius: 50%;
   opacity: 0;
   animation: arrowOpacity forwards 2s;
-  animation-delay: 7s;
+  animation-delay: 3s;
 `;
 
 const DownArrow = styled.img`

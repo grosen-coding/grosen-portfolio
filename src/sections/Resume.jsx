@@ -35,11 +35,13 @@ function Resume() {
                   K9 Design -- <span>Toronto, ONT</span>
                 </h4>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
-                  dolorum maiores tempora molestiae iure possimus architecto,
-                  cupiditate atque laboriosam in modi, quam excepturi soluta
-                  sequi? Veniam rerum dolore ratione maxime optio. Eum dicta
-                  ipsam illum esse id quaerat cum recusandae!
+                  I first built my company's website in 2014, using a template.
+                  It didn't take long before I realized the template's
+                  limitations, and began learning how to code front-end
+                  websites. As I learned more, I have been re-designing &
+                  running the website ever since, and have recently updated it
+                  to a full-stack website for my dog clients to be able to
+                  submit on-going training reports.
                 </p>
               </Job>
               <Job className="resume-card">
@@ -58,12 +60,13 @@ function Resume() {
                   RMF Construction -- <span>Holland Landing, ONT</span>
                 </h4>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Consectetur, dolorum pariatur? Delectus aliquid eius vero
-                  possimus inventore totam quibusdam recusandae. Voluptatibus
-                  enim dolores culpa deserunt aliquam molestias incidunt nisi?
-                  Perspiciatis aliquam culpa doloribus similique voluptate sit,
-                  beatae omnis laboriosam vel!
+                  Responsible for overseeing and completing $2.5M in large-scale
+                  residential construction projects yearly. Coached and mentored
+                  a team of 13 employees, while working hands-on in the field.
+                  Reduced costs and waste by 10-20% by implementing efficient
+                  strategies and alternative procedures. Assisted in design,
+                  planning, documentation, and implementation of all
+                  construction projects.
                 </p>
               </Job>
               <Job className="resume-card">
@@ -82,13 +85,16 @@ function Resume() {
                   K9PAWS -- <span>Greater Toronto Area, ONT</span>
                 </h4>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Assumenda facilis ab in reiciendis mollitia enim quo,
-                  excepturi quas perspiciatis placeat animi architecto. Dolore,
-                  explicabo repellendus voluptates dignissimos minus molestias,
-                  officia atque quis magnam dolorem et esse expedita eius dolor,
-                  labore sit ea reprehenderit sequi quae deserunt quo repellat.
-                  Commodi id facilis eos fuga, eius autem?
+                  Solely responsible for designing, building and running a
+                  3500sq.ft canine rehabilitation sanctuary, meant for training
+                  and re-homing last-chance dogs. Responsible for the safety,
+                  security and training of all dogs, as well as 12-15 internal
+                  staff, and countless volunteers. Personally developed and
+                  implemented a unique, extremely effective, training &
+                  rehabilitation system taught to thousands of clients, either
+                  one-on-one, or in groups of 10-50. Specialized in
+                  pack-oriented hierarchy training and canine psychology
+                  education.
                 </p>
               </Job>
             </Experience>
@@ -113,12 +119,14 @@ function Resume() {
                   Juno College of Technology -- <span>Toronto, ONT</span>
                 </h4>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Praesentium nulla minus totam officiis neque omnis architecto
-                  molestias quam magni impedit sunt aliquam ratione velit
-                  perspiciatis, dolorem, a tempora dolorum alias error
-                  reprehenderit iure dolor? Mollitia incidunt velit veritatis
-                  eveniet eum ea dolores omnis obcaecati sit?
+                  First completed Juno's Web Development program, and began
+                  building HTML/CSS single-page websites. Then completed their
+                  Vanilla JS and JQuery fundamentals course. Finally,
+                  successfully completed and graduated from their 9-week, full
+                  Front-End Web Development boot camp. Learned all fundamentals
+                  for understanding, and effectively developing front-end
+                  websites, with heavy experience using React, Firebase, NPM,
+                  Git, and peer-programming.
                 </p>
               </School>
               <School className="resume-card">
@@ -137,10 +145,12 @@ function Resume() {
                   Mohawk College -- <span>Hamilton, ONT</span>
                 </h4>
                 <p>
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Temporibus odit quas ut sunt nostrum corporis beatae neque
-                  ullam, eum sit est nulla, suscipit blanditiis nesciunt dolor
-                  rem tempora labore eius sint expedita, dicta aut at?
+                  Originally attended Mohawk's Architecture Technology program
+                  to help further my already-growing skills in the field of
+                  residential construction. Successfully completed their 3-year
+                  program, and went on to successfully start my first company,
+                  selling, designing & building residential landscapes.
+                  Maintained a minimum 85% grade average.
                 </p>
               </School>
               <School className="resume-card">
@@ -159,11 +169,13 @@ function Resume() {
                   McMaster University -- <span>Toronto, ONT</span>
                 </h4>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Tempora ex a dignissimos, deserunt vero error nam libero?
-                  Blanditiis soluta accusantium fugiat sunt adipisci
-                  voluptatibus maxime laboriosam dolores autem minus fuga sint,
-                  accusamus voluptates hic magni nostrum velit vel eum officia!
+                  Began studying Political Science, moving to Behaviour
+                  Psychology in my 2nd year. Successfully completed McMaster's
+                  4-year B.A. Psychology program, graduating with a specialty in
+                  Animal Behaviour, while maintaining a grade point average of
+                  3.5. Participated in several off-campus programs such as
+                  McMaster Music Club and Spiritual Club. Volunteered and
+                  participated in several LIVELab research projects.
                 </p>
               </School>
             </Education>
@@ -290,7 +302,7 @@ const ResumeWrap = styled.div`
   }
 
   .resume-card {
-    height: 350px;
+    height: 400px;
     position: relative;
     width: 100%;
     min-height: 100%;

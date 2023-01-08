@@ -19,13 +19,13 @@ function About() {
           ></div>
         </h2>
         <p>
-          I'm a young, creative tech enthusiast and entrepreneur who loves to
-          take risks. Growing up in a tech-loving family in northern Toronto,
-          Ont, means computers have been in my blood since birth. My coding
-          journey began 25 years ago, writing basic HTML websites and designing
-          graphics in Adobe Photoshop - long before CSS first made life much
-          easier - but it wasn't until I became a business owner that I truly
-          fell in love with web development.
+          I'm an accomplished and results-driven professional, a tech
+          enthusiast, and entrepreneur who loves to take risks. Growing up in a
+          tech-loving family in northern Toronto, Ont, means computers have been
+          in my blood since birth. My coding journey began 25 years ago, writing
+          basic HTML websites and designing graphics in Adobe Photoshop - long
+          before CSS first made life much easier - but it wasn't until I became
+          a business owner that I truly fell in love with web development.
         </p>
         <p>
           Front-End Development is currently my specialty, with a proficiency in
@@ -35,7 +35,10 @@ function About() {
           with a fresh, up-to-date and modern approach. An extensive background
           in both project and employee management has given me a sharp eye for
           problem solving and positive leadership, and has made me an asset to
-          anyone expecting the best.
+          anyone expecting the best. When I'm not coding, you can find me
+          rehabilitating last-chance dogs, teaching canine psychology, designing
+          & building award-winning landscapes, hiking & exploring nature, or
+          playing the drums and a variety of sports!
         </p>
 
         <AboutContent>

@@ -16,13 +16,19 @@ function Contact() {
           ></div>
         </h2>
         <ContactFormDiv>
-          <ContactForm className="contact-form">
+          <ContactForm
+            className="contact-form"
+            action="submit"
+            method="POST"
+            name="contact"
+            data-netlify="true"
+          >
             <FormGroup className="form-group">
               <input
-                type="email"
+                type="text"
                 className="form-control"
-                id="email"
-                name="email"
+                id="name"
+                name="name"
                 placeholder="Name"
                 required
                 data-aos="flip-down"
