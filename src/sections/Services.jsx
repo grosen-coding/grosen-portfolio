@@ -268,7 +268,7 @@ const ServicesWrap = styled.div`
     &:hover .service-icon-div:after {
       width: 130%;
       height: 130%;
-      opacity: 1;
+      opacity: 1 !important;
     }
 
     &:hover p {
@@ -279,6 +279,8 @@ const ServicesWrap = styled.div`
 
     @media ${device.laptop} {
       margin: 10px;
+      padding: 10px;
+      min-height: 130px;
     }
 
     @media ${device.mobileL} {
@@ -317,9 +319,9 @@ const ServicesWrap = styled.div`
       position: absolute;
       /*  */
       /* left: 0; */
-      width: 50%;
-      height: 50%;
-      opacity: 0;
+      width: 0;
+      height: 0;
+      opacity: 0 !important;
       background-color: transparent;
       border: 2px dotted var(--color-primary);
       border-radius: 50%;

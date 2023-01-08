@@ -390,6 +390,7 @@ const ResumeWrap = styled.div`
 
       @media ${device.mobileL} {
         font-size: 1.6rem;
+        text-align: justify;
       }
     }
   }
