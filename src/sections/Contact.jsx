@@ -16,13 +16,7 @@ function Contact() {
           ></div>
         </h2>
         <ContactFormDiv>
-          <ContactForm
-            className="contact-form"
-            action="submit"
-            method="POST"
-            name="contact"
-            data-netlify="true"
-          >
+          <ContactForm className="contact-form" name="contact" netlify>
             <FormGroup className="form-group">
               <input
                 type="text"
@@ -74,7 +68,9 @@ function Contact() {
               />
             </FormGroup>
             <FormGroup className="form-group">
-              <SubmitButton className="btn btn-block">Submit</SubmitButton>
+              <SubmitButton type="submit" className="btn btn-block">
+                Submit
+              </SubmitButton>
             </FormGroup>
           </ContactForm>
         </ContactFormDiv>
