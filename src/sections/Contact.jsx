@@ -16,7 +16,12 @@ function Contact() {
           ></div>
         </h2>
         <ContactFormDiv>
-          <ContactForm className="contact-form" name="contact" netlify>
+          <ContactForm
+            className="contact-form"
+            method="POST"
+            name="contact"
+            netlify
+          >
             <FormGroup className="form-group">
               <input
                 type="text"
