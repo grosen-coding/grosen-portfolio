@@ -124,7 +124,7 @@ function Portfolio() {
 
               <h5>react website</h5>
               <a
-                href="https://flickpicker.netlify.app/"
+                href="https://quick-pick-flicker.herokuapp.com/"
                 target="_blank"
                 rel="noreferrer"
               >
