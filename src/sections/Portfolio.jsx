@@ -16,6 +16,36 @@ function Portfolio() {
           ></div>
         </h2>
         <Projects>
+          {/* Project 4 */}
+          <Project
+            id="project-4"
+            className="project-card"
+            data-aos="flip-left"
+            data-aos-delay="650"
+            data-aos-duration="700"
+            data-aos-easing="ease"
+            data-aos-offset="50px"
+          >
+            <ProjectTitle className="project-card-title">
+              <h3>Quick Pick Flicker</h3>
+
+              <h5>react website</h5>
+              <a
+                href="https://quick-pick-flicker.herokuapp.com/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <ProjectLinkBtn className="project-btn">
+                  Check it out!
+                </ProjectLinkBtn>
+              </a>
+            </ProjectTitle>
+            <ProjectImg
+              className="project-card-img"
+              src="../img/quick-pick-bg-2.jpeg"
+              alt=""
+            />
+          </Project>
           {/* Project 1 */}
           <Project
             id="project-1"
@@ -109,39 +139,8 @@ function Portfolio() {
             />
           </Project>
 
-          {/* Project 4 */}
-          <Project
-            id="project-4"
-            className="project-card"
-            data-aos="flip-left"
-            data-aos-delay="650"
-            data-aos-duration="700"
-            data-aos-easing="ease"
-            data-aos-offset="50px"
-          >
-            <ProjectTitle className="project-card-title">
-              <h3>Quick Pick Flicker</h3>
-
-              <h5>react website</h5>
-              <a
-                href="https://quick-pick-flicker.herokuapp.com/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <ProjectLinkBtn className="project-btn">
-                  Check it out!
-                </ProjectLinkBtn>
-              </a>
-            </ProjectTitle>
-            <ProjectImg
-              className="project-card-img"
-              src="../img/quick-pick-bg-2.jpeg"
-              alt=""
-            />
-          </Project>
-
           {/* Project 5 */}
-          <Project
+          {/* <Project
             id="project-5"
             className="project-card"
             data-aos="flip-left"
@@ -169,10 +168,10 @@ function Portfolio() {
               src="../img/4.jpg"
               alt=""
             />
-          </Project>
+          </Project> */}
 
           {/* Project 6 */}
-          <Project
+          {/* <Project
             id="project-6"
             className="project-card"
             data-aos="flip-left"
@@ -200,7 +199,7 @@ function Portfolio() {
               src="../img/k9paws-bg-2.jpeg"
               alt=""
             />
-          </Project>
+          </Project> */}
         </Projects>
       </Wrap>
     </Container>
@@ -303,9 +302,7 @@ const Wrap = styled.div`
 const Projects = styled.div`
   width: 90%;
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 200px);
+  display: flex;
   gap: 20px;
   padding: 40px 0;
 
