@@ -413,26 +413,26 @@ function Portfolio() {
                     <div>2021</div>
                   </div>
                   <div className="project-info">
-                    <div>Github Repo:</div>
+                    <div>Github:</div>
                     <div>
                       <a
-                        href="https://modest-brahmagupta-c4ca2d.netlify.app/index.html"
+                        href="https://github.com/k9paws/pawtours"
                         target="_blank"
                         rel="noreferrer"
                       >
-                        modest-brahmagupta-c4ca2d.netlify.app
+                        github.com/k9paws/pawtours
                       </a>
                     </div>
                   </div>
                   <div className="project-info">
-                    <div>Project Link:</div>
+                    <div>Preview:</div>
                     <div>
                       <a
-                        href="https://k9paws-website.herokuapp.com/"
+                        href="https://modest-brahmagupta-c4ca2d.netlify.app"
                         target="_blank"
                         rel="noreferrer"
                       >
-                        k9paws-website.herokuapp.com
+                        modest-brahmagupta-c4ca2d.netlify.app
                       </a>
                     </div>
                   </div>
