@@ -87,6 +87,11 @@ p {
   z-index: 999999;
   overflow: hidden;
 }
+@media (max-width: 580px) {
+  .project-modal {
+    padding: 50px 10px 30px !important;
+  }
+}
 .project-modal .close-modal {
   position: absolute;
   top: 15px;
@@ -109,6 +114,12 @@ p {
   border: 1px solid rgba(255, 255, 255, 0.5);
   transition: all 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   cursor: pointer;
+}
+@media (max-width: 580px) {
+  .project-modal .close-modal .button-close {
+    top: 12px !important;
+    right: 12px !important;
+  }
 }
 .project-modal .close-modal .button-close:before {
   content: "";

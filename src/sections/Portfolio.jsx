@@ -711,11 +711,34 @@ const ModalContent = styled.div`
   margin: 0 auto;
   justify-content: space-between;
   padding-top: 50px;
+
+  @media ${device.laptop} {
+    width: 90%;
+    /* padding: 30px 20px 20px; */
+    /* overflow-y: auto; */
+  }
+
+  @media ${device.tablet} {
+    width: 90%;
+    /* padding: 30px 20px 20px; */
+    /* overflow-y: auto; */
+  }
+
+  @media ${device.mobileL} {
+    flex-direction: column;
+    width: 100%;
+    padding: 30px 20px 20px;
+    overflow-y: auto;
+  }
 `;
 
 const ModalLeft = styled.div`
   height: 100%;
   width: 60%;
+
+  @media ${device.mobileL} {
+    width: 100%;
+  }
   img {
     width: 100%;
     height: 100%;
@@ -727,17 +750,31 @@ const ModalLeft = styled.div`
 const ModalRight = styled.div`
   width: 35%;
   color: white;
+  @media ${device.mobileL} {
+    width: 100%;
+  }
 
   h2 {
     padding: 0 0 20px;
     font-size: 2.5rem;
     letter-spacing: 1.5px;
     font-weight: 400;
+    color: var(--color-yellow);
+
+    @media ${device.mobileL} {
+      text-align: center;
+      padding: 20px 0;
+    }
   }
 
   p {
     padding: 20px 0 60px;
     font-size: 1.4rem;
+
+    @media ${device.mobileL} {
+      padding: 0 0 20px;
+      text-align: justify;
+    }
   }
 `;
 
