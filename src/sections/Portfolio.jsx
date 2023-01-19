@@ -205,13 +205,16 @@ function Portfolio() {
               <ModalRight>
                 <h2>Quick Flick Picker</h2>
                 <p>
+                  Can't decide what to watch? Let Quick Picker decide for you.
                   Technically version 2.0, the Quick Flick Picker app is a
                   custom design, first created as a frontend-only project while
                   attending Juno College, intended to help indecisive users
-                  select a movie or tv show to watch. It has since been
-                  completely redesigned and rebuilt into a full-stack MERN app
-                  allowing for authenticated user accounts. Styling was done
-                  using both the Material UI database, and styled-components.
+                  select a random movie or tv show to watch from a list of
+                  personal favourites. The entire app has since been completely
+                  redesigned and rebuilt into a full-stack MERN app allowing for
+                  authenticated user accounts and personal reviews of movies or
+                  shows. Styling was done using both the Material UI database,
+                  styled-components, and some SASS.
                 </p>
                 <ModalInfo>
                   <div className="project-info">
@@ -337,9 +340,10 @@ function Portfolio() {
                   The Retro Daily Planner is an app I created to help plan and
                   organize your busy life. It was built using the MERN stack and
                   a REST API for users to first create an authenticated account,
-                  and then input and manage tasks. The design for the user
-                  dashboard was provided to me, with the all other components,
-                  menus, animations and styling custom designed by myself.
+                  and then input and manage different daily or weekly tasks. The
+                  design for the user dashboard was provided for me, with the
+                  all other components, menus, animations and styling custom
+                  designed by myself.
                 </p>
                 <ModalInfo>
                   <div className="project-info">
