@@ -398,10 +398,11 @@ function Portfolio() {
                 <h2>Nature Paw Tours</h2>
                 <p>
                   Nature Paw Tours is a Front-End website, originally built as a
-                  fun project, that has blossomed into an aspiring dog nature
-                  tour company. It is built using hardcoded HTML, CSS, SASS and
-                  Javascript. All pages, content and animations are custom
-                  designed.
+                  fun project as a way to learn and play around with CSS, that
+                  actually blossomed into an aspiring dog nature tour company.
+                  The website was built using hardcoded HTML, CSS, SASS and
+                  Vanilla Javascript, no fancy libraries or frameworks. All
+                  pages, content and animations are custom designed.
                 </p>
                 <ModalInfo>
                   <div className="project-info">
