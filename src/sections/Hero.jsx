@@ -8,8 +8,8 @@ AOS.init({
   offset: 200,
   duration: 800,
   easing: "ease-in-out-sine",
-  delay: 200,
-  mirror: true,
+  // delay: 200,
+  // mirror: true,
 });
 
 function Hero() {
@@ -19,7 +19,7 @@ function Hero() {
         <h3>Welcome to my Portfolio</h3>
         <h1
           data-aos="fade-right"
-          data-aos-delay="100"
+          data-aos-delay="1200"
           data-aos-duration="1000"
           data-aos-easing="ease"
           data-aos-once="true"
@@ -28,14 +28,14 @@ function Hero() {
         </h1>
         <h2
           data-aos="fade-left"
-          data-aos-delay="800"
+          data-aos-delay="1200"
           data-aos-duration="1000"
           data-aos-easing="ease"
           data-aos-once="true"
         >
           <Typed
             strings={["a Freelancer, ", "a Designer,", "and a Programmer."]}
-            startDelay={1200}
+            startDelay={1700}
             typeSpeed={80}
             backSpeed={30}
             backDelay={800}
@@ -45,7 +45,7 @@ function Hero() {
 
         <ProjectsBtnDiv
           data-aos="fade-down"
-          data-aos-delay="300"
+          data-aos-delay="1200"
           data-aos-duration="700"
           data-aos-easing="ease"
           data-aos-once="true"

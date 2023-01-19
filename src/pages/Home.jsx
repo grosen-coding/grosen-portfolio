@@ -6,6 +6,7 @@ import Resume from "../sections/Resume";
 import Contact from "../sections/Contact";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
+import PreLoader from "../components/PreLoader";
 
 import React from "react";
 import ScrollButton from "../components/ScrollButton";
@@ -13,6 +14,8 @@ import ScrollButton from "../components/ScrollButton";
 function Home() {
   return (
     <>
+      <PreLoader />
+
       <Header />
       <ScrollButton />
       <About />
