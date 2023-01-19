@@ -21,7 +21,7 @@ function WhatIDo() {
         <div>
           <Left>
             <ImgWrap>
-              <img src="./img/what-i-do.png" alt="" />
+              <img src="./img/profile-pic.jpeg" alt="" />
             </ImgWrap>
           </Left>
 
@@ -116,12 +116,12 @@ const Container = styled.section`
   background-image: linear-gradient(rgba(23, 26, 29, 1), rgba(46, 49, 53, 0.9));
   background-repeat: no-repeat;
   font-family: var(--font-title);
-  padding: 40px 0;
+  padding: 40px 0 0;
   position: relative;
   overflow: hidden;
 
   @media ${device.laptop} {
-    padding: 20px 0;
+    padding: 20px 0 0;
   }
 
   &:after {
@@ -193,7 +193,8 @@ const ImgWrap = styled.div`
   width: 100%;
   height: 100%;
   justify-content: center;
-  padding-bottom: 120px;
+  /* padding-bottom: 120px; */
+  position: relative;
 
   @media ${device.tablet} {
     padding-bottom: 0;
@@ -205,7 +206,13 @@ const ImgWrap = styled.div`
 
   img {
     width: 90%;
-    border-radius: 50px;
+    height: 100%;
+    border-radius: 100px;
+    /* position: relative; */
+    z-index: -1;
+
+    /* border: 10px solid #000; */
+    /* border-image: linear-gradient(to bottom, black, black) 1; */
 
     @media ${device.laptop} {
       width: 100%;
