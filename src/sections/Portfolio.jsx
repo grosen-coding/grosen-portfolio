@@ -223,7 +223,7 @@ function Portfolio() {
                     <div>2022</div>
                   </div>
                   <div className="project-info">
-                    <div>Github Repo:</div>
+                    <div>Github:</div>
                     <div>
                       <a
                         href="https://github.com/grosen-coding/quick-pick-mern"
@@ -235,7 +235,7 @@ function Portfolio() {
                     </div>
                   </div>
                   <div className="project-info">
-                    <div>Project Link:</div>
+                    <div>Preview:</div>
                     <div>
                       <a
                         href="https://quick-pick-flicker.herokuapp.com/"
@@ -288,7 +288,7 @@ function Portfolio() {
                     <div>2021</div>
                   </div>
                   <div className="project-info">
-                    <div>Github Repo:</div>
+                    <div>Github:</div>
                     <div>
                       <a
                         href="https://github.com/grosen-coding/k9paws-website"
@@ -300,7 +300,7 @@ function Portfolio() {
                     </div>
                   </div>
                   <div className="project-info">
-                    <div>Project Link:</div>
+                    <div>Preview:</div>
                     <div>
                       <a
                         href="https://k9paws-website.herokuapp.com/"
@@ -351,7 +351,7 @@ function Portfolio() {
                     <div>2022</div>
                   </div>
                   <div className="project-info">
-                    <div>Github Repo:</div>
+                    <div>Github:</div>
                     <div>
                       <a
                         href="https://github.com/grosen-coding/daily-planner-app"
@@ -363,7 +363,7 @@ function Portfolio() {
                     </div>
                   </div>
                   <div className="project-info">
-                    <div>Project Link:</div>
+                    <div>Preview:</div>
                     <div>
                       <a
                         href="https://retro-daily-planner-app.herokuapp.com/"
@@ -792,6 +792,10 @@ const ModalInfo = styled.div`
       color: var(--color-primary);
       font-size: 1.1rem;
       letter-spacing: 0.8px;
+
+      @media ${device.mobileL} {
+        font-size: 1rem;
+      }
 
       &:hover {
         opacity: 0.8;
