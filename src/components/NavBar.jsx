@@ -57,12 +57,7 @@ function NavBar() {
                 <span></span>
               </a>
             </li>
-            <li className="nav-link">
-              <a href="#services">
-                Services<span></span>
-                <span></span>
-              </a>
-            </li>
+
             <li className="nav-link">
               <a href="#contact">
                 Contact<span></span>

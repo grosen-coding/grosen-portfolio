@@ -8,7 +8,6 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 
 import React from "react";
-import Services from "../sections/Services";
 import ScrollButton from "../components/ScrollButton";
 
 function Home() {
@@ -21,7 +20,6 @@ function Home() {
       <Skills />
       <Portfolio />
       <Resume />
-      <Services />
       <Contact />
       <Footer />
     </>

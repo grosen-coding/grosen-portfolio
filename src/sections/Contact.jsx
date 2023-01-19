@@ -106,8 +106,8 @@ const Container = styled.section`
     width: 100%;
     bottom: 0;
     left: 0;
-    height: 20%;
-    background: linear-gradient(to top, #000, #0003 70%, #0000);
+    height: 100%;
+    /* background: linear-gradient(to top, #000, #0003 70%, #0000); */
     position: absolute;
     z-index: 5;
   }
@@ -116,8 +116,9 @@ const Container = styled.section`
     width: 100%;
     top: 0;
     left: 0;
-    height: 200px;
-    background: linear-gradient(to bottom, #000, #0003 70%, #0000);
+    height: 100%;
+    /* height: 200px; */
+    background: linear-gradient(to bottom, #000, #0003 100%, #0000);
     position: absolute;
     z-index: 5;
   }

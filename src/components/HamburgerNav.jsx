@@ -43,11 +43,6 @@ const HamburgerNav = () => {
               </a>
             </li>
             <li className="hamburger-nav-link">
-              <a href="#services" onClick={() => setShowNav((prev) => !prev)}>
-                Services
-              </a>
-            </li>
-            <li className="hamburger-nav-link">
               <a href="#contact" onClick={() => setShowNav((prev) => !prev)}>
                 Contact
               </a>

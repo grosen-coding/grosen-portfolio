@@ -192,8 +192,11 @@ export default Resume;
 const Container = styled.section`
   height: 100%;
   width: 100%;
-  /* background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(50, 54, 59, 0.1)); */
-  background-color: rgba(50, 54, 59, 0.9);
+  background-image: linear-gradient(
+    rgba(50, 54, 59, 0.9),
+    rgba(50, 54, 59, 0.1)
+  );
+  background-color: rgba(0, 0, 0, 0.5);
 
   font-family: var(--font-title);
   padding-bottom: 60px;

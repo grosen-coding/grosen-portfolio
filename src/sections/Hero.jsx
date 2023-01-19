@@ -78,7 +78,7 @@ const TitleWrap = styled.div`
   height: 100%;
   flex-direction: column;
   justify-content: center;
-  padding-top: 100px;
+  padding-top: 50px;
   padding-left: 100px;
 
   @media ${device.tablet} {
