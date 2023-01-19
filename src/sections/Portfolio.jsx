@@ -1,208 +1,448 @@
 import React from "react";
 import styled from "styled-components";
 import { device } from "../components/device";
+import { useState } from "react";
 
 function Portfolio() {
+  const [projectModal, setProjectModal] = useState(false);
+  const handleOpenProject = () => {
+    setProjectModal(!projectModal);
+    let x = document.getElementsByTagName("BODY")[0];
+    x.style.overflow = "hidden";
+  };
+  const handleCloseProject = () => {
+    setProjectModal(!projectModal);
+    let x = document.getElementsByTagName("BODY")[0];
+    x.style.overflow = "auto";
+  };
+
+  const [projectModal2, setProjectModal2] = useState(false);
+  const handleOpenProject2 = () => {
+    setProjectModal2(!projectModal2);
+    let x = document.getElementsByTagName("BODY")[0];
+    x.style.overflow = "hidden";
+  };
+  const handleCloseProject2 = () => {
+    setProjectModal2(!projectModal2);
+    let x = document.getElementsByTagName("BODY")[0];
+    x.style.overflow = "auto";
+  };
+
+  const [projectModal3, setProjectModal3] = useState(false);
+  const handleOpenProject3 = () => {
+    setProjectModal3(!projectModal3);
+    let x = document.getElementsByTagName("BODY")[0];
+    x.style.overflow = "hidden";
+  };
+  const handleCloseProject3 = () => {
+    setProjectModal3(!projectModal3);
+    let x = document.getElementsByTagName("BODY")[0];
+    x.style.overflow = "auto";
+  };
+
+  const [projectModal4, setProjectModal4] = useState(false);
+  const handleOpenProject4 = () => {
+    setProjectModal4(!projectModal4);
+    let x = document.getElementsByTagName("BODY")[0];
+    x.style.overflow = "hidden";
+  };
+  const handleCloseProject4 = () => {
+    setProjectModal4(!projectModal4);
+    let x = document.getElementsByTagName("BODY")[0];
+    x.style.overflow = "auto";
+  };
+
   return (
-    <Container id="portfolio">
-      <Wrap>
-        <h2>
-          <span>Portfolio</span>
-          <div
-            data-aos="zoom-in"
-            data-aos-delay="100"
-            data-aos-duration="500"
-            data-aos-easing="ease-in-out"
-          ></div>
-        </h2>
-        <Projects>
-          {/* Project 4 */}
-          <Project
-            id="project-4"
-            className="project-card"
-            data-aos="flip-left"
-            data-aos-delay="650"
-            data-aos-duration="700"
-            data-aos-easing="ease"
-            data-aos-offset="50px"
-          >
-            <ProjectTitle className="project-card-title">
-              <h3>Quick Pick Flicker</h3>
+    <>
+      <Container id="portfolio">
+        <Wrap>
+          <h2>
+            <span>Portfolio</span>
+            <div
+              data-aos="zoom-in"
+              data-aos-delay="100"
+              data-aos-duration="500"
+              data-aos-easing="ease-in-out"
+            ></div>
+          </h2>
+          <Projects>
+            {/* Project 4 */}
+            <Project
+              id="project-4"
+              className="project-card"
+              data-aos="flip-left"
+              data-aos-delay="200"
+              data-aos-duration="700"
+              data-aos-easing="ease"
+              data-aos-offset="50px"
+            >
+              <ProjectTitle className="project-card-title">
+                <h3>Quick Pick Flicker</h3>
 
-              <h5>react website</h5>
-              <a
-                href="https://quick-pick-flicker.herokuapp.com/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <ProjectLinkBtn className="project-btn">
+                <h5>full stack website</h5>
+
+                <ProjectLinkBtn
+                  onClick={handleOpenProject}
+                  className="project-btn"
+                >
                   Check it out!
                 </ProjectLinkBtn>
-              </a>
-            </ProjectTitle>
-            <ProjectImg
-              className="project-card-img"
-              src="../img/quick-pick-bg-2.jpeg"
-              alt=""
-            />
-          </Project>
-          {/* Project 1 */}
-          <Project
-            id="project-1"
-            className="project-card"
-            data-aos="flip-left"
-            data-aos-delay="100"
-            data-aos-duration="700"
-            data-aos-easing="ease"
-            data-aos-offset="200px"
-          >
-            <ProjectTitle className="project-card-title">
-              <h3>K9 Paws</h3>
+              </ProjectTitle>
+              <ProjectImg
+                className="project-card-img"
+                src="../img/quick-pick-bg-2.jpeg"
+                alt=""
+              />
+            </Project>
+            {/* Project 1 */}
+            <Project
+              id="project-1"
+              className="project-card"
+              data-aos="flip-left"
+              data-aos-delay="350"
+              data-aos-duration="700"
+              data-aos-easing="ease"
+              data-aos-offset="200px"
+            >
+              <ProjectTitle className="project-card-title">
+                <h3>K9 Paws</h3>
 
-              <h5>full stack website</h5>
-              <a
+                <h5>full stack website</h5>
+                {/* <a
                 href="https://k9paws-website.herokuapp.com/"
                 target="_blank"
                 rel="noreferrer"
-              >
-                <ProjectLinkBtn className="project-btn">
+              > */}
+                <ProjectLinkBtn
+                  className="project-btn"
+                  onClick={handleOpenProject2}
+                >
                   Check it out!
                 </ProjectLinkBtn>
-              </a>
-            </ProjectTitle>
-            <ProjectImg
-              className="project-card-img"
-              src="../img/k9paws-bg.jpeg"
-              alt=""
-            />
-          </Project>
+                {/* </a> */}
+              </ProjectTitle>
+              <ProjectImg
+                className="project-card-img"
+                src="../img/k9paws-bg.jpeg"
+                alt=""
+              />
+            </Project>
 
-          {/* Project 2 */}
-          <Project
-            id="project-2"
-            className="project-card"
-            data-aos="flip-left"
-            data-aos-delay="250"
-            data-aos-duration="700"
-            data-aos-easing="ease"
-            data-aos-offset="200px"
-          >
-            <ProjectTitle className="project-card-title">
-              <h3>Retro Daily Planner</h3>
+            {/* Project 2 */}
+            <Project
+              id="project-2"
+              className="project-card"
+              data-aos="flip-left"
+              data-aos-delay="500"
+              data-aos-duration="700"
+              data-aos-easing="ease"
+              data-aos-offset="200px"
+            >
+              <ProjectTitle className="project-card-title">
+                <h3>Retro Daily Planner</h3>
 
-              <h5>full stack website</h5>
-              <a
-                href="https://retro-daily-planner-app.herokuapp.com/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <ProjectLinkBtn className="project-btn">
+                <h5>full stack website</h5>
+
+                <ProjectLinkBtn
+                  onClick={handleOpenProject3}
+                  className="project-btn"
+                >
                   Check it out!
                 </ProjectLinkBtn>
-              </a>
-            </ProjectTitle>
-            <ProjectImg
-              className="project-card-img"
-              src="../img/daily-planner-bg.jpeg"
-              alt=""
-            />
-          </Project>
+              </ProjectTitle>
+              <ProjectImg
+                className="project-card-img"
+                src="../img/daily-planner-bg.jpeg"
+                alt=""
+              />
+            </Project>
 
-          {/* Project 3 */}
-          <Project
-            id="project-3"
-            className="project-card"
-            data-aos="flip-left"
-            data-aos-delay="400"
-            data-aos-duration="700"
-            data-aos-easing="ease"
-            data-aos-offset="200px"
-          >
-            <ProjectTitle className="project-card-title">
-              <h3>PawTours</h3>
+            {/* Project 3 */}
+            <Project
+              id="project-3"
+              className="project-card"
+              data-aos="flip-left"
+              data-aos-delay="750"
+              data-aos-duration="700"
+              data-aos-easing="ease"
+              data-aos-offset="200px"
+            >
+              <ProjectTitle className="project-card-title">
+                <h3>PawTours</h3>
 
-              <h5>front end website</h5>
-              <a
-                href="https://modest-brahmagupta-c4ca2d.netlify.app/index.html"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <ProjectLinkBtn className="project-btn">
+                <h5>front end website</h5>
+
+                <ProjectLinkBtn
+                  onClick={handleOpenProject4}
+                  className="project-btn"
+                >
                   Check it out!
                 </ProjectLinkBtn>
-              </a>
-            </ProjectTitle>
-            <ProjectImg
-              className="project-card-img"
-              src="../img/pawtours-bg.jpeg"
-              alt=""
-            />
-          </Project>
+              </ProjectTitle>
+              <ProjectImg
+                className="project-card-img"
+                src="../img/pawtours-bg.jpeg"
+                alt=""
+              />
+            </Project>
+          </Projects>
+        </Wrap>
+      </Container>
 
-          {/* Project 5 */}
-          {/* <Project
-            id="project-5"
-            className="project-card"
-            data-aos="flip-left"
-            data-aos-delay="800"
-            data-aos-duration="700"
-            data-aos-easing="ease"
-            data-aos-offset="50px"
-          >
-            <ProjectTitle className="project-card-title">
-              <h3>The Dog Blog</h3>
+      {projectModal && (
+        <div className="project-modal">
+          <div className="close-modal">
+            <button
+              className="button-close"
+              onClick={handleCloseProject}
+            ></button>
+          </div>
+          <ModalWrap>
+            <ModalContent>
+              <ModalLeft>
+                <img src="../img/quick-pick-bg-2.jpeg" alt="" />
+              </ModalLeft>
+              <ModalRight>
+                <h2>Quick Flick Picker</h2>
+                <p>
+                  Technically version 2.0, the Quick Flick Picker app is a
+                  custom design, first created as a frontend-only project while
+                  attending Juno College, intended to help indecisive users
+                  select a movie or tv show to watch. It has since been
+                  completely redesigned and rebuilt into a full-stack MERN app
+                  allowing for authenticated user accounts. Styling was done
+                  using both the Material UI database, and styled-components.
+                </p>
+                <ModalInfo>
+                  <div className="project-info">
+                    <div>Type:</div>
+                    <div>Full Stack Website</div>
+                  </div>
+                  <div className="project-info">
+                    <div>Year:</div>
+                    <div>2022</div>
+                  </div>
+                  <div className="project-info">
+                    <div>Github Repo:</div>
+                    <div>
+                      <a
+                        href="https://github.com/grosen-coding/quick-pick-mern"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        github.com/grosen-coding/quick-pick-mern
+                      </a>
+                    </div>
+                  </div>
+                  <div className="project-info">
+                    <div>Project Link:</div>
+                    <div>
+                      <a
+                        href="https://quick-pick-flicker.herokuapp.com/"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        quick-pick-flicker.herokuapp.com
+                      </a>
+                    </div>
+                  </div>
+                </ModalInfo>
+              </ModalRight>
+            </ModalContent>
+          </ModalWrap>
+        </div>
+      )}
 
-              <h5>react website</h5>
-              <a
-                href="https://eloquent-wescoff-2d2bcd.netlify.app/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <ProjectLinkBtn className="project-btn">
-                  Check it out!
-                </ProjectLinkBtn>
-              </a>
-            </ProjectTitle>
-            <ProjectImg
-              className="project-card-img"
-              src="../img/4.jpg"
-              alt=""
-            />
-          </Project> */}
+      {projectModal2 && (
+        <div className="project-modal">
+          <div className="close-modal">
+            <button
+              className="button-close"
+              onClick={handleCloseProject2}
+            ></button>
+          </div>
+          <ModalWrap>
+            <ModalContent>
+              <ModalLeft>
+                <img src="../img/k9paws-bg.jpeg" alt="" />
+              </ModalLeft>
+              <ModalRight>
+                <h2>K9Paws</h2>
+                <p>
+                  K9PAWS is a full-stack company website and client platform for
+                  training dogs and educating owners. It is a custom design,
+                  created using the MERN stack to allow for client
+                  authentication and management, with styled- components & SASS
+                  used on the front-end for designing and styling the user
+                  experience. It also utilizes Firebase to manage and create
+                  Blog posts, and a Breed search API to provide breed-specific
+                  information to clients.
+                </p>
+                <ModalInfo>
+                  <div className="project-info">
+                    <div>Type:</div>
+                    <div>Full Stack Website</div>
+                  </div>
+                  <div className="project-info">
+                    <div>Year:</div>
+                    <div>2021</div>
+                  </div>
+                  <div className="project-info">
+                    <div>Github Repo:</div>
+                    <div>
+                      <a
+                        href="https://github.com/grosen-coding/k9paws-website"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        github.com/grosen-coding/k9paws-website
+                      </a>
+                    </div>
+                  </div>
+                  <div className="project-info">
+                    <div>Project Link:</div>
+                    <div>
+                      <a
+                        href="https://k9paws-website.herokuapp.com/"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        k9paws-website.herokuapp.com
+                      </a>
+                    </div>
+                  </div>
+                </ModalInfo>
+              </ModalRight>
+            </ModalContent>
+          </ModalWrap>
+        </div>
+      )}
 
-          {/* Project 6 */}
-          {/* <Project
-            id="project-6"
-            className="project-card"
-            data-aos="flip-left"
-            data-aos-delay="950"
-            data-aos-duration="700"
-            data-aos-easing="ease"
-            data-aos-offset="50px"
-          >
-            <ProjectTitle className="project-card-title">
-              <h3>Project Title 6</h3>
+      {projectModal3 && (
+        <div className="project-modal">
+          <div className="close-modal">
+            <button
+              className="button-close"
+              onClick={handleCloseProject3}
+            ></button>
+          </div>
+          <ModalWrap>
+            <ModalContent>
+              <ModalLeft>
+                <img src="../img/daily-planner-bg.jpeg" alt="" />
+              </ModalLeft>
+              <ModalRight>
+                <h2>Retro Daily Planner</h2>
+                <p>
+                  The Retro Daily Planner is an app I created to help plan and
+                  organize your busy life. It was built using the MERN stack and
+                  a REST API for users to first create an authenticated account,
+                  and then input and manage tasks. The design for the user
+                  dashboard was provided to me, with the all other components,
+                  menus, animations and styling custom designed by myself.
+                </p>
+                <ModalInfo>
+                  <div className="project-info">
+                    <div>Type:</div>
+                    <div>Full Stack Website</div>
+                  </div>
+                  <div className="project-info">
+                    <div>Year:</div>
+                    <div>2022</div>
+                  </div>
+                  <div className="project-info">
+                    <div>Github Repo:</div>
+                    <div>
+                      <a
+                        href="https://github.com/grosen-coding/daily-planner-app"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        github.com/grosen-coding/daily-planner-app
+                      </a>
+                    </div>
+                  </div>
+                  <div className="project-info">
+                    <div>Project Link:</div>
+                    <div>
+                      <a
+                        href="https://retro-daily-planner-app.herokuapp.com/"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        retro-daily-planner-app.herokuapp.com
+                      </a>
+                    </div>
+                  </div>
+                </ModalInfo>
+              </ModalRight>
+            </ModalContent>
+          </ModalWrap>
+        </div>
+      )}
 
-              <h5>project type</h5>
-              <a
-                href="https://k9paws-website.herokuapp.com/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <ProjectLinkBtn className="project-btn">
-                  Check it out!
-                </ProjectLinkBtn>
-              </a>
-            </ProjectTitle>
-            <ProjectImg
-              className="project-card-img"
-              src="../img/k9paws-bg-2.jpeg"
-              alt=""
-            />
-          </Project> */}
-        </Projects>
-      </Wrap>
-    </Container>
+      {projectModal4 && (
+        <div className="project-modal">
+          <div className="close-modal">
+            <button
+              className="button-close"
+              onClick={handleCloseProject4}
+            ></button>
+          </div>
+          <ModalWrap>
+            <ModalContent>
+              <ModalLeft>
+                <img src="../img/pawtours-bg.jpeg" alt="" />
+              </ModalLeft>
+              <ModalRight>
+                <h2>Nature Paw Tours</h2>
+                <p>
+                  Nature Paw Tours is a Front-End website, originally built as a
+                  fun project, that has blossomed into an aspiring dog nature
+                  tour company. It is built using hardcoded HTML, CSS, SASS and
+                  Javascript. All pages, content and animations are custom
+                  designed.
+                </p>
+                <ModalInfo>
+                  <div className="project-info">
+                    <div>Type:</div>
+                    <div>Front-End Website</div>
+                  </div>
+                  <div className="project-info">
+                    <div>Year:</div>
+                    <div>2021</div>
+                  </div>
+                  <div className="project-info">
+                    <div>Github Repo:</div>
+                    <div>
+                      <a
+                        href="https://modest-brahmagupta-c4ca2d.netlify.app/index.html"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        modest-brahmagupta-c4ca2d.netlify.app
+                      </a>
+                    </div>
+                  </div>
+                  <div className="project-info">
+                    <div>Project Link:</div>
+                    <div>
+                      <a
+                        href="https://k9paws-website.herokuapp.com/"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        k9paws-website.herokuapp.com
+                      </a>
+                    </div>
+                  </div>
+                </ModalInfo>
+              </ModalRight>
+            </ModalContent>
+          </ModalWrap>
+        </div>
+      )}
+    </>
   );
 }
 
@@ -456,4 +696,69 @@ const ProjectImg = styled.img`
   object-position: center center;
   transition: all 0.3s;
   transform: scale(1.2);
+`;
+
+const ModalWrap = styled.div`
+  width: 100%;
+  height: 100%;
+  font-family: var(--font-title);
+`;
+
+const ModalContent = styled.div`
+  display: flex;
+  width: 70%;
+  height: 100%;
+  margin: 0 auto;
+  justify-content: space-between;
+  padding-top: 50px;
+`;
+
+const ModalLeft = styled.div`
+  height: 100%;
+  width: 60%;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+  }
+`;
+
+const ModalRight = styled.div`
+  width: 35%;
+  color: white;
+
+  h2 {
+    padding: 0 0 20px;
+    font-size: 2.5rem;
+    letter-spacing: 1.5px;
+    font-weight: 400;
+  }
+
+  p {
+    padding: 20px 0 60px;
+    font-size: 1.4rem;
+  }
+`;
+
+const ModalInfo = styled.div`
+  .project-info {
+    padding: 15px 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    font-size: 1.4rem;
+    border-bottom: 1px solid rgba(118, 116, 116, 0.5);
+    letter-spacing: 1.2px;
+
+    a {
+      color: var(--color-primary);
+      font-size: 1.1rem;
+      letter-spacing: 0.8px;
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
 `;

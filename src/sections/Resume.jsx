@@ -78,23 +78,24 @@ function Resume() {
                   data-aos-offset="200px"
                 ></div>
                 <h5>
-                  <span>3</span>2010 - present
+                  <span>3</span>2009 - 2018
                 </h5>
                 <h3>Owner & Operator</h3>
                 <h4>
-                  K9PAWS -- <span>Greater Toronto Area, ONT</span>
+                  Rosehill Designs Ltd. --{" "}
+                  <span>Greater Toronto Area, ONT</span>
                 </h4>
                 <p>
-                  Solely responsible for designing, building and running a
-                  3500sq.ft canine rehabilitation sanctuary, meant for training
-                  and re-homing last-chance dogs. Responsible for the safety,
-                  security and training of all dogs, as well as 12-15 internal
-                  staff, and countless volunteers. Personally developed and
-                  implemented a unique, extremely effective, training &
-                  rehabilitation system taught to thousands of clients, either
-                  one-on-one, or in groups of 10-50. Specialized in
-                  pack-oriented hierarchy training and canine psychology
-                  education.
+                  Responsible for complete project management of all
+                  construction sites, contractors and employees. Personally
+                  sold, designed, planned, organized and constructed over $10M
+                  in high-profile, prestigious residential landscape
+                  construction projects. Responsible for all daily, weekly and
+                  monthly tasks including, but not limited to; sales, material
+                  planning and ordering, designing & drafting, operation &
+                  maintenance of heavy machinery, control of finances and
+                  business accounts, hiring & training of all employees/staff
+                  and client communication & satisfaction.
                 </p>
               </Job>
             </Experience>
@@ -205,7 +206,7 @@ const Container = styled.section`
     bottom: 0;
     left: 0;
     height: 100%;
-    background: linear-gradient(to top, #000, #0003 100%, #0000);
+    background: linear-gradient(to top, #000, #0003 70%, #0000);
     position: absolute;
     z-index: 5;
   }

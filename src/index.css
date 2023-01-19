@@ -76,6 +76,77 @@ p {
   }
 }
 
+.project-modal {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  top: 0;
+  left: 0;
+  padding: 80px 0;
+  z-index: 999999;
+  overflow: hidden;
+}
+.project-modal .close-modal {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+}
+.project-modal .close-modal .button-close {
+  display: block;
+  position: fixed;
+  top: 40px;
+  right: 40px;
+  width: 48px;
+  height: 48px;
+  background: none;
+  color: #ffffff;
+  outline: none;
+  border-radius: 30px;
+  -moz-border-radius: 30px;
+  -webkit-border-radius: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  transition: all 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  cursor: pointer;
+}
+.project-modal .close-modal .button-close:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 0;
+  height: 1px;
+  -webkit-transform: translate3d(-50%, -50%, 0) rotate(-45deg);
+  transition: all 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  border-left: 8px solid #ffffff;
+  border-right: 8px solid #ffffff;
+}
+.project-modal .close-modal .button-close:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 0;
+  height: 1px;
+  -webkit-transform: translate3d(-50%, -50%, 0) rotate(45deg);
+  transition: all 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  border-left: 8px solid #ffffff;
+  border-right: 8px solid #ffffff;
+}
+.project-modal .close-modal .button-close:hover {
+  border-color: #ffffff;
+  transition: all 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.project-modal .close-modal .button-close:hover:before {
+  border-left-width: 15px;
+  border-right-width: 15px;
+}
+.project-modal .close-modal .button-close:hover:after {
+  border-right-width: 15px;
+  border-left-width: 15px;
+}
+
 /* Animations */
 @keyframes bounceDown {
   0%, 20%, 50%, 80%, 100% {

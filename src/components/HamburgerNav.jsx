@@ -72,12 +72,12 @@ const HamMenu = styled.div`
   background-color: rgba(0, 0, 0, 0.9);
   width: 100vw;
   height: 100vh;
-  border-radius: 100px;
+  /* border-radius: 100px; */
   top: 0;
   left: 0;
   position: fixed;
   transform: ${(props) => (props.showNav ? "scale(0)" : "scale(1)")};
-  transition: all 0.5s cubic-bezier(0.33, -1.48, 0.38, 3.1);
+  transition: all 0.5s ease;
   transition-delay: 0s !important;
 `;
 
