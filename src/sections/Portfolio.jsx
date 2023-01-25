@@ -291,7 +291,7 @@ function Portfolio() {
                   </div>
                   <div className="project-info">
                     <div>Year:</div>
-                    <div>2021</div>
+                    <div>2023</div>
                   </div>
                   <div className="project-info">
                     <div>Github:</div>
