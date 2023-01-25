@@ -57,7 +57,7 @@ function Portfolio() {
       <Container id="portfolio">
         <Wrap>
           <h2>
-            <span>Portfolio</span>
+            <span>Featured Projects</span>
             <div
               data-aos="zoom-in"
               data-aos-delay="100"
