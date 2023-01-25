@@ -272,14 +272,17 @@ function Portfolio() {
               <ModalRight>
                 <h2>K9Paws</h2>
                 <p>
-                  K9PAWS is a full-stack company website and client platform for
-                  training dogs and educating owners. It is a custom design,
+                  Currently undergoing a complete re-design and
+                  makeover...K9PAWS is a company website and client platform for
+                  training dogs and educating owners. The website has been
+                  completely re-designed from scratch, and has now also been
                   created using the MERN stack to allow for client
-                  authentication and management, with styled- components & SASS
-                  used on the front-end for designing and styling the user
-                  experience. It also utilizes Firebase to manage and create
-                  Blog posts, and a Breed search API to provide breed-specific
-                  information to clients.
+                  authentication and data management. Styled-components, SASS,
+                  and some Material UI was used on the front-end for designing
+                  and styling the user experience. THe website also uses both
+                  Firebase and MongoDB to manage and create Blog posts and
+                  handle backend client data, as well as a Breed search API to
+                  provide breed-specific information to clients.
                 </p>
                 <ModalInfo>
                   <div className="project-info">
