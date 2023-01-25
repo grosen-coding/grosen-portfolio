@@ -32,16 +32,16 @@ function Resume() {
                 </h5>
                 <h3>Full-Stack Designer & Developer</h3>
                 <h4>
-                  K9 Design -- <span>Toronto, ONT</span>
+                  K9PAWS -- <span>Toronto, ONT</span>
                 </h4>
                 <p>
-                  I first built my company's website in 2014, using a template.
-                  It didn't take long before I realized the template's
-                  limitations, and began learning how to code front-end
-                  websites. As I learned more, I have been re-designing &
-                  running the website ever since, and have recently updated it
-                  to a full-stack website for my dog clients to be able to
-                  submit on-going training reports.
+                  K9PAWS is a company website and client platform for training
+                  dogs and educating owners. The website has been completely
+                  re-designed in 2023 from scratch, and is now a Full Stack
+                  website, created using the MERN stack to allow for client
+                  authentication and data management. Styled-components, SASS,
+                  and some Material UI were used on the front-end for designing
+                  and styling the user experience.
                 </p>
               </Job>
               <Job className="resume-card">
