@@ -279,7 +279,7 @@ function Portfolio() {
                   created using the MERN stack to allow for client
                   authentication and data management. Styled-components, SASS,
                   and some Material UI were used on the front-end for designing
-                  and styling the user experience. THe website also uses both
+                  and styling the user experience. The website also uses both
                   Firebase and MongoDB to manage and create Blog posts and
                   handle backend client data, as well as a Breed search API to
                   provide breed-specific information to clients.
