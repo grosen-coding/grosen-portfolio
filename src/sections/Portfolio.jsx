@@ -714,11 +714,11 @@ const ModalWrap = styled.div`
 
 const ModalContent = styled.div`
   display: flex;
-  width: 70%;
+  width: 90%;
   height: 100%;
   margin: 0 auto;
   justify-content: space-between;
-  padding-top: 50px;
+  /* padding-top: 50px; */
 
   @media ${device.laptop} {
     width: 90%;
@@ -742,7 +742,7 @@ const ModalContent = styled.div`
 
 const ModalLeft = styled.div`
   height: 100%;
-  width: 60%;
+  width: 50%;
 
   @media ${device.mobileL} {
     width: 100%;
@@ -756,7 +756,7 @@ const ModalLeft = styled.div`
 `;
 
 const ModalRight = styled.div`
-  width: 35%;
+  width: 45%;
   color: white;
   @media ${device.mobileL} {
     width: 100%;
@@ -777,7 +777,7 @@ const ModalRight = styled.div`
 
   p {
     padding: 20px 0 60px;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
 
     @media ${device.mobileL} {
       padding: 0 0 20px;
