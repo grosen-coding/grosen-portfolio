@@ -18,9 +18,9 @@ function Contact() {
         <ContactFormDiv>
           <ContactForm
             className="contact-form"
-            method="POST"
             name="contact"
-            netlify
+            method="POST"
+            data-netlify="true"
           >
             <FormGroup className="form-group">
               <input
