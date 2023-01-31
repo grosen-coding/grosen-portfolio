@@ -16,12 +16,7 @@ function Contact() {
           ></div>
         </h2>
         <ContactFormDiv>
-          <ContactForm
-            className="contact-form"
-            name="contact"
-            method="POST"
-            data-netlify="true"
-          >
+          <form className="contact-form" name="contact" netlify>
             <FormGroup className="form-group">
               <input
                 type="text"
@@ -77,7 +72,7 @@ function Contact() {
                 Submit
               </SubmitButton>
             </FormGroup>
-          </ContactForm>
+          </form>
         </ContactFormDiv>
       </Wrap>
     </Container>
@@ -178,21 +173,21 @@ const Wrap = styled.div`
 
 const ContactFormDiv = styled.div`
   width: 100%;
-`;
 
-const ContactForm = styled.form`
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-  width: 70%;
-  padding: 20px 0 40px;
-  position: relative;
-  z-index: 7;
-  @media ${device.tablet} {
-    width: 90%;
-  }
-  @media ${device.mobileL} {
-    width: 90%;
+  form {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 70%;
+    padding: 20px 0 40px;
+    position: relative;
+    z-index: 7;
+    @media ${device.tablet} {
+      width: 90%;
+    }
+    @media ${device.mobileL} {
+      width: 90%;
+    }
   }
   input,
   textarea {
