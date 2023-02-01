@@ -5,6 +5,9 @@ import { device } from "../components/device";
 import emailjs from "emailjs-com";
 import { Modal, Button } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { BsLinkedin } from "react-icons/bs";
+import { MdMarkEmailUnread } from "react-icons/md";
+import { MdLocationOn } from "react-icons/md";
 
 function Contact() {
   const [formData, setFormData] = useState({
@@ -63,6 +66,31 @@ function Contact() {
             data-aos-easing="ease-in-out"
           ></div>
         </h2>
+        <ContactInfo
+          style={{
+            zIndex: 10,
+            position: "relative",
+            display: "flex",
+            width: "100%",
+            justifyContent: "center",
+            margin: "4rem 0 1rem",
+            // alignItems: "center",
+          }}
+        >
+          <h3>gsrcoding@gmail.com </h3>{" "}
+          <MdMarkEmailUnread
+            style={{ marginLeft: "1rem", fontSize: "2.2em" }}
+          />
+          <LinkedIn>
+            <BsLinkedin
+              href="https://www.linkedin.com/in/gary-rosen-coding/"
+              target="_blank"
+              rel="noreferrer"
+            />
+          </LinkedIn>
+          <MdLocationOn style={{ fontSize: "2.2rem", marginRight: "1rem" }} />{" "}
+          <h3>GTA, Ontario</h3>
+        </ContactInfo>
         <ContactFormDiv>
           <form
             className="contact-form"
@@ -258,6 +286,31 @@ const Wrap = styled.div`
         background-color: var(--color-primary);
       }
     }
+  }
+`;
+
+const ContactInfo = styled.div`
+  h3 {
+    font-weight: 400;
+    color: rgba(241, 186, 45, 0.8);
+  }
+`;
+
+const LinkedIn = styled(BsLinkedin)`
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  color: #fedc79;
+  font-size: 2rem;
+  margin: 0 5rem;
+  /* padding-right: 20px; */
+  /* width: 80%; */
+  /* height: 100%; */
+  /* margin: auto; */
+  /* margin: auto 0; */
+
+  @media ${device.mobileL} {
+    padding-bottom: 5px;
   }
 `;
 

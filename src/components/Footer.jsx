@@ -1,24 +1,14 @@
 import React from "react";
 import styled from "styled-components";
 import { device } from "../components/device";
-import { BsLinkedin } from "react-icons/bs";
 
 function Footer() {
   return (
     <Container>
       <Wrap>
         <FooterContent>
-          <LinkedIn
-            href="https://www.linkedin.com/in/gary-rosen-908680209/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <BsLinkedin />
-          </LinkedIn>
           <h4>
-            &nbsp; &nbsp; <span>rosengsr@gmail.com</span>&nbsp; &nbsp;||&nbsp;
-            &nbsp; &copy; 2023 Copyright &nbsp; &nbsp;||&nbsp; &nbsp;{" "}
-            <span>GSRCoding</span>
+            2023 Copyright &nbsp; &nbsp;||&nbsp; &nbsp; <span>GSRCoding</span>
           </h4>
         </FooterContent>
       </Wrap>
@@ -69,21 +59,5 @@ const FooterContent = styled.div`
     span {
       color: var(--color-yellow);
     }
-  }
-`;
-
-const LinkedIn = styled.a`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.8rem;
-  /* padding-right: 20px; */
-  /* width: 80%; */
-  /* height: 100%; */
-  /* margin: auto; */
-  /* margin: auto 0; */
-
-  @media ${device.mobileL} {
-    padding-bottom: 5px;
   }
 `;
