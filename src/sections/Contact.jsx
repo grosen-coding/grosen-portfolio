@@ -66,17 +66,7 @@ function Contact() {
             data-aos-easing="ease-in-out"
           ></div>
         </h2>
-        <ContactInfo
-          style={{
-            zIndex: 10,
-            position: "relative",
-            display: "flex",
-            width: "100%",
-            justifyContent: "center",
-            margin: "4rem 0 1rem",
-            // alignItems: "center",
-          }}
-        >
+        <ContactInfo>
           <a href="mailto:gsrcoding@gmail.com">
             <h3>gsrcoding@gmail.com </h3>
           </a>{" "}
@@ -294,9 +284,27 @@ const Wrap = styled.div`
 `;
 
 const ContactInfo = styled.div`
+  z-index: 10;
+  position: relative;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin: 4rem 0 1rem;
+  // alignItems: "center",
+
+  @media ${device.mobileL} {
+    width: 80%;
+    margin: 0 auto;
+    align-items: center;
+  }
+
   h3 {
     font-weight: 400;
     color: rgba(241, 186, 45, 0.8);
+
+    @media ${device.mobileL} {
+      font-size: 1rem;
+    }
 
     &:hover {
       color: rgba(241, 186, 45, 0.5);
@@ -311,6 +319,10 @@ const LinkedIn = styled(BsLinkedin)`
   color: #50bec2;
   font-size: 2rem;
   margin: 0 5rem;
+
+  @media ${device.mobileL} {
+    margin: 0 2rem;
+  }
 
   &:hover {
     color: rgba(80, 190, 194, 0.7);
