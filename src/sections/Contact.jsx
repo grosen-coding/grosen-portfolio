@@ -1,8 +1,83 @@
 import React from "react";
+import { useState } from "react";
 import styled from "styled-components";
 import { device } from "../components/device";
+import emailjs from "emailjs-com";
 
 function Contact() {
+  const [formData, setFormData] = useState({
+    user_name: "",
+    user_email: "",
+    user_phone: "",
+    message: "",
+  });
+
+  // .sendForm(
+  //   process.env.SERVICE_ID,
+  //   process.env.TEMPLATE_ID,
+  //   formData,
+  //   process.env.EMAILJS_PUBLIC_KEY
+  // )
+
+  const handleChange = (event) => {
+    setFormData({ ...formData, [event.target.name]: event.target.value });
+  };
+
+  const handleSubmit = (event) => {
+    const success = document.getElementById("success");
+    const button = document.getElementById("send_message");
+    const failed = document.getElementById("failed");
+    event.preventDefault();
+
+    emailjs
+      .sendForm(
+        process.env.SERVICE_ID,
+        process.env.TEMPLATE_ID,
+        event.target,
+        process.env.EMAILJS_PUBLIC_KEY
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          success.classList.add("show");
+          button.classList.add("show");
+          failed.classList.remove("show");
+        },
+        (error) => {
+          console.log(error.text);
+          failed.classList.add("show");
+        }
+      );
+    setFormData({ user_name: "", user_email: "", user_phone: "", message: "" });
+  };
+
+  // function sendEmail(e) {
+  //   const success = document.getElementById("success");
+  //   const button = document.getElementById("send_message");
+  //   const failed = document.getElementById("failed");
+  //   e.preventDefault();
+
+  //   emailjs
+  //     .sendForm(
+  //       "service_wo9lv6o",
+  //       "template_gpd0odv",
+  //       e.target,
+  //       "WuwUwial6BNhAsnae"
+  //     )
+  //     .then(
+  //       (result) => {
+  //         console.log(result.text);
+  //         success.classList.add("show");
+  //         button.classList.add("show");
+  //         failed.classList.remove("show");
+  //       },
+  //       (error) => {
+  //         console.log(error.text);
+  //         failed.classList.add("show");
+  //       }
+  //     );
+  // }
+
   return (
     <Container id="contact">
       <Wrap>
@@ -16,13 +91,20 @@ function Contact() {
           ></div>
         </h2>
         <ContactFormDiv>
-          <form className="contact-form" name="contact" netlify>
+          <form
+            className="contact-form"
+            id="contact_form"
+            name="contact"
+            onSubmit={handleSubmit}
+          >
             <FormGroup className="form-group">
               <input
                 type="text"
+                name="user_name"
                 className="form-control"
-                id="name"
-                name="name"
+                id="user_name"
+                onChange={handleChange}
+                value={formData.user_name}
                 placeholder="Name"
                 required
                 data-aos="flip-down"
@@ -32,9 +114,11 @@ function Contact() {
               />
               <input
                 type="email"
+                name="user_email"
                 className="form-control"
-                id="email"
-                name="email"
+                id="user_email"
+                onChange={handleChange}
+                value={formData.user_email}
                 placeholder="E-mail Address"
                 required
                 data-aos="flip-down"
@@ -43,10 +127,12 @@ function Contact() {
                 data-aos-easing="ease-in-out"
               />
               <input
-                type="phone"
+                type="number"
+                name="user_phone"
                 className="form-control"
-                id="phone"
-                name="phone"
+                id="user_phone"
+                onChange={handleChange}
+                value={formData.user_phone}
                 placeholder="Phone Number"
                 required
                 data-aos="flip-down"
@@ -58,7 +144,11 @@ function Contact() {
             <FormGroup className="form-group">
               <textarea
                 type="textarea"
+                name="message"
                 placeholder="Please type your message"
+                id="message"
+                onChange={handleChange}
+                value={formData.message}
                 className="form-text-area"
                 data-aos="zoom-in"
                 data-aos-delay="75000"
@@ -67,8 +157,18 @@ function Contact() {
                 required
               />
             </FormGroup>
-            <FormGroup className="form-group">
-              <SubmitButton type="submit" className="btn btn-block">
+            <div id="success" className="hide">
+              Your message has been sent...
+            </div>
+            <div id="failed" className="hide">
+              Message failed...
+            </div>
+            <FormGroup id="submit" className="form-group">
+              <SubmitButton
+                type="submit"
+                id="send_message"
+                className="btn btn-block"
+              >
                 Submit
               </SubmitButton>
             </FormGroup>
@@ -173,6 +273,18 @@ const Wrap = styled.div`
 
 const ContactFormDiv = styled.div`
   width: 100%;
+
+  #success,
+  #failed {
+    color: $color;
+    margin-top: 30px;
+    &.hide {
+      display: none;
+    }
+    &.show {
+      display: block;
+    }
+  }
 
   form {
     display: flex;
