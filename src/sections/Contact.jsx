@@ -77,17 +77,21 @@ function Contact() {
             // alignItems: "center",
           }}
         >
-          <h3>gsrcoding@gmail.com </h3>{" "}
+          <a href="mailto:gsrcoding@gmail.com">
+            <h3>gsrcoding@gmail.com </h3>
+          </a>{" "}
           <MdMarkEmailUnread
             style={{ marginLeft: "1rem", fontSize: "2.2em" }}
           />
-          <LinkedIn>
-            <BsLinkedin
-              href="https://www.linkedin.com/in/gary-rosen-coding/"
-              target="_blank"
-              rel="noreferrer"
-            />
-          </LinkedIn>
+          <a
+            href="https://www.linkedin.com/in/gary-rosen-coding/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <LinkedIn>
+              <BsLinkedin />
+            </LinkedIn>
+          </a>
           <MdLocationOn style={{ fontSize: "2.2rem", marginRight: "1rem" }} />{" "}
           <h3>GTA, Ontario</h3>
         </ContactInfo>
@@ -293,6 +297,10 @@ const ContactInfo = styled.div`
   h3 {
     font-weight: 400;
     color: rgba(241, 186, 45, 0.8);
+
+    &:hover {
+      color: rgba(241, 186, 45, 0.5);
+    }
   }
 `;
 
@@ -300,9 +308,13 @@ const LinkedIn = styled(BsLinkedin)`
   display: flex;
   justify-content: center;
   /* align-items: center; */
-  color: #fedc79;
+  color: #50bec2;
   font-size: 2rem;
   margin: 0 5rem;
+
+  &:hover {
+    color: rgba(80, 190, 194, 0.7);
+  }
   /* padding-right: 20px; */
   /* width: 80%; */
   /* height: 100%; */
