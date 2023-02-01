@@ -37,17 +37,15 @@ function Contact() {
       .then(
         (result) => {
           console.log(result.text);
-          setFormMessage("Thank you! ");
+          setFormMessage(
+            "Thank you for your interest. I will do my absolute best to get back to you within the next 24 hours. Have a wonderful day!"
+          );
           setShowModal(true);
-          // success.classList.add("show");
-          // button.classList.add("show");
-          // failed.classList.remove("show");
         },
         (error) => {
           console.log(error.text);
           setFormMessage("I'm sorry, your message failed to send...");
           setShowModal(true);
-          // failed.classList.add("show");
         }
       );
     setFormData({ user_name: "", user_email: "", user_phone: "", message: "" });
@@ -108,7 +106,7 @@ function Contact() {
                 id="user_phone"
                 onChange={handleChange}
                 value={formData.user_phone}
-                placeholder={`Phone Number (optional)`}
+                placeholder="Phone Number (optional)"
                 data-aos="flip-down"
                 data-aos-delay="500"
                 data-aos-duration="800"
@@ -131,13 +129,6 @@ function Contact() {
                 required
               />
             </FormGroup>
-            <div id="success" className="hide">
-              Thank you! Your message has been sent. I will get back to you
-              within 24 hours.
-            </div>
-            <div id="failed" className="hide">
-              I'm sorry, your message failed to send...
-            </div>
             <FormGroup id="submit" className="form-group">
               <SubmitButton
                 type="submit"
@@ -150,16 +141,29 @@ function Contact() {
           </form>
         </ContactFormDiv>
       </Wrap>
-      <Modal show={showModal} onHide={() => setShowModal(false)}>
-        <Modal.Header closeButton>
-          <Modal.Title>Form Result</Modal.Title>
+      <Modal
+        style={{ marginTop: "10%" }}
+        show={showModal}
+        onHide={() => setShowModal(false)}
+      >
+        <Modal.Header
+          style={{ backgroundColor: "rgb(80, 190, 194, .9)" }}
+          closeButton
+        >
+          <Modal.Title>Message Sent!</Modal.Title>
         </Modal.Header>
-        <Modal.Body>{formMessage}</Modal.Body>
-        <Modal.Footer>
-          <Button variant="secondary" onClick={() => setShowModal(false)}>
-            Close
-          </Button>
-        </Modal.Footer>
+        <Modal.Body
+          style={{
+            backgroundColor: "#333",
+            color: " rgba(241, 186, 45, 0.8)",
+            fontWeight: "600",
+          }}
+        >
+          {formMessage}
+        </Modal.Body>
+        <Modal.Footer
+          style={{ backgroundColor: "rgb(80, 190, 194, 0.9)" }}
+        ></Modal.Footer>
       </Modal>
     </Container>
   );

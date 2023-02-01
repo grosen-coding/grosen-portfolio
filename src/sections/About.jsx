@@ -29,16 +29,18 @@ function About() {
         </p>
         <p>
           Front-End Development is currently my specialty, with a proficiency in
-          HTML, CSS and JavaScript code, but what I enjoy most, is bringing an
-          obsessive level of creativity and attention-to-detail into my
+          advanced HTML, CSS and JavaScript code, but, without a doubt, what I
+          enjoy most, is using <strong>React</strong>. React allows me to bring
+          an obsessive level of creativity and attention-to-detail into my
           projects. I take great pride in developing websites & writing code
-          with a fresh, up-to-date and modern approach. An extensive background
-          in both project and employee management has given me a sharp eye for
-          problem solving and positive leadership, and has made me an asset to
-          anyone expecting the best. When I'm not coding, you can find me
-          rehabilitating last-chance dogs, teaching canine psychology, designing
-          & building award-winning landscapes, hiking & exploring nature, or
-          playing the drums and a variety of sports.
+          with a fresh, up-to-date and modern approach. Having an extensive
+          background as a long-time entrepreneur, and in both project and
+          employee management has given me a sharp eye for problem solving and
+          positive leadership, and has made me an asset to anyone expecting the
+          best. When I'm not coding, you can find me rehabilitating last-chance
+          dogs, teaching canine psychology, designing & building award-winning
+          landscapes, hiking & exploring nature, building sustainable food
+          gardens, or playing the drums and a variety of sports.
         </p>
 
         <AboutContent>
@@ -54,9 +56,10 @@ function About() {
             <h3>Creativity</h3>
             <p>
               Without a doubt, the best part of modern web development has to be
-              the endless possibilities to express creativity. From writing
+              the endless possibilities to express my creativity. From writing
               cleaner, more efficient code, to obsessing over the placement of
-              design components, the skies are truly the limit.
+              design components, the skies, and imagination, are truly the limit
+              all the way from design right through implementation.
             </p>
           </ContentCard>
           <ContentCard
@@ -74,7 +77,8 @@ function About() {
               I love to solve problems even more knowing there are always
               multiple solutions. Whether I'm debugging a problem with code, or
               working with a client, my level of commitment to my work is
-              unmatched.
+              unmatched, and I will always see every project through to
+              completion.
             </p>
           </ContentCard>
           <ContentCard
@@ -91,7 +95,8 @@ function About() {
               Web development changes faster than most technology these days.
               The excitement of watching emerging languages and methods develop
               literally every day allows me to feel I am able to continuously
-              learn something new or different.
+              learn something new or different. Constant learning also means
+              stronger project efficiency.
             </p>
           </ContentCard>
         </AboutContent>
@@ -170,7 +175,7 @@ const AboutWrap = styled.div`
     margin-top: 20px;
     text-transform: uppercase;
     font-weight: 500;
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     letter-spacing: 0.8px;
     text-align: center;
     color: var(--color-yellow);
