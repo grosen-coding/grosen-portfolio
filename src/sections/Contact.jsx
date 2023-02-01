@@ -104,7 +104,7 @@ function Contact() {
                 data-aos-easing="ease-in-out"
               />
               <input
-                type="number"
+                type="text"
                 name="user_phone"
                 className="form-control"
                 id="user_phone"
