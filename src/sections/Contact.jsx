@@ -3,7 +3,7 @@ import { useState } from "react";
 import styled from "styled-components";
 import { device } from "../components/device";
 import emailjs from "emailjs-com";
-import { Modal, Button } from "react-bootstrap";
+import { Modal } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { BsLinkedin } from "react-icons/bs";
 import { MdMarkEmailUnread } from "react-icons/md";
@@ -25,9 +25,6 @@ function Contact() {
   };
 
   const handleSubmit = (event) => {
-    // const success = document.getElementById("success");
-    // const button = document.getElementById("send_message");
-    // const failed = document.getElementById("failed");
     event.preventDefault();
 
     emailjs
@@ -214,7 +211,6 @@ const Container = styled.section`
     bottom: 0;
     left: 0;
     height: 100%;
-    /* background: linear-gradient(to top, #000, #0003 70%, #0000); */
     position: absolute;
     z-index: 5;
   }
@@ -224,7 +220,6 @@ const Container = styled.section`
     top: 0;
     left: 0;
     height: 100%;
-    /* height: 200px; */
     background: linear-gradient(to bottom, #000, #0003 100%, #0000);
     position: absolute;
     z-index: 5;

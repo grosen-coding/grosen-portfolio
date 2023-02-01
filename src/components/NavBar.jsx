@@ -29,7 +29,7 @@ function NavBar() {
           <ul className="navbar-links link-1">
             <li className="nav-link">
               <a href="#about">
-                About<span></span>
+                About Me<span></span>
                 <span></span>
               </a>
             </li>
@@ -41,7 +41,7 @@ function NavBar() {
             </li>
             <li className="nav-link">
               <a href="#skills">
-                Skills<span></span>
+                My Skills<span></span>
                 <span></span>
               </a>
             </li>
@@ -54,7 +54,7 @@ function NavBar() {
 
             <li className="nav-link">
               <a href="#contact">
-                Contact<span></span>
+                Contact Me<span></span>
                 <span></span>
               </a>
             </li>
