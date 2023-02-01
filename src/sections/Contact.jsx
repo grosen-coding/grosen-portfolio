@@ -3,6 +3,8 @@ import { useState } from "react";
 import styled from "styled-components";
 import { device } from "../components/device";
 import emailjs from "emailjs-com";
+import { Modal, Button } from "react-bootstrap";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function Contact() {
   const [formData, setFormData] = useState({
@@ -11,6 +13,9 @@ function Contact() {
     user_phone: "",
     message: "",
   });
+
+  const [showModal, setShowModal] = useState(false);
+  const [formMessage, setFormMessage] = useState("");
 
   const handleChange = (event) => {
     setFormData({ ...formData, [event.target.name]: event.target.value });
@@ -32,13 +37,19 @@ function Contact() {
       .then(
         (result) => {
           console.log(result.text);
-          success.classList.add("show");
-          button.classList.add("show");
-          failed.classList.remove("show");
+          setFormMessage(
+            "Thank you! Your message has been sent. I will get back to you within 24 hours."
+          );
+          setShowModal(true);
+          // success.classList.add("show");
+          // button.classList.add("show");
+          // failed.classList.remove("show");
         },
         (error) => {
           console.log(error.text);
-          failed.classList.add("show");
+          setFormMessage("I'm sorry, your message failed to send...");
+          setShowModal(true);
+          // failed.classList.add("show");
         }
       );
     setFormData({ user_name: "", user_email: "", user_phone: "", message: "" });
@@ -124,10 +135,11 @@ function Contact() {
               />
             </FormGroup>
             <div id="success" className="hide">
-              Your message has been sent...
+              Thank you! Your message has been sent. I will get back to you
+              within 24 hours.
             </div>
             <div id="failed" className="hide">
-              Message failed...
+              I'm sorry, your message failed to send...
             </div>
             <FormGroup id="submit" className="form-group">
               <SubmitButton
@@ -141,6 +153,17 @@ function Contact() {
           </form>
         </ContactFormDiv>
       </Wrap>
+      <Modal show={showModal} onHide={() => setShowModal(false)}>
+        <Modal.Header closeButton>
+          <Modal.Title>Form Result</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>{formMessage}</Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={() => setShowModal(false)}>
+            Close
+          </Button>
+        </Modal.Footer>
+      </Modal>
     </Container>
   );
 }
@@ -302,13 +325,13 @@ const FormGroup = styled.div`
 const SubmitButton = styled.button`
   width: 50%;
   height: auto;
-  background-color: var(--color-primary);
+  background-color: var(--color-primary) !important;
   font-family: var(--font-title);
   text-transform: uppercase;
   letter-spacing: 1px;
   font-size: 1.5rem;
   border-radius: 10px;
-  font-weight: 500;
+  font-weight: 500 !important;
   padding: 12px;
   display: inline-block;
   z-index: 5;
@@ -319,12 +342,12 @@ const SubmitButton = styled.button`
   margin-top: 15px;
   color: rgba(0, 0, 0, 0.7);
   &:hover {
-    background-color: #e2e2e2;
-    transition: 0.3s;
-    color: var(--color-primary);
+    background-color: #e2e2e2 !important;
+    transition: 0.3s !important;
+    color: var(--color-primary) !important;
   }
   &:hover a {
-    color: var(--color-primary);
-    transition: 0.3s;
+    color: var(--color-primary) !important;
+    transition: 0.3s !important;
   }
 `;

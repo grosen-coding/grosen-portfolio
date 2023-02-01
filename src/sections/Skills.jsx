@@ -313,6 +313,7 @@ const Skill = styled.div`
 
   h3 {
     letter-spacing: 0.6px;
+    font-size: 1.2rem;
     @media ${device.mobileL} {
       font-size: 1.7rem;
     }

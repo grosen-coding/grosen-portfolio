@@ -90,12 +90,13 @@ const Nav = styled.nav`
   a {
     transition: 0.25s;
     letter-spacing: 1.1px;
+    color: #e2e2e2 !important;
   }
 
   a:hover,
   a:focus,
   a:active {
-    color: var(--color-primary);
+    color: var(--color-primary) !important;
   }
 `;
 
@@ -118,8 +119,8 @@ const Logo = styled.div`
   transform-origin: left;
 
   a {
-    color: var(--color-yellow);
-    font-weight: 500;
+    color: var(--color-yellow) !important;
+    font-weight: 500 !important;
   }
 
   @media ${device.tablet} {
