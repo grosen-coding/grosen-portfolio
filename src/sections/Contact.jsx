@@ -37,9 +37,7 @@ function Contact() {
       .then(
         (result) => {
           console.log(result.text);
-          setFormMessage(
-            "Thank you! Your message has been sent. I will get back to you within 24 hours."
-          );
+          setFormMessage("Thank you! ");
           setShowModal(true);
           // success.classList.add("show");
           // button.classList.add("show");
@@ -111,7 +109,6 @@ function Contact() {
                 onChange={handleChange}
                 value={formData.user_phone}
                 placeholder="Phone Number"
-                required
                 data-aos="flip-down"
                 data-aos-delay="500"
                 data-aos-duration="800"
