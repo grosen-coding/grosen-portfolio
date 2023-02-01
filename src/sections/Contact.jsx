@@ -22,9 +22,9 @@ function Contact() {
   };
 
   const handleSubmit = (event) => {
-    const success = document.getElementById("success");
-    const button = document.getElementById("send_message");
-    const failed = document.getElementById("failed");
+    // const success = document.getElementById("success");
+    // const button = document.getElementById("send_message");
+    // const failed = document.getElementById("failed");
     event.preventDefault();
 
     emailjs
