@@ -68,9 +68,9 @@ function Skills() {
               <SkillWrap>
                 <Skill>
                   <h3>CSS</h3>
-                  <div id="skill-progress">90%</div>
+                  <div id="skill-progress">95%</div>
                 </Skill>
-                <SkillBar progress={90} className="skill-bar" id="skill-bar">
+                <SkillBar progress={95} className="skill-bar" id="skill-bar">
                   {" "}
                   <div
                     data-aos="anim1"
@@ -83,9 +83,9 @@ function Skills() {
               <SkillWrap>
                 <Skill>
                   <h3>Javascript</h3>
-                  <div id="skill-progress">70%</div>
+                  <div id="skill-progress">80%</div>
                 </Skill>
-                <SkillBar progress={70} className="skill-bar" id="skill-bar">
+                <SkillBar progress={80} className="skill-bar" id="skill-bar">
                   {" "}
                   <div
                     data-aos="anim1"
@@ -98,9 +98,9 @@ function Skills() {
               <SkillWrap>
                 <Skill>
                   <h3>Back-end</h3>
-                  <div id="skill-progress">40%</div>
+                  <div id="skill-progress">60%</div>
                 </Skill>
-                <SkillBar progress={40} className="skill-bar" id="skill-bar">
+                <SkillBar progress={60} className="skill-bar" id="skill-bar">
                   {" "}
                   <div
                     data-aos="anim1"
@@ -113,9 +113,9 @@ function Skills() {
               <SkillWrap>
                 <Skill>
                   <h3>React</h3>
-                  <div id="skill-progress">75%</div>
+                  <div id="skill-progress">85%</div>
                 </Skill>
-                <SkillBar progress={75} className="skill-bar" id="skill-bar">
+                <SkillBar progress={85} className="skill-bar" id="skill-bar">
                   {" "}
                   <div
                     data-aos="anim1"
@@ -142,9 +142,9 @@ function Skills() {
               <SkillWrap>
                 <Skill>
                   <h3>Responsive Design</h3>
-                  <div id="skill-progress">90%</div>
+                  <div id="skill-progress">95%</div>
                 </Skill>
-                <SkillBar progress={90} className="skill-bar" id="skill-bar">
+                <SkillBar progress={95} className="skill-bar" id="skill-bar">
                   <div
                     data-aos="anim1"
                     data-aos-duration="2000"
@@ -156,9 +156,9 @@ function Skills() {
               <SkillWrap>
                 <Skill>
                   <h3>Accessibility</h3>
-                  <div id="skill-progress">80%</div>
+                  <div id="skill-progress">90%</div>
                 </Skill>
-                <SkillBar progress={80} className="skill-bar" id="skill-bar">
+                <SkillBar progress={90} className="skill-bar" id="skill-bar">
                   <div
                     data-aos="anim1"
                     data-aos-duration="2000"
