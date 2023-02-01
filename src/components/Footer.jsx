@@ -17,7 +17,7 @@ function Footer() {
           </LinkedIn>
           <h4>
             &nbsp; &nbsp; <span>rosengsr@gmail.com</span>&nbsp; &nbsp;||&nbsp;
-            &nbsp; &copy; 2022 Copyright &nbsp; &nbsp;||&nbsp; &nbsp;{" "}
+            &nbsp; &copy; 2023 Copyright &nbsp; &nbsp;||&nbsp; &nbsp;{" "}
             <span>GSRCoding</span>
           </h4>
         </FooterContent>

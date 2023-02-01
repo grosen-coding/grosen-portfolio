@@ -46,7 +46,7 @@ const ToTopButton = styled.div`
   position: fixed;
   /* width: 100%; */
   right: 40px;
-  bottom: 40px;
+  bottom: 80px;
   height: 20px;
   font-size: 3rem;
   z-index: 50;
