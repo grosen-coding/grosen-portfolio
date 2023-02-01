@@ -24,6 +24,9 @@ textarea::placeholder {
     opacity: .4;
     color: #e2e2e2;
     text-transform: uppercase;
+     span{
+        font-style: italic;
+     }
 }
 
 

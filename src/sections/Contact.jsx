@@ -108,7 +108,7 @@ function Contact() {
                 id="user_phone"
                 onChange={handleChange}
                 value={formData.user_phone}
-                placeholder="Phone Number"
+                placeholder={`Phone Number (optional)`}
                 data-aos="flip-down"
                 data-aos-delay="500"
                 data-aos-duration="800"
