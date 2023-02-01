@@ -12,13 +12,6 @@ function Contact() {
     message: "",
   });
 
-  // .sendForm(
-  //   process.env.SERVICE_ID,
-  //   process.env.TEMPLATE_ID,
-  //   formData,
-  //   process.env.EMAILJS_PUBLIC_KEY
-  // )
-
   const handleChange = (event) => {
     setFormData({ ...formData, [event.target.name]: event.target.value });
   };
@@ -31,10 +24,10 @@ function Contact() {
 
     emailjs
       .sendForm(
-        process.env.SERVICE_ID,
-        process.env.TEMPLATE_ID,
+        "service_wo9lv6o",
+        "template_gpd0odv",
         event.target,
-        process.env.EMAILJS_PUBLIC_KEY
+        "WuwUwial6BNhAsnae"
       )
       .then(
         (result) => {
@@ -50,33 +43,6 @@ function Contact() {
       );
     setFormData({ user_name: "", user_email: "", user_phone: "", message: "" });
   };
-
-  // function sendEmail(e) {
-  //   const success = document.getElementById("success");
-  //   const button = document.getElementById("send_message");
-  //   const failed = document.getElementById("failed");
-  //   e.preventDefault();
-
-  //   emailjs
-  //     .sendForm(
-  //       "service_wo9lv6o",
-  //       "template_gpd0odv",
-  //       e.target,
-  //       "WuwUwial6BNhAsnae"
-  //     )
-  //     .then(
-  //       (result) => {
-  //         console.log(result.text);
-  //         success.classList.add("show");
-  //         button.classList.add("show");
-  //         failed.classList.remove("show");
-  //       },
-  //       (error) => {
-  //         console.log(error.text);
-  //         failed.classList.add("show");
-  //       }
-  //     );
-  // }
 
   return (
     <Container id="contact">
