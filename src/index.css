@@ -28,7 +28,7 @@
 }
 
 a {
-  text-decoration: none;
+  text-decoration: none !important;
   color: #e2e2e2;
 }
 
@@ -38,10 +38,6 @@ textarea::placeholder {
   opacity: 0.4;
   color: #e2e2e2;
   text-transform: uppercase;
-}
-input::placeholder span,
-textarea::placeholder span {
-  font-style: italic;
 }
 
 html {
