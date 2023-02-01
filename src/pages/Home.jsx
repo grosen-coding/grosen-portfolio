@@ -2,7 +2,7 @@ import About from "../sections/About";
 import WhatIDo from "../sections/WhatIDo";
 import Skills from "../sections/Skills";
 import Portfolio from "../sections/Portfolio";
-import Resume from "../sections/Resume";
+// import Resume from "../sections/Resume";
 import Contact from "../sections/Contact";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
@@ -22,7 +22,7 @@ function Home() {
       <WhatIDo />
       <Skills />
       <Portfolio />
-      <Resume />
+      {/* <Resume /> */}
       <Contact />
       <Footer />
     </>

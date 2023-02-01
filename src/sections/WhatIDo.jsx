@@ -42,7 +42,7 @@ function WhatIDo() {
               data-aos-easing="ease-in-out"
               data-aos-offset="100px"
             >
-              I Develop Websites & Debug Code
+              Custom Designs, Complete Website Development & Code Debugging
             </h3>
             <p
               className="p-text"
@@ -53,12 +53,15 @@ function WhatIDo() {
               data-aos-offset="100px"
             >
               My strongest areas of web development are easily designing &
-              creating stunning websites, and debugging code. Writing a website
-              from scratch, or tracking down & solving a problem bug, deliver
-              overwhelming feelings of excitement, satisfaction and pride that
-              make me only want to learn more. I can provide custom designs,
-              help you create your own vision for your personal or business
-              website, or even help you find problems and bugs in your code.
+              creating stunning websites, but I also love debugging code, and
+              have a unique eye for it. Whether designing and building from
+              scratch, or tracking down & solving a problem bug, the
+              overwhelming feelings of excitement, satisfaction and pride I
+              receive from flawlessly completed projects only makes me want to
+              learn more. I can provide custom designs, help you create your own
+              vision for your personal or business website, or even help you
+              find problems and bugs in your code. Our only limit is our
+              imagination.
             </p>
             <div
               data-aos="zoom-in"
@@ -82,7 +85,7 @@ function WhatIDo() {
               data-aos-easing="ease-in-out"
               data-aos-offset="100px"
             >
-              Superior Results with Top User Experience
+              Superior Results with Top User & Client Experience
             </h3>
             <p
               className="p-text"
@@ -93,13 +96,13 @@ function WhatIDo() {
               data-aos-offset="100px"
             >
               Over two decades of working with clients and large companies has
-              also given me the patience, knowledge and ability to work
-              extremely effectively in all environments, whether one-on-one,
-              leading a small group, or being an essential part of a large
-              company. I bring the same level of passion, creativity and
-              dedication to every aspect of my life, and take great pride in
-              providing results that always exceed expectations. You will never
-              be disappointed!
+              given me the patience, knowledge and ability to work extremely
+              effectively in all environments, whether one-on-one, leading a
+              small group, or being an essential part of a large company. I
+              bring the same level of passion, creativity and dedication to
+              every aspect of my life, and take great pride in providing results
+              that always exceed expectations. You will never be disappointed,
+              and I only work to exceed already high expectations.
             </p>
           </Right>
         </div>

@@ -42,9 +42,10 @@ function Skills() {
               design first drew me towards the visual experience of a website,
               but, after creating several full-stack websites, I have developed
               an appreciation for writing back-end security and authentication.
-              I enjoy both writing code in plain JS, as well as using
-              frameworks, with significant experience using React and the vast
-              libraries it contains.
+              Without a doubt, I most enjoy working with React for is incredible
+              versatility, and although I will always prefer to freedom of
+              writing well written styled-components and CSS, I have started
+              enjoy working with libraries such as Material UI and Bootstrap.
             </p>
           </Left>
 
@@ -97,10 +98,10 @@ function Skills() {
               </SkillWrap>
               <SkillWrap>
                 <Skill>
-                  <h3>Back-end</h3>
-                  <div id="skill-progress">60%</div>
+                  <h3>Material UI/Bootstrap</h3>
+                  <div id="skill-progress">70%</div>
                 </Skill>
-                <SkillBar progress={60} className="skill-bar" id="skill-bar">
+                <SkillBar progress={70} className="skill-bar" id="skill-bar">
                   {" "}
                   <div
                     data-aos="anim1"
@@ -116,6 +117,21 @@ function Skills() {
                   <div id="skill-progress">85%</div>
                 </Skill>
                 <SkillBar progress={85} className="skill-bar" id="skill-bar">
+                  {" "}
+                  <div
+                    data-aos="anim1"
+                    data-aos-duration="2000"
+                    data-aos-easing="ease-in-out"
+                    data-aos-offset="50px"
+                  ></div>
+                </SkillBar>
+              </SkillWrap>
+              <SkillWrap>
+                <Skill>
+                  <h3>Back-end</h3>
+                  <div id="skill-progress">60%</div>
+                </Skill>
+                <SkillBar progress={60} className="skill-bar" id="skill-bar">
                   {" "}
                   <div
                     data-aos="anim1"
@@ -313,8 +329,10 @@ const Skill = styled.div`
 
   h3 {
     letter-spacing: 0.6px;
+    line-height: 0.8;
     font-size: 1.2rem;
     @media ${device.mobileL} {
+      padding-top: 5px;
       font-size: 1.7rem;
     }
   }

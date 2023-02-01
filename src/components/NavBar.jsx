@@ -51,12 +51,6 @@ function NavBar() {
                 <span></span>
               </a>
             </li>
-            <li className="nav-link">
-              <a href="#resume">
-                Resume<span></span>
-                <span></span>
-              </a>
-            </li>
 
             <li className="nav-link">
               <a href="#contact">

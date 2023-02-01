@@ -39,7 +39,7 @@ html {
     }
 
     @include respond(tab-land) {
-        font-size: 55%;
+        font-size: 60%;
     }
 
     @include respond(tab-port) {
