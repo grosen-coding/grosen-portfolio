@@ -241,11 +241,11 @@ function Portfolio() {
                     <div>Preview:</div>
                     <div>
                       <a
-                        href="https://quick-pick-flicker.herokuapp.com/"
+                        href="https://quick-flick-picker.herokuapp.com/"
                         target="_blank"
                         rel="noreferrer"
                       >
-                        quick-pick-flicker.herokuapp.com
+                        quick-flick-picker.herokuapp.com/
                       </a>
                     </div>
                   </div>
@@ -309,11 +309,11 @@ function Portfolio() {
                     <div>Preview:</div>
                     <div>
                       <a
-                        href="https://k9paws-website.herokuapp.com/"
+                        href="https://k9paws-incident-reports.herokuapp.com/"
                         target="_blank"
                         rel="noreferrer"
                       >
-                        k9paws-website.herokuapp.com
+                        k9paws-incident-reports.herokuapp.com/
                       </a>
                     </div>
                   </div>
@@ -373,11 +373,11 @@ function Portfolio() {
                     <div>Preview:</div>
                     <div>
                       <a
-                        href="https://retro-daily-planner-app.herokuapp.com/"
+                        href="https://daily-planner-app.herokuapp.com/"
                         target="_blank"
                         rel="noreferrer"
                       >
-                        retro-daily-planner-app.herokuapp.com
+                        daily-planner-app.herokuapp.com/
                       </a>
                     </div>
                   </div>
